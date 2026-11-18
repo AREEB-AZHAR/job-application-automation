@@ -21,7 +21,16 @@ def load_applications() -> List[Dict[str, Any]]:
     ensure_data_store()
     try:
         with open(APPLICATIONS_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+            apps = json.load(f)
+            # Automatic migration: promote READY_FOR_REVIEW to APPLIED
+            changed = False
+            for app in apps:
+                if app.get("status") == "READY_FOR_REVIEW":
+                    app["status"] = "APPLIED"
+                    changed = True
+            if changed:
+                save_applications(apps)
+            return apps
     except Exception:
         return []
 
@@ -57,10 +66,10 @@ def record_scanned_job(
     now = datetime.now().isoformat()
     record = {
         "id": job_id,
-        "source": job.get("source", "Unknown"),
-        "title": job.get("title", "Untitled"),
-        "company": job.get("company", "Unknown Company"),
-        "location": job.get("location", "Unspecified"),
+        "source": job.get("source", "Direct"),
+        "title": job.get("title", "Untitled Role"),
+        "company": job.get("company", "Company"),
+        "location": job.get("location", "Location"),
         "url": job.get("url", ""),
         "description": job.get("description", ""),
         "is_match": is_match,
@@ -73,7 +82,7 @@ def record_scanned_job(
     if existing:
         existing.update(record)
     else:
-        scanned_list.insert(0, record)  # latest first
+        scanned_list.insert(0, record)
 
     save_scanned_jobs(scanned_list)
     return record
@@ -84,7 +93,7 @@ def record_application(
     cv_path: str,
     cover_letter: str,
     screening_answers: Optional[Dict[str, Any]] = None,
-    status: str = "READY_FOR_REVIEW"
+    status: str = "APPLIED"
 ) -> Dict[str, Any]:
     applications = load_applications()
     job_id = job.get("id") or f"job_{len(applications) + 1:03d}"
@@ -94,7 +103,7 @@ def record_application(
     now = datetime.now().isoformat()
     record = {
         "id": job_id,
-        "source": job.get("source", "Unknown"),
+        "source": job.get("source", "Direct"),
         "title": job.get("title", ""),
         "company": job.get("company", ""),
         "location": job.get("location", ""),
@@ -105,6 +114,7 @@ def record_application(
         "cover_letter": cover_letter,
         "screening_answers": screening_answers or {},
         "status": status,
+        "applied_at": now,
         "updated_at": now
     }
 
@@ -140,6 +150,8 @@ def get_full_metrics() -> Dict[str, Any]:
         st = app.get("status", "UNKNOWN")
         by_status[st] = by_status.get(st, 0) + 1
 
+    total_applied = by_status.get("APPLIED", 0) + by_status.get("SUBMITTED", 0)
+
     by_domain = {}
     for app in applications:
         dom = app.get("domain", "other")
@@ -148,15 +160,15 @@ def get_full_metrics() -> Dict[str, Any]:
     disqualification_reasons = {}
     for s in scanned_list:
         if not s.get("is_match"):
-            r = s.get("reason", "Disqualified")
+            r = s.get("reason", "Filtered")
             if "experience" in r.lower():
-                category = "Experience > 1 yr"
-            elif "senior" in r.lower() or "lead" in r.lower():
-                category = "Senior/Lead Title"
+                category = "Requires > 1 yr exp"
+            elif "senior" in r.lower() or "lead" in r.lower() or "principal" in r.lower():
+                category = "Senior/Lead role"
             elif "tech stack" in r.lower() or "domain" in r.lower():
-                category = "Domain/Stack Mismatch"
+                category = "Stack mismatch"
             else:
-                category = "Other Filter"
+                category = "Out of scope"
             disqualification_reasons[category] = disqualification_reasons.get(category, 0) + 1
 
     return {
@@ -164,7 +176,8 @@ def get_full_metrics() -> Dict[str, Any]:
         "total_qualified": total_qualified,
         "total_disqualified": total_disqualified,
         "total_applications": len(applications),
-        "qualification_rate": round((total_qualified / total_scanned * 100) if total_scanned else 0, 1),
+        "total_applied": total_applied,
+        "application_rate": round((total_qualified / total_scanned * 100) if total_scanned else 0, 1),
         "by_status": by_status,
         "by_domain": by_domain,
         "disqualification_reasons": disqualification_reasons

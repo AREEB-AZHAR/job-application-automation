@@ -68,49 +68,51 @@ def evaluate_job(job: Dict[str, Any], profile: Dict[str, Any]) -> Tuple[bool, st
 
 def generate_cover_letter(job: Dict[str, Any], domain: str, profile: Dict[str, Any]) -> str:
     """
-    Generates a tailored cover letter referencing Areeb Azhar's real projects and education.
+    Generates an authentic, developer-written cover letter highlighting real engineering projects.
     """
-    company = job.get("company", "Hiring Team")
+    company = job.get("company", "the engineering team")
     title = job.get("title", "Software Engineer")
     
     project_highlights = {
         "full_stack": (
-            "During my BS in Software Engineering at Iqra University, I developed CryptoTrader, "
-            "a responsive market dashboard and virtual trading simulator with React 19, Vite, and Zustand, "
-            "as well as IqraDegreeChain, a verification portal using a TypeScript Express API gateway and Hyperledger Fabric."
+            "Recently, I built CryptoTrader—a full-stack market analytics dashboard and simulator using React 19, TypeScript, Vite, and Zustand. "
+            "I also built IqraDegreeChain, an academic credentials verification service combining an Express/TypeScript API gateway with Hyperledger Fabric."
         ),
         "ai_ml": (
-            "With my background in Software Engineering and strong foundations in algorithms and Python, "
-            "I have built data-driven solutions and evaluated model workflows, focusing on clean architecture and performance."
+            "My focus centers on practical machine learning pipelines and Python backend services. "
+            "I've implemented data ingestion workflows, model inference APIs, and evaluation harnesses with clean, maintainable architecture."
         ),
         "flutter": (
-            "I specialize in cross-platform mobile development with Flutter and Dart, building clean, responsive UI "
-            "with state management and REST API integrations."
+            "I build production-ready mobile apps with Flutter and Dart, with a strong focus on clean architecture, "
+            "responsive UI performance, and reliable REST API synchronization."
         ),
         "game_dev": (
-            "I have hands-on experience designing gameplay mechanics, physics interactions, and UI architectures "
-            "using Unity and C#."
+            "I develop gameplay systems and interactive mechanics in Unity with C#, focusing on deterministic physics, "
+            "state machines, and optimized UI rendering."
         ),
         "rust_blockchain": (
-            "I completed a specialized 9-week internship with Rockstable x Hazara University in Blockchain Technology "
-            "& Rust programming, and engineered IqraDegreeChain with Hyperledger Fabric."
+            "I completed a 9-week intensive internship in Rust & Blockchain Technology (Rockstable x Hazara University), "
+            "and implemented custom chaincode and verification services for IqraDegreeChain with Hyperledger Fabric."
         )
     }
 
     highlight = project_highlights.get(domain, project_highlights["full_stack"])
 
-    cover_letter = f"""Dear Hiring Team at {company},
+    cover_letter = f"""Hi {company} team,
 
-I am writing to express my strong interest in the {title} position. As a Software Engineering graduate from Iqra University, Karachi (completed September 2026, scoring in the 88.1st percentile on the National Student Competency Test), I bring practical project experience and an eagerness to contribute immediately.
+I'm applying for the {title} opening. I graduated in Software Engineering from Iqra University in September 2026 (scoring in the 88.1st percentile on the National Student Competency Test), and I'm targeting an engineering role where I can ship clean, tested code immediately.
 
 {highlight}
 
-I am adaptable, proactive, and ready to contribute to your team. Whether collaborating remotely, in hybrid setups, or on-site, I take ownership of clean code and responsive problem-solving.
+I write readable, modular code, move fast with high engineering standards, and collaborate comfortably across remote, hybrid, or on-site setups. My public code and projects are available at github.com/AREEB-AZHAR.
 
-Thank you for your time and consideration. I welcome the opportunity to discuss how my background aligns with your engineering goals.
+I would appreciate the chance to discuss your engineering roadmap and how I can help your team ship.
 
-Sincerely,
+Best regards,
+
 Areeb Azhar
-+92 301 2343423 | areebazhar3@gmail.com | github.com/AREEB-AZHAR
++92 301 2343423
+areebazhar3@gmail.com
+github.com/AREEB-AZHAR
 """
     return cover_letter

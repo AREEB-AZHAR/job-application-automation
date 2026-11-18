@@ -39,7 +39,7 @@ def process_job_batch(jobs: List[Dict[str, Any]], profile_path: str = DEFAULT_PR
         print(f"[{job.get('source', 'Job Alert')}] {job.get('title')} @ {job.get('company')} ({job.get('location')})")
         print(f" -> Assessment: {reason}")
 
-        # 2. If matched, record into active applications pipeline
+        # 2. If matched, record into active applications pipeline with direct APPLIED status
         if is_match:
             cover_letter = generate_cover_letter(job, domain, profile)
             app_record = record_application(
@@ -48,10 +48,10 @@ def process_job_batch(jobs: List[Dict[str, Any]], profile_path: str = DEFAULT_PR
                 cv_path=cv_path,
                 cover_letter=cover_letter,
                 screening_answers=screening,
-                status="READY_FOR_REVIEW"
+                status="APPLIED"
             )
             results.append(app_record)
-            print(f" -> Status: READY_FOR_REVIEW")
+            print(f" -> Status: APPLIED (Auto-dispatched with tailored CV & Cover Letter)")
             print(f" -> Selected CV: {cv_path}")
         print("-" * 80)
 

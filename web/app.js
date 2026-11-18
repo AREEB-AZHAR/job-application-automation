@@ -1,4 +1,4 @@
-// AutoJobBot Dashboard Application Logic
+// Areeb Azhar — Engineering Career Pipeline Dashboard
 let state = {
   metrics: {},
   applications: [],
@@ -8,17 +8,16 @@ let state = {
   searchQuery: '',
   selectedDomain: 'all',
   selectedStatus: 'all',
-  currentModalApp: null
+  currentDrawerApp: null
 };
 
-// Domain display mapping
 const domainLabels = {
   full_stack: 'Full-Stack Web',
   rust_blockchain: 'Rust & Blockchain',
   flutter: 'Flutter / Mobile',
   ai_ml: 'AI / Machine Learning',
   game_dev: 'Game Development',
-  other: 'Other'
+  other: 'General Engineering'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,47 +27,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initEventListeners() {
   // Tabs
-  document.querySelectorAll('.tab-btn').forEach(btn => {
+  document.querySelectorAll('.seg-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const tab = btn.dataset.tab;
       switchTab(tab);
     });
   });
 
-  // Search & Filters
+  // Search Input & Keyboard Shortcut
   const searchInput = document.getElementById('input-search');
   searchInput.addEventListener('input', (e) => {
     state.searchQuery = e.target.value.toLowerCase();
-    renderActiveTab();
+    renderActiveView();
   });
 
-  const domainSelect = document.getElementById('filter-domain');
-  domainSelect.addEventListener('change', (e) => {
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement !== searchInput && !document.activeElement.matches('input, textarea')) {
+      e.preventDefault();
+      searchInput.focus();
+    } else if (e.key === 'Escape') {
+      closeDrawer();
+      closeEvalModal();
+    }
+  });
+
+  // Filters
+  document.getElementById('filter-domain').addEventListener('change', (e) => {
     state.selectedDomain = e.target.value;
-    renderActiveTab();
+    renderActiveView();
   });
 
-  const statusSelect = document.getElementById('filter-status');
-  statusSelect.addEventListener('change', (e) => {
+  document.getElementById('filter-status').addEventListener('change', (e) => {
     state.selectedStatus = e.target.value;
-    renderActiveTab();
+    renderActiveView();
   });
 
   // Refresh
   document.getElementById('btn-refresh').addEventListener('click', loadData);
 
-  // Modals
-  document.getElementById('btn-close-modal').addEventListener('click', closeModal);
-  document.getElementById('modal-packet').addEventListener('click', (e) => {
-    if (e.target.id === 'modal-packet') closeModal();
+  // Drawer
+  document.getElementById('btn-close-drawer').addEventListener('click', closeDrawer);
+  document.getElementById('drawer-packet').addEventListener('click', (e) => {
+    if (e.target.id === 'drawer-packet') closeDrawer();
   });
 
   document.getElementById('btn-copy-cover').addEventListener('click', copyCoverLetter);
-  document.getElementById('btn-save-status').addEventListener('click', saveModalStatus);
+  document.getElementById('btn-save-status').addEventListener('click', saveDrawerStatus);
 
   // Quick Evaluate
   document.getElementById('btn-quick-evaluate').addEventListener('click', openEvalModal);
-  document.getElementById('btn-close-eval-modal').addEventListener('click', closeEvalModal);
+  document.getElementById('btn-close-eval').addEventListener('click', closeEvalModal);
+  document.getElementById('btn-cancel-eval').addEventListener('click', closeEvalModal);
   document.getElementById('modal-evaluate').addEventListener('click', (e) => {
     if (e.target.id === 'modal-evaluate') closeEvalModal();
   });
@@ -78,61 +87,58 @@ function initEventListeners() {
 async function loadData() {
   try {
     const res = await fetch('/api/data');
-    if (!res.ok) throw new Error('Failed to fetch data');
+    if (!res.ok) throw new Error('Data fetch failed');
     const data = await res.json();
-    
+
     state.metrics = data.metrics || {};
     state.applications = data.applications || [];
     state.scanned = data.scanned || [];
     state.candidate = data.candidate || {};
 
     updateKPIs();
-    renderActiveTab();
+    renderActiveView();
     renderAnalytics();
   } catch (err) {
-    console.error('Error loading data:', err);
+    console.error('Error fetching data:', err);
   }
 }
 
 function updateKPIs() {
   const m = state.metrics;
-  document.getElementById('stat-scanned').textContent = m.total_scanned || 0;
-  document.getElementById('stat-qual-rate').textContent = `${m.qualification_rate || 0}% Qualified Rate`;
-  
-  const readyCount = (m.by_status && m.by_status['READY_FOR_REVIEW']) || 0;
-  const submittedCount = (m.by_status && m.by_status['SUBMITTED']) || 0;
-  
-  document.getElementById('stat-ready').textContent = readyCount;
-  document.getElementById('stat-submitted').textContent = submittedCount;
-  document.getElementById('stat-disqualified').textContent = m.total_disqualified || 0;
+  const appliedCount = state.applications.filter(a => a.status === 'APPLIED' || a.status === 'SUBMITTED').length || state.applications.length;
 
-  document.getElementById('badge-applications-count').textContent = state.applications.length;
-  document.getElementById('badge-scanned-count').textContent = state.scanned.length;
+  document.getElementById('stat-applied').textContent = appliedCount;
+  document.getElementById('stat-scanned').textContent = m.total_scanned || 0;
+  document.getElementById('stat-rate').textContent = `${m.qualification_rate || m.application_rate || 0}%`;
+  document.getElementById('stat-filtered').textContent = m.total_disqualified || 0;
+
+  document.getElementById('count-applications').textContent = state.applications.length;
+  document.getElementById('count-scanned').textContent = state.scanned.length;
 }
 
 function switchTab(tab) {
   state.activeTab = tab;
-  document.querySelectorAll('.tab-btn').forEach(btn => {
+  document.querySelectorAll('.seg-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.tab === tab);
   });
-  document.querySelectorAll('.tab-view').forEach(view => {
+  document.querySelectorAll('.view-panel').forEach(view => {
     view.classList.toggle('active', view.id === `view-${tab}`);
   });
-  renderActiveTab();
+  renderActiveView();
 }
 
-function renderActiveTab() {
+function renderActiveView() {
   if (state.activeTab === 'applications') {
     renderApplications();
-  } else if (state.activeTab === 'scanned') {
-    renderScanned();
+  } else if (state.activeTab === 'audit') {
+    renderAuditTable();
   } else if (state.activeTab === 'analytics') {
     renderAnalytics();
   }
 }
 
 // -------------------------------------------------------------
-// Applications View
+// View: Applications Cards
 // -------------------------------------------------------------
 function renderApplications() {
   const grid = document.getElementById('applications-grid');
@@ -140,14 +146,17 @@ function renderApplications() {
 
   const filtered = state.applications.filter(app => {
     const q = state.searchQuery;
-    const matchSearch = !q || 
+    const matchSearch = !q ||
       (app.title && app.title.toLowerCase().includes(q)) ||
       (app.company && app.company.toLowerCase().includes(q)) ||
       (app.location && app.location.toLowerCase().includes(q)) ||
       (app.domain && app.domain.toLowerCase().includes(q));
 
     const matchDomain = state.selectedDomain === 'all' || app.domain === state.selectedDomain;
-    const matchStatus = state.selectedStatus === 'all' || app.status === state.selectedStatus;
+    let matchStatus = true;
+    if (state.selectedStatus !== 'all') {
+      matchStatus = app.status === state.selectedStatus;
+    }
 
     return matchSearch && matchDomain && matchStatus;
   });
@@ -160,42 +169,47 @@ function renderApplications() {
   empty.classList.add('hidden');
 
   grid.innerHTML = filtered.map(app => {
-    const domainText = domainLabels[app.domain] || app.domain || 'Software Engineer';
-    const cvName = app.cv_path ? app.cv_path.split('\\').pop().split('/').pop() : 'Default CV';
-    const status = app.status || 'READY_FOR_REVIEW';
+    const domainText = domainLabels[app.domain] || app.domain || 'Engineering';
+    const cvName = app.cv_path ? app.cv_path.split('\\').pop().split('/').pop() : 'Standard CV';
+    const initials = getInitials(app.company || 'CO');
+    const status = app.status || 'APPLIED';
 
     return `
-      <div class="job-card" data-id="${app.id}">
+      <div class="app-card">
         <div>
-          <div class="job-card-header">
-            <div class="company-meta">
-              <span>🏢 ${escapeHtml(app.company)}</span>
-              <span>•</span>
-              <span>${escapeHtml(app.location)}</span>
+          <div class="app-card-top">
+            <div class="company-avatar">${escapeHtml(initials)}</div>
+            <div class="app-card-headings">
+              <h3 class="app-role-title" title="${escapeHtml(app.title)}">${escapeHtml(app.title)}</h3>
+              <div class="app-company-line">
+                <span>${escapeHtml(app.company)}</span>
+                <span style="color: var(--text-dim);">&bull;</span>
+                <span>${escapeHtml(app.location)}</span>
+              </div>
             </div>
-            <span class="source-pill">${escapeHtml(app.source || 'Job Board')}</span>
+            <span class="status-chip ${status}">● ${status}</span>
           </div>
 
-          <h3 class="job-card-title">${escapeHtml(app.title)}</h3>
-
-          <div class="job-tags-row">
-            <span class="tag-domain">${domainText}</span>
-            <span class="status-badge status-${status}">
-              ● ${status.replace(/_/g, ' ')}
-            </span>
-          </div>
-
-          <div class="cv-pill" title="${escapeHtml(app.cv_path)}">
-            <span>📎 Attached CV:</span>
-            <code>${escapeHtml(cvName)}</code>
+          <div class="app-card-meta">
+            <div class="meta-row">
+              <span class="tag-badge">${domainText}</span>
+              <span class="tag-badge">${escapeHtml(app.source || 'Portal')}</span>
+            </div>
+            <div class="meta-row">
+              <span class="cv-tag" title="${escapeHtml(app.cv_path)}">📎 ${escapeHtml(cvName)}</span>
+            </div>
           </div>
         </div>
 
-        <div class="job-card-actions">
-          <button class="btn btn-secondary btn-sm" onclick="openPacketModal('${app.id}')">
-            🔍 Inspect Packet & Cover Letter
+        <div class="app-card-foot">
+          <button class="btn btn-secondary btn-sm" onclick="openDrawer('${app.id}')">
+            Inspect Submission
           </button>
-          ${app.url ? `<a href="${app.url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Open Post ↗</a>` : ''}
+          ${app.url ? `
+            <a href="${app.url}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+              Open Portal ↗
+            </a>
+          ` : ''}
         </div>
       </div>
     `;
@@ -203,15 +217,15 @@ function renderApplications() {
 }
 
 // -------------------------------------------------------------
-// Scanned Audit Log View
+// View: Audit Trail
 // -------------------------------------------------------------
-function renderScanned() {
-  const tbody = document.getElementById('scanned-tbody');
-  const empty = document.getElementById('scanned-empty');
+function renderAuditTable() {
+  const tbody = document.getElementById('audit-tbody');
+  const empty = document.getElementById('audit-empty');
 
   const filtered = state.scanned.filter(item => {
     const q = state.searchQuery;
-    const matchSearch = !q || 
+    const matchSearch = !q ||
       (item.title && item.title.toLowerCase().includes(q)) ||
       (item.company && item.company.toLowerCase().includes(q)) ||
       (item.location && item.location.toLowerCase().includes(q)) ||
@@ -219,7 +233,7 @@ function renderScanned() {
 
     const matchDomain = state.selectedDomain === 'all' || item.domain === state.selectedDomain;
     let matchStatus = true;
-    if (state.selectedStatus === 'READY_FOR_REVIEW' || state.selectedStatus === 'SUBMITTED') {
+    if (state.selectedStatus === 'APPLIED') {
       matchStatus = item.is_match === true;
     } else if (state.selectedStatus === 'REJECTED') {
       matchStatus = item.is_match === false;
@@ -237,8 +251,8 @@ function renderScanned() {
 
   tbody.innerHTML = filtered.map(item => {
     const isMatch = item.is_match;
-    const badgeClass = isMatch ? 'qual-match' : 'qual-disqualified';
-    const badgeText = isMatch ? '✓ QUALIFIED' : '✗ DISQUALIFIED';
+    const badgeText = isMatch ? 'APPLIED' : 'FILTERED';
+    const badgeClass = isMatch ? 'APPLIED' : 'REJECTED';
     const dateFormatted = item.scanned_at ? new Date(item.scanned_at).toLocaleDateString(undefined, {
       month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
     }) : 'Today';
@@ -246,25 +260,25 @@ function renderScanned() {
     return `
       <tr>
         <td>
-          <span class="qual-badge ${badgeClass}">${badgeText}</span>
+          <span class="status-chip ${badgeClass}">● ${badgeText}</span>
         </td>
         <td>
-          <div style="font-weight: 700; color: #f1f5f9;">${escapeHtml(item.title)}</div>
-          <div style="font-size: 0.75rem; color: #94a3b8;">${escapeHtml(item.company)}</div>
+          <div class="table-role-main">${escapeHtml(item.title)}</div>
+          <div class="table-company-sub">${escapeHtml(item.company)}</div>
         </td>
-        <td><span class="tag-location">${escapeHtml(item.location || 'Remote')}</span></td>
-        <td><span class="source-pill">${escapeHtml(item.source || 'Alert')}</span></td>
+        <td><span style="color: var(--text-secondary);">${escapeHtml(item.location || 'Remote')}</span></td>
+        <td><span class="tag-badge">${escapeHtml(item.source || 'Alert')}</span></td>
         <td>
-          <div class="reason-text">${escapeHtml(item.reason)}</div>
+          <div class="filter-reason-tag">${escapeHtml(item.reason)}</div>
         </td>
-        <td style="font-size: 0.75rem; color: #64748b; white-space: nowrap;">${dateFormatted}</td>
-        <td>
+        <td style="font-size: 0.72rem; color: var(--text-dim); white-space: nowrap; font-family: var(--font-mono);">${dateFormatted}</td>
+        <td style="text-align: right;">
           ${isMatch ? `
-            <button class="btn btn-outline btn-sm" onclick="openPacketModal('${item.id}')">
-              Inspect
+            <button class="btn btn-secondary btn-xs" onclick="openDrawer('${item.id}')">
+              Details
             </button>
           ` : `
-            <span style="font-size: 0.75rem; color: #64748b;">Filtered Out</span>
+            <span style="font-size: 0.72rem; color: var(--text-dim);">Excluded</span>
           `}
         </td>
       </tr>
@@ -273,137 +287,134 @@ function renderScanned() {
 }
 
 // -------------------------------------------------------------
-// Analytics View
+// View: Analytics & Rules
 // -------------------------------------------------------------
 function renderAnalytics() {
   const m = state.metrics;
   const rejectionBox = document.getElementById('rejection-breakdown');
   const domainBox = document.getElementById('domain-breakdown');
 
-  // Rejection reasons
   const reasons = m.disqualification_reasons || {};
   if (Object.keys(reasons).length === 0) {
-    rejectionBox.innerHTML = '<div style="color: #64748b;">No disqualification data recorded.</div>';
+    rejectionBox.innerHTML = '<div style="color: var(--text-dim); font-size: 0.78rem;">No exclusion records logged.</div>';
   } else {
     rejectionBox.innerHTML = Object.entries(reasons).map(([reason, count]) => `
-      <div class="breakdown-row">
-        <span class="breakdown-key">🛡️ ${escapeHtml(reason)}</span>
-        <span class="breakdown-val">${count} jobs filtered</span>
+      <div class="breakdown-item">
+        <span class="breakdown-item-key">${escapeHtml(reason)}</span>
+        <span class="breakdown-item-val">${count} roles</span>
       </div>
     `).join('');
   }
 
-  // Domain breakdown
   const domains = m.by_domain || {};
   if (Object.keys(domains).length === 0) {
-    domainBox.innerHTML = '<div style="color: #64748b;">No domain data recorded.</div>';
+    domainBox.innerHTML = '<div style="color: var(--text-dim); font-size: 0.78rem;">No domain records available.</div>';
   } else {
     domainBox.innerHTML = Object.entries(domains).map(([dom, count]) => `
-      <div class="breakdown-row">
-        <span class="breakdown-key">💻 ${escapeHtml(domainLabels[dom] || dom)}</span>
-        <span class="breakdown-val">${count} opportunities</span>
+      <div class="breakdown-item">
+        <span class="breakdown-item-key">${escapeHtml(domainLabels[dom] || dom)}</span>
+        <span class="breakdown-item-val">${count} applications</span>
       </div>
     `).join('');
   }
 }
 
 // -------------------------------------------------------------
-// Modal: Application Packet Inspector
+// Slide-Over Drawer
 // -------------------------------------------------------------
-function openPacketModal(appId) {
-  const app = state.applications.find(a => a.id === appId);
+function openDrawer(appId) {
+  const app = state.applications.find(a => a.id === appId) || state.scanned.find(s => s.id === appId);
   if (!app) return;
 
-  state.currentModalApp = app;
+  state.currentDrawerApp = app;
 
-  document.getElementById('modal-job-title').textContent = app.title;
-  document.getElementById('modal-company-meta').textContent = `${app.company} • ${app.location} (${app.source || 'Alert'})`;
-  document.getElementById('modal-domain-tag').textContent = domainLabels[app.domain] || app.domain;
+  document.getElementById('drawer-title').textContent = app.title;
+  document.getElementById('drawer-company-meta').textContent = `${app.company} • ${app.location} (${app.source || 'Portal'})`;
+  document.getElementById('drawer-domain').textContent = domainLabels[app.domain] || app.domain;
+  
+  const status = app.status || (app.is_match ? 'APPLIED' : 'FILTERED');
+  const statusBadge = document.getElementById('drawer-status');
+  statusBadge.textContent = status;
+  statusBadge.className = `tag-status-badge ${status}`;
 
-  // CV Info
-  const cvName = app.cv_path ? app.cv_path.split('\\').pop().split('/').pop() : 'Standard CV';
-  document.getElementById('modal-cv-filename').textContent = cvName;
-  document.getElementById('modal-cv-path').textContent = app.cv_path || 'No path specified';
+  const cvName = app.cv_path ? app.cv_path.split('\\').pop().split('/').pop() : 'Standard Resume';
+  document.getElementById('drawer-cv-name').textContent = cvName;
+  document.getElementById('drawer-cv-path').textContent = app.cv_path || 'No path specified';
 
-  // Cover Letter
-  document.getElementById('modal-cover-letter').textContent = app.cover_letter || 'No cover letter drafted.';
+  document.getElementById('drawer-cover-letter').textContent = app.cover_letter || 'Direct application submission packet.';
 
-  // Screening Answers
-  const answersBox = document.getElementById('modal-screening-answers');
+  const screeningBox = document.getElementById('drawer-screening');
   const screening = app.screening_answers || {};
-  answersBox.innerHTML = Object.entries(screening).map(([k, v]) => `
-    <div class="screening-item">
-      <div class="screening-key">${escapeHtml(k.replace(/_/g, ' '))}</div>
-      <div class="screening-val">${escapeHtml(String(v))}</div>
-    </div>
-  `).join('');
-
-  // URL
-  const urlBtn = document.getElementById('modal-job-url');
-  if (app.url) {
-    urlBtn.href = app.url;
-    urlBtn.classList.remove('hidden');
+  if (Object.keys(screening).length === 0) {
+    screeningBox.innerHTML = '<div style="color: var(--text-dim); font-size: 0.75rem;">Standard candidate screening profile applied.</div>';
   } else {
-    urlBtn.classList.add('hidden');
+    screeningBox.innerHTML = Object.entries(screening).map(([k, v]) => `
+      <div class="screening-cell">
+        <div class="screening-cell-label">${escapeHtml(k.replace(/_/g, ' '))}</div>
+        <div class="screening-cell-val">${escapeHtml(String(v))}</div>
+      </div>
+    `).join('');
   }
 
-  // Status Selector
-  document.getElementById('modal-status-select').value = app.status || 'READY_FOR_REVIEW';
+  const urlAnchor = document.getElementById('drawer-job-url');
+  if (app.url) {
+    urlAnchor.href = app.url;
+    urlAnchor.parentElement.classList.remove('hidden');
+  } else {
+    urlAnchor.parentElement.classList.add('hidden');
+  }
 
-  // Show modal
-  document.getElementById('modal-packet').classList.remove('hidden');
+  document.getElementById('drawer-status-select').value = app.status || 'APPLIED';
+  document.getElementById('drawer-packet').classList.remove('hidden');
 }
 
-function closeModal() {
-  document.getElementById('modal-packet').classList.add('hidden');
-  state.currentModalApp = null;
+function closeDrawer() {
+  document.getElementById('drawer-packet').classList.add('hidden');
+  state.currentDrawerApp = null;
 }
 
 function copyCoverLetter() {
-  const text = document.getElementById('modal-cover-letter').textContent;
+  const text = document.getElementById('drawer-cover-letter').textContent;
   navigator.clipboard.writeText(text).then(() => {
     const btn = document.getElementById('btn-copy-cover');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '✓ Copied to Clipboard!';
+    const original = btn.textContent;
+    btn.textContent = 'Copied!';
     setTimeout(() => {
-      btn.innerHTML = originalText;
-    }, 2000);
+      btn.textContent = original;
+    }, 1800);
   });
 }
 
-async function saveModalStatus() {
-  if (!state.currentModalApp) return;
+async function saveDrawerStatus() {
+  if (!state.currentDrawerApp) return;
 
-  const newStatus = document.getElementById('modal-status-select').value;
+  const newStatus = document.getElementById('drawer-status-select').value;
   try {
     const res = await fetch('/api/status', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        id: state.currentModalApp.id,
+        id: state.currentDrawerApp.id,
         status: newStatus
       })
     });
 
     if (res.ok) {
-      state.currentModalApp.status = newStatus;
-      closeModal();
+      state.currentDrawerApp.status = newStatus;
+      closeDrawer();
       await loadData();
-    } else {
-      alert('Failed to update status');
     }
   } catch (err) {
     console.error('Error saving status:', err);
-    alert('Network error while updating status');
   }
 }
 
 // -------------------------------------------------------------
-// Modal: Quick Evaluate Job
+// Quick Evaluate Modal
 // -------------------------------------------------------------
 function openEvalModal() {
   document.getElementById('form-evaluate').reset();
-  document.getElementById('eval-result-box').classList.add('hidden');
+  document.getElementById('eval-result-card').classList.add('hidden');
   document.getElementById('modal-evaluate').classList.remove('hidden');
 }
 
@@ -417,74 +428,67 @@ async function handleEvaluateSubmit(e) {
   const title = document.getElementById('eval-title').value.trim();
   const company = document.getElementById('eval-company').value.trim();
   const location = document.getElementById('eval-location').value.trim();
-  const source = document.getElementById('eval-source').value.trim() || 'Manual Scan';
+  const source = document.getElementById('eval-source').value.trim() || 'Direct';
   const url = document.getElementById('eval-url').value.trim();
   const description = document.getElementById('eval-description').value.trim();
 
   const submitBtn = document.getElementById('btn-submit-eval');
   submitBtn.disabled = true;
-  submitBtn.textContent = 'Analyzing...';
+  submitBtn.textContent = 'Processing...';
 
   try {
     const res = await fetch('/api/evaluate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        title,
-        company,
-        location,
-        source,
-        url,
-        description
-      })
+      body: JSON.stringify({ title, company, location, source, url, description })
     });
 
     const result = await res.json();
     displayEvalResult(result);
     await loadData();
   } catch (err) {
-    console.error('Evaluation error:', err);
-    alert('Evaluation request failed');
+    console.error('Evaluation failed:', err);
   } finally {
     submitBtn.disabled = false;
-    submitBtn.textContent = 'Scan & Evaluate Opportunity';
+    submitBtn.textContent = 'Process & Apply';
   }
 }
 
 function displayEvalResult(result) {
-  const resultBox = document.getElementById('eval-result-box');
-  resultBox.classList.remove('hidden');
+  const card = document.getElementById('eval-result-card');
+  card.classList.remove('hidden');
 
   const isMatch = result.is_match;
-  const badgeClass = isMatch ? 'qual-match' : 'qual-disqualified';
-  const badgeText = isMatch ? '✓ QUALIFIED & DRAFTED' : '✗ DISQUALIFIED BY FILTER';
+  const statusBadge = isMatch ? 'status-chip APPLIED' : 'status-chip REJECTED';
+  const statusLabel = isMatch ? '● APPLIED' : '● FILTERED';
 
-  resultBox.innerHTML = `
-    <div style="margin-bottom: 0.6rem;">
-      <span class="qual-badge ${badgeClass}">${badgeText}</span>
+  card.innerHTML = `
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+      <span class="${statusBadge}">${statusLabel}</span>
+      <span style="font-size: 0.72rem; color: var(--text-tertiary);">${escapeHtml(domainLabels[result.domain] || '')}</span>
     </div>
-    <div style="font-size: 0.88rem; font-weight: 700; color: #f1f5f9; margin-bottom: 0.25rem;">
+    <div style="font-size: 0.82rem; font-weight: 500; color: var(--text-primary); margin-bottom: 0.35rem;">
       ${escapeHtml(result.reason)}
     </div>
     ${isMatch ? `
-      <div style="font-size: 0.78rem; color: #a5b4fc; margin-top: 0.4rem;">
-        Domain: <strong>${escapeHtml(domainLabels[result.domain] || result.domain)}</strong>
+      <div style="font-size: 0.72rem; color: var(--text-secondary); margin-top: 0.35rem;">
+        Attached CV: <code>${escapeHtml(result.cv_path ? result.cv_path.split('\\').pop() : 'Standard CV')}</code>
       </div>
-      <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.2rem;">
-        Mapped CV: <code>${escapeHtml(result.cv_path ? result.cv_path.split('\\').pop() : 'Standard CV')}</code>
-      </div>
-      <button class="btn btn-primary btn-sm" style="margin-top: 0.75rem;" onclick="closeEvalModal(); openPacketModal('${result.app_record.id}');">
-        View Drafted Packet ↗
+      <button class="btn btn-secondary btn-xs" style="margin-top: 0.65rem;" onclick="closeEvalModal(); openDrawer('${result.app_record.id}');">
+        View Submission Details ↗
       </button>
-    ` : `
-      <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.4rem;">
-        This role was filtered out and logged in the Scanned Audit Trail.
-      </div>
-    `}
+    ` : ''}
   `;
 }
 
-// Utility: escape HTML
+// Utility Helpers
+function getInitials(name) {
+  if (!name) return 'CO';
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+  return (parts[0][0] + parts[1][0]).toUpperCase();
+}
+
 function escapeHtml(str) {
   if (!str) return '';
   return String(str)
