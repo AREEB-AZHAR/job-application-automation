@@ -28,6 +28,9 @@ class JobShowcaseHTTPHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=WEB_DIR, **kwargs)
 
+    def do_HEAD(self):
+        self.do_GET()
+
     def do_GET(self):
         parsed = urlparse(self.path)
         path = parsed.path
@@ -40,6 +43,14 @@ class JobShowcaseHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.serve_file(os.path.join(WEB_DIR, "styles.css"), "text/css; charset=utf-8")
         elif path == "/app.js":
             self.serve_file(os.path.join(WEB_DIR, "app.js"), "application/javascript; charset=utf-8")
+        elif path.startswith("/proofs/"):
+            rel_path = path[len("/proofs/"):].replace("/", os.sep)
+            proof_file = os.path.join(BASE_DIR, "data", "proofs", rel_path)
+            self.serve_file(proof_file, "image/png")
+        elif path.startswith("/screenshots/"):
+            rel_path = path[len("/screenshots/"):].replace("/", os.sep)
+            screenshot_file = os.path.join(WEB_DIR, "screenshots", rel_path)
+            self.serve_file(screenshot_file, "image/png")
         else:
             super().do_GET()
 
