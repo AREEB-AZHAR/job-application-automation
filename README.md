@@ -6,10 +6,11 @@ An intelligent, safety-conscious agentic automation system that scans daily job 
 
 ## 🚀 Accomplishments & Recent Updates
 
-- **Architecture & Implementation Plan Finalized**: Conducted online research and synthesized an account-safe, Human-in-the-Loop (HITL) automation framework based on industry best practices.
-- **Repository Initialized**: Created the project workspace in `C:\Users\areeb\.gemini\antigravity\scratch\job_application_automation` with Git version control.
-- **Candidate Profile Schema Prepared**: Defined structured fields for target roles, technical skills, salary expectations, and standardized screening questions.
-- **Automation Workflow Initiated**: Starting the Antigravity cron sidecar configuration flow for automated scheduled runs.
+- **Candidate Profile Configured**: Tailored profile established in `config/candidate_profile.json` using Areeb Azhar's credentials from `C:\Users\areeb\Desktop\cv`.
+- **Experience Filter Embedded**: Strict filtering applied for entry-level / junior opportunities requiring **less than 1 year of experience** (<1 year / fresh graduate).
+- **Multi-Domain CV Vault Integrated**: Mapped specialized resumes for Full-Stack, AI/ML, Flutter, Game Dev, and Rust/Blockchain.
+- **Workflow Safety Ensured**: Implemented a mandatory pre-submission notification policy—every prospective role is matched, drafted, and presented for approval before external application.
+- **Architecture & Implementation Plan Updated**: See [job_automation_architecture_plan.md](file:///C:/Users/areeb/.gemini/antigravity/brain/e3d8c435-2a59-4947-8581-5602fba5c6aa/job_automation_architecture_plan.md).
 
 ---
 
@@ -19,12 +20,10 @@ An intelligent, safety-conscious agentic automation system that scans daily job 
 job_application_automation/
 ├── README.md                          # Documentation and setup instructions
 ├── config/
-│   └── candidate_profile.template.json # Resume data, target criteria, screening answers
-├── src/
-│   ├── email_parser.py                # Ingests and parses job alert emails
-│   ├── job_matcher.py                 # LLM-based profile fit evaluator
-│   └── application_tracker.py         # SQLite database management for application states
-└── data/                              # Stores local sqlite database and cache
+│   ├── candidate_profile.json         # Active candidate profile & CV mapping
+│   └── candidate_profile.template.json # Template schema
+├── src/                               # Automation scripts & helpers
+└── data/                              # Application tracking database
 ```
 
 ---
@@ -32,37 +31,35 @@ job_application_automation/
 ## 🛠️ Prerequisites & Environment Setup
 
 - **Python**: Version 3.10 or higher.
-- **Antigravity CLI & Extensions**:
-  - Gmail Plugin (`antigravity-plugins-official/plugin/gmail`) for secure inbox querying.
-- **Operating System**: Windows / macOS / Linux.
+- **Antigravity Plugins**:
+  - **Gmail Plugin** (`antigravity-plugins-official/plugin/gmail`): Required to search and read job alert emails from Gmail securely.
+- **Operating System**: Windows (tested with PowerShell).
 
-### Installation
+### Local Setup Instructions
 
-1. Clone or navigate to the repository directory:
-   ```bash
+1. Set your working directory:
+   ```powershell
    cd C:\Users\areeb\.gemini\antigravity\scratch\job_application_automation
    ```
-2. Create and activate a virtual environment:
-   ```powershell
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   ```
-3. Install required packages (to be expanded):
-   ```powershell
-   pip install pydantic beautifulsoup4
-   ```
+2. Verify CV files in `C:\Users\areeb\Desktop\cv`:
+   - `Areeb_Azhar_Full_Stack_Web_CV.pdf`
+   - `Areeb Azhar - AI Resume PDF.pdf`
+   - `Areeb Azhar - Flutter Developer Resume PDF.pdf`
+   - `Areeb Azhar - Game Developer.pdf`
+   - `Areeb_Azhar_Rust_Blockchain_CV.pdf`
 
 ---
 
-## ⚙️ Configuration
+## ⚙️ Daily Automation Schedule
 
-Copy `config/candidate_profile.template.json` to `config/candidate_profile.json` and populate your personal details, target roles, experience levels, and standard screening answers.
+- **Cadence**: Daily at 8:00 AM Pakistan Standard Time (`CRON_TZ=Asia/Karachi 0 8 * * *`)
+- **Action**: Ingests new job notifications from the last 24 hours, filters for software roles requiring <1 year experience, matches appropriate CV, generates custom cover letters, and presents a structured digest for review.
 
 ---
 
 ## 📸 Screenshots & UI Previews
 
-*(Screenshots are not yet available as UI and visual dashboard components are under construction)*.
-> **Screenshot Request**: Once the scheduled automation dashboard and test runs are executed, please capture:
-> 1. The Antigravity Automations Dashboard showing the active `Job Application Automation` sidecar.
-> 2. The job digest report generated in the conversation or log file.
+*(Screenshots will be added once the first daily run report is generated)*.
+> **Screenshot Request**: After activating the automation in the Automations dashboard (`sidecar://dashboard`), please take a screenshot of:
+> 1. The active `Daily Job Search & Application Drafter` card.
+> 2. The morning email digest table rendered in chat.

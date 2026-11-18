@@ -1,0 +1,58 @@
+{
+  "personal_info": {
+    "full_name": "Areeb Azhar",
+    "email": "areebazhar3@gmail.com",
+    "phone": "+92 301 2343423",
+    "location": "Karachi, Pakistan",
+    "github_url": "https://github.com/AREEB-AZHAR",
+    "cv_directory": "C:\\Users\\areeb\\Desktop\\cv"
+  },
+  "job_search_criteria": {
+    "domains": [
+      "Software Engineering",
+      "Full-Stack Web Development (React, Node.js, TypeScript)",
+      "AI / Machine Learning",
+      "Flutter / Mobile App Development",
+      "Game Development (Unity, C#)",
+      "Rust & Blockchain Development"
+    ],
+    "experience_filter": {
+      "max_experience_required_years": 1,
+      "acceptable_levels": [
+        "Fresh Graduate",
+        "Entry Level",
+        "Junior",
+        "Associate",
+        "Internship to Permanent",
+        "0-1 years"
+      ],
+      "strictly_exclude_senior": true
+    },
+    "work_arrangements": [
+      "Remote",
+      "Hybrid",
+      "On-site"
+    ],
+    "preferred_locations": [
+      "Karachi, Pakistan",
+      "Lahore, Pakistan",
+      "Islamabad, Pakistan",
+      "Foreign / International / Remote Worldwide"
+    ]
+  },
+  "standard_screening_answers": {
+    "work_authorization_pk": "Yes",
+    "require_visa_sponsorship_abroad": "Yes",
+    "years_of_experience": 0.5,
+    "current_status": "Software Engineering Graduate (< 1 year experience)",
+    "education": "BS Software Engineering, Iqra University, Karachi",
+    "notice_period": "Immediate"
+  },
+  "cv_mappings": {
+    "full_stack": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "ai_ml": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - AI Resume PDF.pdf",
+    "flutter": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - Flutter Developer Resume PDF.pdf",
+    "game_dev": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - Game Developer.pdf",
+    "rust_blockchain": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Rust_Blockchain_CV.pdf"
+  }
+}
