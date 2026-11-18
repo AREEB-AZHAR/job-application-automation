@@ -115,8 +115,9 @@ To enable the automation:
 
 ## 📸 Screenshots & UI Previews
 
-*(Screenshots will be captured and placed here once verified in the UI)*.
-> **Screenshot Request**: After launching the dashboard at `http://localhost:5000`, please take a screenshot of:
-> 1. The main **Applied & Ready for Review** grid with the KPI summary header.
-> 2. The **All Scanned & Filtered Log** table showing qualification and disqualification audit tags.
-> 3. The **Inspect Application Packet** modal displaying the tailored cover letter and attached CV.
+### Live Web Dashboard (`http://localhost:5000`)
+![AutoJobBot Live Dashboard](web/screenshots/dashboard_preview.png)
+
+> **Screenshot Request**: After launching the dashboard and applying to opportunities, please also capture:
+> 1. The **All Scanned & Filtered Log** tab showing detailed disqualification root causes.
+> 2. The **Inspect Application Packet** modal displaying the tailored cover letter and attached CV.
