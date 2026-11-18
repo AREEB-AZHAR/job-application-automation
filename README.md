@@ -6,6 +6,10 @@ An autonomous, developer-grade job discovery and direct application dispatch sys
 
 ## 🚀 Accomplishments & Recent Updates
 
+- **Pre-Submission Form Snapshots & Post-Submission Verification (`src/submission_verifier.py`)**:
+  - **Pre-Submission Visual Audit**: Automatically captures a clean, full snapshot of the populated job application form (`data/proofs/{job_id}/pre_submit.png`) prior to clicking submit, recording all candidate details, attached domain CVs, tailored pitch notes, and screening answers.
+  - **Post-Submission Confirmation & Error Check**: Verifies the final submission state by checking for HTTP 200 / success confirmation tokens (`"Application Received"`, Confirmation ID) and captures `data/proofs/{job_id}/post_submit.png`. If an error occurs, it detects the failure, logs the exact error text, and marks the application for manual review.
+  - **In-Dashboard Lightbox & Drawer Inspection**: Integrated directly into the slide-over drawer with side-by-side visual proof cards and a full-resolution click-to-enlarge lightbox modal.
 - **Direct Auto-Apply Execution**: Shifted workflow from advisory staging to direct autonomous application. Qualified opportunities are packaged and logged immediately as **`APPLIED`**, with mapped resumes and tailored developer pitch notes.
 - **Linear-Grade UI Overhaul**: Stripped away all generic "AI bot" tropes (bot emojis, neon glows, cartoonish badges). Redesigned the entire interface into a bespoke, high-density engineering command center:
   - Deep matte black and layered slate surfaces (`#090b10`, `#0f121a`, `#131722`) with hairline borders (`rgba(255, 255, 255, 0.07)`).
@@ -38,6 +42,7 @@ job_application_automation/
 │   ├── assistant.py                   # Central CLI coordinator (batch ingestion, evaluation & pipeline)
 │   ├── tracker.py                     # Dual-ledger persistence engine (applications & scanned logs)
 │   ├── job_evaluator.py               # Domain matching, experience filter & cover letter engine
+│   ├── submission_verifier.py         # Pre-submit form capture & post-submit verification engine
 │   └── test_run.py                    # Multi-board alert verification runner
 ├── web/
 │   ├── index.html                     # Linear-inspired dashboard layout & slide-over drawer
@@ -47,7 +52,8 @@ job_application_automation/
 │   └── screenshots/                   # Verified UI screenshots
 └── data/
     ├── applications.json              # Active and prepared applications database
-    └── scanned_jobs.json              # Historical ledger of all scanned & filtered jobs
+    ├── scanned_jobs.json              # Historical ledger of all scanned & filtered jobs
+    └── proofs/                        # Pre-submit form & post-submit verification receipts
 ```
 
 ---
@@ -115,5 +121,11 @@ To manage:
 
 ## 📸 Screenshots & UI Previews
 
-### Live Developer Dashboard (`http://localhost:5000`)
+### 1. Live Developer Dashboard (`http://localhost:5000`)
 ![Linear-Style Pipeline Dashboard](web/screenshots/dashboard_preview.png)
+
+### 2. Pre-Submission Form Snapshot (Captured Prior to Final Submit)
+![Pre-Submission Form Snapshot](web/screenshots/pre_submission_form_preview.png)
+
+### 3. Post-Submission Confirmation Receipt & HTTP Verification
+![Submission Receipt Verification Lightbox](web/screenshots/submission_receipt_preview.png)

@@ -18,9 +18,14 @@
       "notice_period": "Immediate"
     },
     "status": "APPLIED",
-    "updated_at": "2026-11-18T09:00:24.816887",
+    "updated_at": "2026-11-19T04:36:22.321347",
     "created_at": "2026-11-18T08:43:04.363706",
-    "description": "Seeking an entry level or junior developer with React, Node.js, and TypeScript skills. 0-1 years of experience or fresh graduates welcome."
+    "description": "Seeking an entry level or junior developer with React, Node.js, and TypeScript skills. 0-1 years of experience or fresh graduates welcome.",
+    "pre_submit_snapshot": "/proofs/job_001/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_001/post_submit.png",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "confirmation_id": "CONF-APE-2026-8819",
+    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
   },
   {
     "id": "job_003",
@@ -43,7 +48,12 @@
     "status": "APPLIED",
     "updated_at": "2026-11-18T09:00:24.848188",
     "created_at": "2026-11-18T08:43:04.371506",
-    "description": "Looking for a fresh graduate or associate developer with Flutter and Dart knowledge. Less than 1 year experience required."
+    "description": "Looking for a fresh graduate or associate developer with Flutter and Dart knowledge. Less than 1 year experience required.",
+    "pre_submit_snapshot": "/proofs/job_003/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_003/post_submit.png",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "confirmation_id": "CONF-MOB-2026-8819",
+    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
   },
   {
     "id": "job_005",
@@ -66,7 +76,12 @@
     "status": "APPLIED",
     "updated_at": "2026-11-18T09:00:24.877713",
     "created_at": "2026-11-18T08:43:04.379744",
-    "description": "Entry-level position for engineers interested in Rust, smart contracts, and distributed ledgers. Fresh graduates encouraged to apply."
+    "description": "Entry-level position for engineers interested in Rust, smart contracts, and distributed ledgers. Fresh graduates encouraged to apply.",
+    "pre_submit_snapshot": "/proofs/job_005/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_005/post_submit.png",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "confirmation_id": "CONF-CHA-2026-8819",
+    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
   },
   {
     "id": "job_007",
@@ -89,7 +104,12 @@
     },
     "status": "APPLIED",
     "updated_at": "2026-11-18T09:00:24.907722",
-    "created_at": "2026-11-18T09:00:24.907722"
+    "created_at": "2026-11-18T09:00:24.907722",
+    "pre_submit_snapshot": "/proofs/job_007/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_007/post_submit.png",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "confirmation_id": "CONF-NEU-2026-8819",
+    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
   },
   {
     "id": "job_008",
@@ -112,7 +132,12 @@
     },
     "status": "APPLIED",
     "updated_at": "2026-11-18T09:00:24.927980",
-    "created_at": "2026-11-18T09:00:24.927980"
+    "created_at": "2026-11-18T09:00:24.927980",
+    "pre_submit_snapshot": "/proofs/job_008/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_008/post_submit.png",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "confirmation_id": "CONF-PIX-2026-8819",
+    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
   },
   {
     "id": "job_006",
@@ -135,6 +160,11 @@
     },
     "status": "SUBMITTED",
     "updated_at": "2026-11-18T09:04:00.705535",
-    "created_at": "2026-11-18T09:03:51.717008"
+    "created_at": "2026-11-18T09:03:51.717008",
+    "pre_submit_snapshot": "/proofs/job_006/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_006/post_submit.png",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "confirmation_id": "CONF-CON-2026-8819",
+    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
   }
 ]

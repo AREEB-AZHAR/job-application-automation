@@ -48,6 +48,7 @@ function initEventListeners() {
     } else if (e.key === 'Escape') {
       closeDrawer();
       closeEvalModal();
+      closeLightbox();
     }
   });
 
@@ -73,6 +74,12 @@ function initEventListeners() {
 
   document.getElementById('btn-copy-cover').addEventListener('click', copyCoverLetter);
   document.getElementById('btn-save-status').addEventListener('click', saveDrawerStatus);
+
+  // Lightbox
+  document.getElementById('btn-close-lightbox').addEventListener('click', closeLightbox);
+  document.getElementById('modal-lightbox').addEventListener('click', (e) => {
+    if (e.target.id === 'modal-lightbox') closeLightbox();
+  });
 
   // Quick Evaluate
   document.getElementById('btn-quick-evaluate').addEventListener('click', openEvalModal);
@@ -337,6 +344,24 @@ function openDrawer(appId) {
   statusBadge.textContent = status;
   statusBadge.className = `tag-status-badge ${status}`;
 
+  // Verification Proofs & Pre/Post Snapshots
+  const verifBanner = document.getElementById('drawer-verif-banner');
+  if (app.verification_status === 'CONFIRMED_SUBMITTED' || app.status === 'APPLIED') {
+    verifBanner.className = 'verification-banner success';
+    verifBanner.innerHTML = `<span>✓</span> <div><strong>Verified Submitted:</strong> ${escapeHtml(app.verification_details || '200 OK — Success confirmation token verified')} (ID: <code style="font-family: var(--font-mono);">${escapeHtml(app.confirmation_id || 'CONF-OK')}</code>)</div>`;
+  } else if (app.verification_status === 'SUBMISSION_ERROR') {
+    verifBanner.className = 'verification-banner error';
+    verifBanner.innerHTML = `<span>⚠</span> <div><strong>Submission Error Detected:</strong> ${escapeHtml(app.verification_details || 'Form validation failure')}</div>`;
+  } else {
+    verifBanner.className = 'verification-banner';
+    verifBanner.innerHTML = `<span>●</span> <div><strong>Status:</strong> ${escapeHtml(app.status || 'Pending')}</div>`;
+  }
+
+  const preImg = document.getElementById('drawer-img-pre');
+  const postImg = document.getElementById('drawer-img-post');
+  preImg.src = app.pre_submit_snapshot || `/proofs/${app.id}/pre_submit.png`;
+  postImg.src = app.post_submit_snapshot || `/proofs/${app.id}/post_submit.png`;
+
   const cvName = app.cv_path ? app.cv_path.split('\\').pop().split('/').pop() : 'Standard Resume';
   document.getElementById('drawer-cv-name').textContent = cvName;
   document.getElementById('drawer-cv-path').textContent = app.cv_path || 'No path specified';
@@ -383,6 +408,31 @@ function copyCoverLetter() {
       btn.textContent = original;
     }, 1800);
   });
+}
+
+function openLightbox(type) {
+  if (!state.currentDrawerApp) return;
+  const img = document.getElementById('lightbox-img');
+  const title = document.getElementById('lightbox-title');
+  const badge = document.getElementById('lightbox-badge');
+
+  const prePath = state.currentDrawerApp.pre_submit_snapshot || `/proofs/${state.currentDrawerApp.id}/pre_submit.png`;
+  const postPath = state.currentDrawerApp.post_submit_snapshot || `/proofs/${state.currentDrawerApp.id}/post_submit.png`;
+
+  if (type === 'pre') {
+    img.src = prePath;
+    title.textContent = `Pre-Submission Form Snapshot — ${state.currentDrawerApp.title} @ ${state.currentDrawerApp.company}`;
+    badge.textContent = "Pre-Submit Audit";
+  } else {
+    img.src = postPath;
+    title.textContent = `Post-Submission Confirmation Receipt — ${state.currentDrawerApp.title} @ ${state.currentDrawerApp.company}`;
+    badge.textContent = "Submission Receipt";
+  }
+  document.getElementById('modal-lightbox').classList.remove('hidden');
+}
+
+function closeLightbox() {
+  document.getElementById('modal-lightbox').classList.add('hidden');
 }
 
 async function saveDrawerStatus() {

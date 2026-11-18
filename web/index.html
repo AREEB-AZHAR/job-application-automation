@@ -230,6 +230,34 @@
       </div>
 
       <div class="drawer-body">
+        <!-- Visual Submission Proofs & Verification -->
+        <div class="detail-block">
+          <div class="block-title">Submission Verification & Visual Proofs</div>
+          <div class="verification-banner" id="drawer-verif-banner">
+            <!-- Dynamic verification outcome -->
+          </div>
+
+          <div class="proofs-grid">
+            <div class="proof-card" onclick="openLightbox('pre')">
+              <div class="proof-card-label">1. Pre-Submission Form Snapshot</div>
+              <div class="proof-card-sub">Form filled with candidate details prior to submit</div>
+              <div class="proof-img-wrap">
+                <img id="drawer-img-pre" src="" alt="Pre-submission form screenshot" />
+                <div class="zoom-overlay">🔍 Click to Enlarge Form</div>
+              </div>
+            </div>
+
+            <div class="proof-card" onclick="openLightbox('post')">
+              <div class="proof-card-label">2. Post-Submission Confirmation</div>
+              <div class="proof-card-sub">Verified receipt / server DOM state</div>
+              <div class="proof-img-wrap">
+                <img id="drawer-img-post" src="" alt="Post-submission receipt screenshot" />
+                <div class="zoom-overlay">🔍 Click to Enlarge Receipt</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Attached Resume -->
         <div class="detail-block">
           <div class="block-title">Attached Resume</div>
@@ -333,6 +361,22 @@
       </form>
 
       <div id="eval-result-card" class="eval-result-card hidden"></div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal for Inspection -->
+  <div id="modal-lightbox" class="drawer-overlay hidden" style="z-index: 2000;">
+    <div class="lightbox-dialog">
+      <div class="lightbox-head">
+        <div>
+          <span class="lightbox-badge" id="lightbox-badge">Audit Proof</span>
+          <h4 id="lightbox-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-top: 0.2rem;">Verification Snapshot</h4>
+        </div>
+        <button class="drawer-close" id="btn-close-lightbox">&times;</button>
+      </div>
+      <div class="lightbox-body">
+        <img id="lightbox-img" src="" alt="Enlarged verification proof" />
+      </div>
     </div>
   </div>
 
