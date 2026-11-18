@@ -134,7 +134,7 @@ class JobShowcaseHTTPHandler(http.server.SimpleHTTPRequestHandler):
                 cv_path=cv_path,
                 cover_letter=cover_letter,
                 screening_answers=screening,
-                status="READY_FOR_REVIEW"
+                status="APPLIED"
             )
 
         self.send_json({

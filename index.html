@@ -3,210 +3,210 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AutoJobBot Showcase & Application Audit | Areeb Azhar</title>
+  <title>Areeb Azhar — Career Pipeline & Application Intelligence</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="navbar">
-    <div class="nav-left">
-      <div class="logo-mark">
-        <span class="bot-icon">⚡</span>
-      </div>
-      <div>
-        <div class="brand-title">AutoJobBot <span class="version-tag">Audit Console</span></div>
-        <div class="brand-subtitle">Autonomous Job Search & Application Drafter</div>
-      </div>
-    </div>
-    
-    <div class="nav-center">
-      <div class="candidate-pill">
-        <span class="avatar">AA</span>
-        <div class="candidate-meta">
-          <span class="name">Areeb Azhar</span>
-          <span class="qualification">BS Software Engineering • Iqra Univ (88.1% NSCT)</span>
-        </div>
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="brand-monogram">AA</div>
+      <div class="brand-hierarchy">
+        <span class="brand-name">Areeb Azhar</span>
+        <span class="brand-divider">/</span>
+        <span class="brand-context">Engineering Career Pipeline</span>
       </div>
     </div>
 
-    <div class="nav-right">
-      <div class="status-indicator">
-        <span class="pulse-dot"></span>
-        <span>Daily Alert Scanner Active</span>
+    <div class="topbar-center">
+      <div class="dispatch-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Autonomous Dispatch Active</span>
+        <span class="status-cadence">08:00 PKT</span>
       </div>
-      <button id="btn-quick-evaluate" class="btn btn-primary">
-        <span>+ Evaluate New Job</span>
+    </div>
+
+    <div class="topbar-right">
+      <button id="btn-quick-evaluate" class="btn btn-secondary">
+        <span class="btn-icon">+</span>
+        <span>Evaluate Opportunity</span>
       </button>
-      <button id="btn-refresh" class="btn btn-outline" title="Refresh Live Data">
-        ↻
+      <button id="btn-refresh" class="btn btn-ghost" title="Refresh data">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
       </button>
+      <a href="https://github.com/AREEB-AZHAR" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="GitHub Profile">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
     </div>
   </header>
 
+  <!-- Candidate Context Bar -->
+  <div class="subbar">
+    <div class="subbar-content">
+      <div class="profile-chip">
+        <span class="chip-label">Candidate</span>
+        <span class="chip-val">Areeb Azhar</span>
+        <span class="chip-meta">BS Software Engineering, Iqra Univ (88.1st percentile NSCT)</span>
+      </div>
+      <div class="profile-chip">
+        <span class="chip-label">Target Tier</span>
+        <span class="chip-val">&le; 1 Year Exp</span>
+        <span class="chip-meta">Junior / Associate / Fresh Grad</span>
+      </div>
+      <div class="profile-chip">
+        <span class="chip-label">CV Directory</span>
+        <span class="chip-mono">Desktop\cv</span>
+      </div>
+    </div>
+  </div>
+
   <!-- Main Container -->
-  <main class="container">
+  <main class="shell">
     
-    <!-- KPI Summary Grid -->
-    <section class="kpi-grid">
-      <div class="kpi-card">
-        <div class="kpi-icon-wrap icon-purple">📡</div>
-        <div class="kpi-content">
-          <div class="kpi-label">Total Jobs Scanned</div>
-          <div class="kpi-value" id="stat-scanned">0</div>
-          <div class="kpi-foot" id="stat-qual-rate">0% Qualified Rate</div>
-        </div>
+    <!-- KPI Header Strip -->
+    <section class="metrics-strip">
+      <div class="metric-cell">
+        <div class="metric-meta">Applications Submitted</div>
+        <div class="metric-num text-emerald" id="stat-applied">0</div>
+        <div class="metric-sub">Tailored CV & letter dispatched</div>
       </div>
 
-      <div class="kpi-card">
-        <div class="kpi-icon-wrap icon-emerald">📝</div>
-        <div class="kpi-content">
-          <div class="kpi-label">Ready for Review</div>
-          <div class="kpi-value" id="stat-ready">0</div>
-          <div class="kpi-foot">Tailored packets prepared</div>
-        </div>
+      <div class="metric-cell">
+        <div class="metric-meta">Opportunities Analyzed</div>
+        <div class="metric-num" id="stat-scanned">0</div>
+        <div class="metric-sub">LinkedIn, Indeed, Rozee, PakTechJobs</div>
       </div>
 
-      <div class="kpi-card">
-        <div class="kpi-icon-wrap icon-blue">🚀</div>
-        <div class="kpi-content">
-          <div class="kpi-label">Submitted Applications</div>
-          <div class="kpi-value" id="stat-submitted">0</div>
-          <div class="kpi-foot">Active in recruitment pipeline</div>
-        </div>
+      <div class="metric-cell">
+        <div class="metric-meta">Application Yield</div>
+        <div class="metric-num text-indigo" id="stat-rate">0%</div>
+        <div class="metric-sub">Satisfied seniority & stack criteria</div>
       </div>
 
-      <div class="kpi-card">
-        <div class="kpi-icon-wrap icon-amber">🛡️</div>
-        <div class="kpi-content">
-          <div class="kpi-label">Filtered & Disqualified</div>
-          <div class="kpi-value" id="stat-disqualified">0</div>
-          <div class="kpi-foot" id="stat-filter-reason">Saved time & fatigue</div>
-        </div>
+      <div class="metric-cell">
+        <div class="metric-meta">Filtered Out</div>
+        <div class="metric-num text-muted" id="stat-filtered">0</div>
+        <div class="metric-sub">Senior roles & stack mismatches</div>
       </div>
     </section>
 
-    <!-- Navigation Tabs & Search Controls -->
-    <section class="controls-section">
-      <div class="tabs-bar">
-        <button class="tab-btn active" data-tab="applications">
-          <span>Applied & Ready for Review</span>
-          <span class="badge badge-primary" id="badge-applications-count">0</span>
+    <!-- Toolbar: Tabs & Search -->
+    <section class="toolbar">
+      <div class="segmented-control">
+        <button class="seg-btn active" data-tab="applications">
+          <span>Applications Submitted</span>
+          <span class="seg-count" id="count-applications">0</span>
         </button>
-        <button class="tab-btn" data-tab="scanned">
-          <span>All Scanned & Filtered Log</span>
-          <span class="badge badge-secondary" id="badge-scanned-count">0</span>
+        <button class="seg-btn" data-tab="audit">
+          <span>Opportunity Audit Trail</span>
+          <span class="seg-count" id="count-scanned">0</span>
         </button>
-        <button class="tab-btn" data-tab="analytics">
-          <span>Filter Intelligence & Metrics</span>
+        <button class="seg-btn" data-tab="analytics">
+          <span>Criteria & Rules</span>
         </button>
       </div>
 
-      <div class="filter-toolbar">
-        <div class="search-box">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="input-search" placeholder="Search by role, company, location, or keyword..." />
+      <div class="toolbar-actions">
+        <div class="search-input-wrap">
+          <svg class="search-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="input-search" placeholder="Filter by company, role, location... (Press /)" />
+          <kbd class="kbd-hint">/</kbd>
         </div>
 
-        <div class="filter-dropdowns">
-          <select id="filter-domain" class="select-filter">
-            <option value="all">All Domains</option>
-            <option value="full_stack">Full-Stack Web</option>
-            <option value="rust_blockchain">Rust & Blockchain</option>
-            <option value="flutter">Flutter / Mobile</option>
-            <option value="ai_ml">AI / Machine Learning</option>
-            <option value="game_dev">Game Development</option>
-          </select>
+        <select id="filter-domain" class="select-refined">
+          <option value="all">All Verticals</option>
+          <option value="full_stack">Full-Stack Web</option>
+          <option value="rust_blockchain">Rust & Blockchain</option>
+          <option value="flutter">Flutter / Mobile</option>
+          <option value="ai_ml">AI / Machine Learning</option>
+          <option value="game_dev">Game Development</option>
+        </select>
 
-          <select id="filter-status" class="select-filter">
-            <option value="all">All Statuses</option>
-            <option value="READY_FOR_REVIEW">Ready for Review</option>
-            <option value="SUBMITTED">Submitted</option>
-            <option value="INTERVIEWING">Interviewing</option>
-            <option value="REJECTED">Rejected</option>
-          </select>
-        </div>
+        <select id="filter-status" class="select-refined">
+          <option value="all">All Pipeline States</option>
+          <option value="APPLIED">Applied</option>
+          <option value="INTERVIEWING">Interviewing</option>
+          <option value="OFFER">Offer</option>
+          <option value="REJECTED">Archived / Rejected</option>
+        </select>
       </div>
     </section>
 
-    <!-- Tab 1: Applications View -->
-    <section id="view-applications" class="tab-view active">
-      <div id="applications-grid" class="cards-grid">
+    <!-- Tab 1: Applications Grid -->
+    <section id="view-applications" class="view-panel active">
+      <div id="applications-grid" class="app-cards-grid">
         <!-- Rendered dynamically -->
       </div>
       <div id="applications-empty" class="empty-state hidden">
-        <div class="empty-icon">📂</div>
-        <h3>No Applications Found</h3>
-        <p>No job applications match your active search or filter selection.</p>
+        <div class="empty-text">No matching applications in the current filter.</div>
       </div>
     </section>
 
-    <!-- Tab 2: Scanned Audit Log View -->
-    <section id="view-scanned" class="tab-view">
-      <div class="table-container">
-        <table class="audit-table">
+    <!-- Tab 2: Audit Trail Table -->
+    <section id="view-audit" class="view-panel">
+      <div class="table-card">
+        <table class="data-table">
           <thead>
             <tr>
-              <th>Status</th>
-              <th>Role & Company</th>
+              <th style="width: 110px;">Dispatch</th>
+              <th>Opportunity</th>
               <th>Location</th>
               <th>Source</th>
-              <th>Evaluation & Filter Reason</th>
-              <th>Scanned Date</th>
-              <th>Action</th>
+              <th>Filter Analysis</th>
+              <th>Date</th>
+              <th style="text-align: right;">Action</th>
             </tr>
           </thead>
-          <tbody id="scanned-tbody">
-            <!-- Rendered dynamically -->
+          <tbody id="audit-tbody">
+            <!-- Dynamic rows -->
           </tbody>
         </table>
       </div>
-      <div id="scanned-empty" class="empty-state hidden">
-        <div class="empty-icon">🔍</div>
-        <h3>No Scanned Logs Found</h3>
-        <p>No records match your search filter.</p>
+      <div id="audit-empty" class="empty-state hidden">
+        <div class="empty-text">No audit records found matching your search.</div>
       </div>
     </section>
 
-    <!-- Tab 3: Analytics View -->
-    <section id="view-analytics" class="tab-view">
-      <div class="analytics-grid">
-        <div class="chart-card">
-          <h3>Filter Rejection Root Causes</h3>
-          <p class="subtitle">Why opportunities were filtered out</p>
+    <!-- Tab 3: Analytics & Rules -->
+    <section id="view-analytics" class="view-panel">
+      <div class="analytics-layout">
+        <div class="panel-box">
+          <div class="panel-head">Filter Exclusion Breakdown</div>
+          <p class="panel-sub">Breakdown of opportunities excluded by qualification filters</p>
           <div id="rejection-breakdown" class="breakdown-list">
-            <!-- Dynamic items -->
+            <!-- Dynamic list -->
           </div>
         </div>
 
-        <div class="chart-card">
-          <h3>Domain Distribution</h3>
-          <p class="subtitle">Qualified opportunities across targeted verticals</p>
+        <div class="panel-box">
+          <div class="panel-head">Active Target Verticals</div>
+          <p class="panel-sub">Volume of applied roles distributed by engineering domain</p>
           <div id="domain-breakdown" class="breakdown-list">
-            <!-- Dynamic items -->
+            <!-- Dynamic list -->
           </div>
         </div>
 
-        <div class="chart-card full-width">
-          <h3>Active Candidate Profile Rules</h3>
-          <div class="rules-summary-box">
-            <div class="rule-item">
-              <span class="rule-badge">MAX EXP</span>
-              <span class="rule-desc">Strictly &le; 1 year experience (Fresh graduate, Associate, Junior, Trainee). Senior/lead titles rejected.</span>
+        <div class="panel-box full-span">
+          <div class="panel-head">Evaluation & Screening Rules</div>
+          <div class="rules-table">
+            <div class="rule-row">
+              <span class="rule-key">Seniority Threshold</span>
+              <span class="rule-val">Maximum 1 year experience required. Disqualifies Senior, Lead, Principal, Architect, and Manager titles.</span>
             </div>
-            <div class="rule-item">
-              <span class="rule-badge">TARGETS</span>
-              <span class="rule-desc">Full-Stack Web (React/Node/TS), Rust & Blockchain, Flutter/Mobile, AI/ML, Unity Game Dev.</span>
+            <div class="rule-row">
+              <span class="rule-key">Domain Alignments</span>
+              <span class="rule-val">Full-Stack (React/Node/TS), Rust & Blockchain (Hyperledger/Solana), Mobile (Flutter/Dart), AI/ML (Python), Game Dev (Unity/C#).</span>
             </div>
-            <div class="rule-item">
-              <span class="rule-badge">LOCATIONS</span>
-              <span class="rule-desc">Karachi (On-site/Hybrid), Lahore/Islamabad (Hybrid/Remote), Worldwide Remote.</span>
+            <div class="rule-row">
+              <span class="rule-key">Work Authorization</span>
+              <span class="rule-val">Direct authorization in Pakistan (Karachi, Lahore, Islamabad); Visa sponsorship requested for foreign overseas roles.</span>
             </div>
-            <div class="rule-item">
-              <span class="rule-badge">CV VAULT</span>
-              <span class="rule-desc">5 domain-specific resumes mapped dynamically from <code>C:\Users\areeb\Desktop\cv</code>.</span>
+            <div class="rule-row">
+              <span class="rule-key">CV Vault Mapping</span>
+              <span class="rule-val">Dynamic 1-to-1 resume binding from <code>C:\Users\areeb\Desktop\cv</code> based on extracted domain keywords.</span>
             </div>
           </div>
         </div>
@@ -214,129 +214,125 @@
     </section>
   </main>
 
-  <!-- Modal: Application Packet Inspector -->
-  <div id="modal-packet" class="modal-backdrop hidden">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div>
-          <span class="modal-tag" id="modal-domain-tag">Full-Stack</span>
-          <h2 id="modal-job-title">Junior Full Stack Developer</h2>
-          <div class="modal-sub" id="modal-company-meta">Apex Technologies • Lahore (Hybrid)</div>
+  <!-- Slide-Over Inspection Drawer -->
+  <div id="drawer-packet" class="drawer-overlay hidden">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <div class="drawer-meta-tags">
+            <span class="tag-domain-badge" id="drawer-domain">Full-Stack Web</span>
+            <span class="tag-status-badge" id="drawer-status">Applied</span>
+          </div>
+          <h2 id="drawer-title">Junior Full Stack Developer</h2>
+          <div class="drawer-sub" id="drawer-company-meta">Apex Technologies • Lahore (Hybrid)</div>
         </div>
-        <button class="modal-close" id="btn-close-modal">&times;</button>
+        <button class="drawer-close" id="btn-close-drawer">&times;</button>
       </div>
 
-      <div class="modal-body">
-        <!-- Selected CV Info -->
-        <div class="packet-section">
-          <div class="section-label">Selected Resume / CV File</div>
-          <div class="cv-file-box">
-            <span class="file-icon">📄</span>
-            <div class="file-details">
-              <span class="file-name" id="modal-cv-filename">Areeb_Azhar_Full_Stack_Web_CV.pdf</span>
-              <span class="file-path" id="modal-cv-path">C:\Users\areeb\Desktop\cv\...</span>
+      <div class="drawer-body">
+        <!-- Attached Resume -->
+        <div class="detail-block">
+          <div class="block-title">Attached Resume</div>
+          <div class="resume-pill-box">
+            <svg class="file-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <div class="resume-info">
+              <div class="resume-name" id="drawer-cv-name">Areeb_Azhar_Full_Stack_Web_CV.pdf</div>
+              <div class="resume-path" id="drawer-cv-path">C:\Users\areeb\Desktop\cv\...</div>
             </div>
           </div>
         </div>
 
-        <!-- Cover Letter -->
-        <div class="packet-section">
-          <div class="section-header-row">
-            <div class="section-label">Tailored Cover Letter</div>
-            <button id="btn-copy-cover" class="btn btn-sm btn-secondary">
-              📋 Copy Cover Letter
+        <!-- Tailored Cover Letter -->
+        <div class="detail-block">
+          <div class="block-header-inline">
+            <div class="block-title">Tailored Application Note</div>
+            <button id="btn-copy-cover" class="btn btn-secondary btn-xs">
+              Copy Text
             </button>
           </div>
-          <pre id="modal-cover-letter" class="cover-letter-preview"></pre>
+          <pre id="drawer-cover-letter" class="cover-code-block"></pre>
         </div>
 
-        <!-- Standard Screening Answers -->
-        <div class="packet-section">
-          <div class="section-label">Pre-filled Screening Questionnaire Responses</div>
-          <div class="screening-grid" id="modal-screening-answers">
-            <!-- Dynamic fields -->
+        <!-- Screening Answers -->
+        <div class="detail-block">
+          <div class="block-title">Pre-filled Screening Questionnaire</div>
+          <div class="screening-table" id="drawer-screening">
+            <!-- Dynamic items -->
           </div>
         </div>
 
-        <!-- Original Job URL -->
-        <div class="packet-section">
-          <div class="section-label">Application Link</div>
-          <a id="modal-job-url" href="#" target="_blank" rel="noopener noreferrer" class="job-link-btn">
-            Open Job Listing on Source Platform ↗
+        <!-- External Link -->
+        <div class="detail-block">
+          <div class="block-title">Job Portal Link</div>
+          <a id="drawer-job-url" href="#" target="_blank" rel="noopener noreferrer" class="external-anchor">
+            Open Opportunity on Portal <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
           </a>
         </div>
       </div>
 
-      <div class="modal-footer">
-        <div class="status-change-wrap">
-          <label for="modal-status-select">Update Pipeline Status:</label>
-          <select id="modal-status-select" class="select-filter">
-            <option value="READY_FOR_REVIEW">Ready for Review</option>
-            <option value="SUBMITTED">Submitted</option>
+      <div class="drawer-footer">
+        <div class="status-action-row">
+          <label for="drawer-status-select" class="footer-label">Update State:</label>
+          <select id="drawer-status-select" class="select-refined">
+            <option value="APPLIED">Applied</option>
             <option value="INTERVIEWING">Interviewing</option>
-            <option value="REJECTED">Rejected</option>
-            <option value="OFFER">Offer Received 🎉</option>
+            <option value="OFFER">Offer</option>
+            <option value="REJECTED">Rejected / Closed</option>
           </select>
+          <button id="btn-save-status" class="btn btn-primary btn-sm">Save</button>
         </div>
-        <button id="btn-save-status" class="btn btn-primary">Save Status</button>
       </div>
     </div>
   </div>
 
-  <!-- Modal: Quick Evaluate Job -->
-  <div id="modal-evaluate" class="modal-backdrop hidden">
-    <div class="modal-dialog">
-      <div class="modal-header">
+  <!-- Evaluate Opportunity Modal -->
+  <div id="modal-evaluate" class="drawer-overlay hidden">
+    <div class="modal-box">
+      <div class="modal-head">
         <div>
-          <h2>Evaluate New Job Posting</h2>
-          <div class="modal-sub">Test the bot's filter & draft an application packet instantly</div>
+          <h3>Evaluate Opportunity</h3>
+          <p class="modal-sub">Submit a listing to analyze against qualification criteria and dispatch</p>
         </div>
-        <button class="modal-close" id="btn-close-eval-modal">&times;</button>
+        <button class="drawer-close" id="btn-close-eval">&times;</button>
       </div>
 
-      <div class="modal-body">
-        <form id="form-evaluate" class="eval-form">
-          <div class="form-row">
-            <div class="form-group flex-1">
-              <label>Job Title *</label>
-              <input type="text" id="eval-title" required placeholder="e.g. Junior React Developer" />
-            </div>
-            <div class="form-group flex-1">
-              <label>Company *</label>
-              <input type="text" id="eval-company" required placeholder="e.g. Systems Ltd" />
-            </div>
+      <form id="form-evaluate" class="modal-form">
+        <div class="form-grid">
+          <div class="field-wrap">
+            <label>Job Title</label>
+            <input type="text" id="eval-title" required placeholder="e.g. Junior Full Stack Engineer" />
           </div>
-
-          <div class="form-row">
-            <div class="form-group flex-1">
-              <label>Location *</label>
-              <input type="text" id="eval-location" required placeholder="e.g. Karachi (Hybrid) or Remote" />
-            </div>
-            <div class="form-group flex-1">
-              <label>Source Platform</label>
-              <input type="text" id="eval-source" placeholder="e.g. LinkedIn, Indeed, Rozee" value="Manual Inspection" />
-            </div>
+          <div class="field-wrap">
+            <label>Company</label>
+            <input type="text" id="eval-company" required placeholder="e.g. Contour Software" />
           </div>
-
-          <div class="form-group">
-            <label>Job URL (optional)</label>
-            <input type="url" id="eval-url" placeholder="https://..." />
+          <div class="field-wrap">
+            <label>Location</label>
+            <input type="text" id="eval-location" required placeholder="e.g. Karachi (Hybrid)" />
           </div>
-
-          <div class="form-group">
-            <label>Job Description & Requirements *</label>
-            <textarea id="eval-description" rows="5" required placeholder="Paste the job requirements, qualifications, and description here..."></textarea>
+          <div class="field-wrap">
+            <label>Source Portal</label>
+            <input type="text" id="eval-source" placeholder="e.g. LinkedIn" value="Direct" />
           </div>
-
-          <button type="submit" id="btn-submit-eval" class="btn btn-primary full-width">
-            Scan & Evaluate Opportunity
-          </button>
-        </form>
-
-        <div id="eval-result-box" class="eval-result-box hidden">
-          <!-- Real-time evaluation output -->
         </div>
-      </div>
+
+        <div class="field-wrap">
+          <label>URL (optional)</label>
+          <input type="url" id="eval-url" placeholder="https://..." />
+        </div>
+
+        <div class="field-wrap">
+          <label>Job Description & Requirements</label>
+          <textarea id="eval-description" rows="5" required placeholder="Paste full requirements and description..."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" id="btn-cancel-eval">Cancel</button>
+          <button type="submit" id="btn-submit-eval" class="btn btn-primary">Process & Apply</button>
+        </div>
+      </form>
+
+      <div id="eval-result-card" class="eval-result-card hidden"></div>
     </div>
   </div>
 
