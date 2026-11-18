@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoJobBot Showcase & Application Audit | Areeb Azhar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo-mark">
+        <span class="bot-icon">⚡</span>
+      </div>
+      <div>
+        <div class="brand-title">AutoJobBot <span class="version-tag">Audit Console</span></div>
+        <div class="brand-subtitle">Autonomous Job Search & Application Drafter</div>
+      </div>
+    </div>
+    
+    <div class="nav-center">
+      <div class="candidate-pill">
+        <span class="avatar">AA</span>
+        <div class="candidate-meta">
+          <span class="name">Areeb Azhar</span>
+          <span class="qualification">BS Software Engineering • Iqra Univ (88.1% NSCT)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <div class="status-indicator">
+        <span class="pulse-dot"></span>
+        <span>Daily Alert Scanner Active</span>
+      </div>
+      <button id="btn-quick-evaluate" class="btn btn-primary">
+        <span>+ Evaluate New Job</span>
+      </button>
+      <button id="btn-refresh" class="btn btn-outline" title="Refresh Live Data">
+        ↻
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    
+    <!-- KPI Summary Grid -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-icon-wrap icon-purple">📡</div>
+        <div class="kpi-content">
+          <div class="kpi-label">Total Jobs Scanned</div>
+          <div class="kpi-value" id="stat-scanned">0</div>
+          <div class="kpi-foot" id="stat-qual-rate">0% Qualified Rate</div>
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-icon-wrap icon-emerald">📝</div>
+        <div class="kpi-content">
+          <div class="kpi-label">Ready for Review</div>
+          <div class="kpi-value" id="stat-ready">0</div>
+          <div class="kpi-foot">Tailored packets prepared</div>
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-icon-wrap icon-blue">🚀</div>
+        <div class="kpi-content">
+          <div class="kpi-label">Submitted Applications</div>
+          <div class="kpi-value" id="stat-submitted">0</div>
+          <div class="kpi-foot">Active in recruitment pipeline</div>
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-icon-wrap icon-amber">🛡️</div>
+        <div class="kpi-content">
+          <div class="kpi-label">Filtered & Disqualified</div>
+          <div class="kpi-value" id="stat-disqualified">0</div>
+          <div class="kpi-foot" id="stat-filter-reason">Saved time & fatigue</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs & Search Controls -->
+    <section class="controls-section">
+      <div class="tabs-bar">
+        <button class="tab-btn active" data-tab="applications">
+          <span>Applied & Ready for Review</span>
+          <span class="badge badge-primary" id="badge-applications-count">0</span>
+        </button>
+        <button class="tab-btn" data-tab="scanned">
+          <span>All Scanned & Filtered Log</span>
+          <span class="badge badge-secondary" id="badge-scanned-count">0</span>
+        </button>
+        <button class="tab-btn" data-tab="analytics">
+          <span>Filter Intelligence & Metrics</span>
+        </button>
+      </div>
+
+      <div class="filter-toolbar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="input-search" placeholder="Search by role, company, location, or keyword..." />
+        </div>
+
+        <div class="filter-dropdowns">
+          <select id="filter-domain" class="select-filter">
+            <option value="all">All Domains</option>
+            <option value="full_stack">Full-Stack Web</option>
+            <option value="rust_blockchain">Rust & Blockchain</option>
+            <option value="flutter">Flutter / Mobile</option>
+            <option value="ai_ml">AI / Machine Learning</option>
+            <option value="game_dev">Game Development</option>
+          </select>
+
+          <select id="filter-status" class="select-filter">
+            <option value="all">All Statuses</option>
+            <option value="READY_FOR_REVIEW">Ready for Review</option>
+            <option value="SUBMITTED">Submitted</option>
+            <option value="INTERVIEWING">Interviewing</option>
+            <option value="REJECTED">Rejected</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 1: Applications View -->
+    <section id="view-applications" class="tab-view active">
+      <div id="applications-grid" class="cards-grid">
+        <!-- Rendered dynamically -->
+      </div>
+      <div id="applications-empty" class="empty-state hidden">
+        <div class="empty-icon">📂</div>
+        <h3>No Applications Found</h3>
+        <p>No job applications match your active search or filter selection.</p>
+      </div>
+    </section>
+
+    <!-- Tab 2: Scanned Audit Log View -->
+    <section id="view-scanned" class="tab-view">
+      <div class="table-container">
+        <table class="audit-table">
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Role & Company</th>
+              <th>Location</th>
+              <th>Source</th>
+              <th>Evaluation & Filter Reason</th>
+              <th>Scanned Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="scanned-tbody">
+            <!-- Rendered dynamically -->
+          </tbody>
+        </table>
+      </div>
+      <div id="scanned-empty" class="empty-state hidden">
+        <div class="empty-icon">🔍</div>
+        <h3>No Scanned Logs Found</h3>
+        <p>No records match your search filter.</p>
+      </div>
+    </section>
+
+    <!-- Tab 3: Analytics View -->
+    <section id="view-analytics" class="tab-view">
+      <div class="analytics-grid">
+        <div class="chart-card">
+          <h3>Filter Rejection Root Causes</h3>
+          <p class="subtitle">Why opportunities were filtered out</p>
+          <div id="rejection-breakdown" class="breakdown-list">
+            <!-- Dynamic items -->
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <h3>Domain Distribution</h3>
+          <p class="subtitle">Qualified opportunities across targeted verticals</p>
+          <div id="domain-breakdown" class="breakdown-list">
+            <!-- Dynamic items -->
+          </div>
+        </div>
+
+        <div class="chart-card full-width">
+          <h3>Active Candidate Profile Rules</h3>
+          <div class="rules-summary-box">
+            <div class="rule-item">
+              <span class="rule-badge">MAX EXP</span>
+              <span class="rule-desc">Strictly &le; 1 year experience (Fresh graduate, Associate, Junior, Trainee). Senior/lead titles rejected.</span>
+            </div>
+            <div class="rule-item">
+              <span class="rule-badge">TARGETS</span>
+              <span class="rule-desc">Full-Stack Web (React/Node/TS), Rust & Blockchain, Flutter/Mobile, AI/ML, Unity Game Dev.</span>
+            </div>
+            <div class="rule-item">
+              <span class="rule-badge">LOCATIONS</span>
+              <span class="rule-desc">Karachi (On-site/Hybrid), Lahore/Islamabad (Hybrid/Remote), Worldwide Remote.</span>
+            </div>
+            <div class="rule-item">
+              <span class="rule-badge">CV VAULT</span>
+              <span class="rule-desc">5 domain-specific resumes mapped dynamically from <code>C:\Users\areeb\Desktop\cv</code>.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal: Application Packet Inspector -->
+  <div id="modal-packet" class="modal-backdrop hidden">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-tag" id="modal-domain-tag">Full-Stack</span>
+          <h2 id="modal-job-title">Junior Full Stack Developer</h2>
+          <div class="modal-sub" id="modal-company-meta">Apex Technologies • Lahore (Hybrid)</div>
+        </div>
+        <button class="modal-close" id="btn-close-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Selected CV Info -->
+        <div class="packet-section">
+          <div class="section-label">Selected Resume / CV File</div>
+          <div class="cv-file-box">
+            <span class="file-icon">📄</span>
+            <div class="file-details">
+              <span class="file-name" id="modal-cv-filename">Areeb_Azhar_Full_Stack_Web_CV.pdf</span>
+              <span class="file-path" id="modal-cv-path">C:\Users\areeb\Desktop\cv\...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cover Letter -->
+        <div class="packet-section">
+          <div class="section-header-row">
+            <div class="section-label">Tailored Cover Letter</div>
+            <button id="btn-copy-cover" class="btn btn-sm btn-secondary">
+              📋 Copy Cover Letter
+            </button>
+          </div>
+          <pre id="modal-cover-letter" class="cover-letter-preview"></pre>
+        </div>
+
+        <!-- Standard Screening Answers -->
+        <div class="packet-section">
+          <div class="section-label">Pre-filled Screening Questionnaire Responses</div>
+          <div class="screening-grid" id="modal-screening-answers">
+            <!-- Dynamic fields -->
+          </div>
+        </div>
+
+        <!-- Original Job URL -->
+        <div class="packet-section">
+          <div class="section-label">Application Link</div>
+          <a id="modal-job-url" href="#" target="_blank" rel="noopener noreferrer" class="job-link-btn">
+            Open Job Listing on Source Platform ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="status-change-wrap">
+          <label for="modal-status-select">Update Pipeline Status:</label>
+          <select id="modal-status-select" class="select-filter">
+            <option value="READY_FOR_REVIEW">Ready for Review</option>
+            <option value="SUBMITTED">Submitted</option>
+            <option value="INTERVIEWING">Interviewing</option>
+            <option value="REJECTED">Rejected</option>
+            <option value="OFFER">Offer Received 🎉</option>
+          </select>
+        </div>
+        <button id="btn-save-status" class="btn btn-primary">Save Status</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Quick Evaluate Job -->
+  <div id="modal-evaluate" class="modal-backdrop hidden">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h2>Evaluate New Job Posting</h2>
+          <div class="modal-sub">Test the bot's filter & draft an application packet instantly</div>
+        </div>
+        <button class="modal-close" id="btn-close-eval-modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <form id="form-evaluate" class="eval-form">
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label>Job Title *</label>
+              <input type="text" id="eval-title" required placeholder="e.g. Junior React Developer" />
+            </div>
+            <div class="form-group flex-1">
+              <label>Company *</label>
+              <input type="text" id="eval-company" required placeholder="e.g. Systems Ltd" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label>Location *</label>
+              <input type="text" id="eval-location" required placeholder="e.g. Karachi (Hybrid) or Remote" />
+            </div>
+            <div class="form-group flex-1">
+              <label>Source Platform</label>
+              <input type="text" id="eval-source" placeholder="e.g. LinkedIn, Indeed, Rozee" value="Manual Inspection" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Job URL (optional)</label>
+            <input type="url" id="eval-url" placeholder="https://..." />
+          </div>
+
+          <div class="form-group">
+            <label>Job Description & Requirements *</label>
+            <textarea id="eval-description" rows="5" required placeholder="Paste the job requirements, qualifications, and description here..."></textarea>
+          </div>
+
+          <button type="submit" id="btn-submit-eval" class="btn btn-primary full-width">
+            Scan & Evaluate Opportunity
+          </button>
+        </form>
+
+        <div id="eval-result-box" class="eval-result-box hidden">
+          <!-- Real-time evaluation output -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
