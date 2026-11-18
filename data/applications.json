@@ -1,0 +1,68 @@
+[
+  {
+    "id": "job_001",
+    "source": "LinkedIn Alerts",
+    "title": "Junior Full Stack Developer",
+    "company": "Apex Technologies",
+    "location": "Lahore (Hybrid)",
+    "url": "https://linkedin.com/jobs/view/1001",
+    "domain": "full_stack",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "cover_letter": "Dear Hiring Team at Apex Technologies,\n\nI am writing to express my strong interest in the Junior Full Stack Developer position. As a Software Engineering graduate from Iqra University, Karachi (completed September 2026, scoring in the 88.1st percentile on the National Student Competency Test), I bring practical project experience and an eagerness to contribute immediately.\n\nDuring my BS in Software Engineering at Iqra University, I developed CryptoTrader, a responsive market dashboard and virtual trading simulator with React 19, Vite, and Zustand, as well as IqraDegreeChain, a verification portal using a TypeScript Express API gateway and Hyperledger Fabric.\n\nI am adaptable, proactive, and ready to contribute to your team. Whether collaborating remotely, in hybrid setups, or on-site, I take ownership of clean code and responsive problem-solving.\n\nThank you for your time and consideration. I welcome the opportunity to discuss how my background aligns with your engineering goals.\n\nSincerely,\nAreeb Azhar\n+92 301 2343423 | areebazhar3@gmail.com | github.com/AREEB-AZHAR\n",
+    "screening_answers": {
+      "work_authorization_pk": "Yes",
+      "require_visa_sponsorship_abroad": "Yes",
+      "years_of_experience": 0.5,
+      "current_status": "Software Engineering Graduate (< 1 year experience)",
+      "education": "BS Software Engineering, Iqra University, Karachi",
+      "notice_period": "Immediate"
+    },
+    "status": "READY_FOR_REVIEW",
+    "updated_at": "2026-11-18T08:43:04.363706",
+    "created_at": "2026-11-18T08:43:04.363706"
+  },
+  {
+    "id": "job_003",
+    "source": "LinkedIn Alerts",
+    "title": "Associate Flutter Developer",
+    "company": "MobileCraft Studios",
+    "location": "Karachi (On-site)",
+    "url": "https://linkedin.com/jobs/view/3003",
+    "domain": "flutter",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - Flutter Developer Resume PDF.pdf",
+    "cover_letter": "Dear Hiring Team at MobileCraft Studios,\n\nI am writing to express my strong interest in the Associate Flutter Developer position. As a Software Engineering graduate from Iqra University, Karachi (completed September 2026, scoring in the 88.1st percentile on the National Student Competency Test), I bring practical project experience and an eagerness to contribute immediately.\n\nI specialize in cross-platform mobile development with Flutter and Dart, building clean, responsive UI with state management and REST API integrations.\n\nI am adaptable, proactive, and ready to contribute to your team. Whether collaborating remotely, in hybrid setups, or on-site, I take ownership of clean code and responsive problem-solving.\n\nThank you for your time and consideration. I welcome the opportunity to discuss how my background aligns with your engineering goals.\n\nSincerely,\nAreeb Azhar\n+92 301 2343423 | areebazhar3@gmail.com | github.com/AREEB-AZHAR\n",
+    "screening_answers": {
+      "work_authorization_pk": "Yes",
+      "require_visa_sponsorship_abroad": "Yes",
+      "years_of_experience": 0.5,
+      "current_status": "Software Engineering Graduate (< 1 year experience)",
+      "education": "BS Software Engineering, Iqra University, Karachi",
+      "notice_period": "Immediate"
+    },
+    "status": "READY_FOR_REVIEW",
+    "updated_at": "2026-11-18T08:43:04.371506",
+    "created_at": "2026-11-18T08:43:04.371506"
+  },
+  {
+    "id": "job_005",
+    "source": "Direct Company Alert",
+    "title": "Junior Blockchain / Rust Engineer",
+    "company": "ChainPulse Labs",
+    "location": "Remote",
+    "url": "https://chainpulse.io/careers/junior-rust",
+    "domain": "rust_blockchain",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Rust_Blockchain_CV.pdf",
+    "cover_letter": "Dear Hiring Team at ChainPulse Labs,\n\nI am writing to express my strong interest in the Junior Blockchain / Rust Engineer position. As a Software Engineering graduate from Iqra University, Karachi (completed September 2026, scoring in the 88.1st percentile on the National Student Competency Test), I bring practical project experience and an eagerness to contribute immediately.\n\nI completed a specialized 9-week internship with Rockstable x Hazara University in Blockchain Technology & Rust programming, and engineered IqraDegreeChain with Hyperledger Fabric.\n\nI am adaptable, proactive, and ready to contribute to your team. Whether collaborating remotely, in hybrid setups, or on-site, I take ownership of clean code and responsive problem-solving.\n\nThank you for your time and consideration. I welcome the opportunity to discuss how my background aligns with your engineering goals.\n\nSincerely,\nAreeb Azhar\n+92 301 2343423 | areebazhar3@gmail.com | github.com/AREEB-AZHAR\n",
+    "screening_answers": {
+      "work_authorization_pk": "Yes",
+      "require_visa_sponsorship_abroad": "Yes",
+      "years_of_experience": 0.5,
+      "current_status": "Software Engineering Graduate (< 1 year experience)",
+      "education": "BS Software Engineering, Iqra University, Karachi",
+      "notice_period": "Immediate"
+    },
+    "status": "READY_FOR_REVIEW",
+    "updated_at": "2026-11-18T08:43:04.379744",
+    "created_at": "2026-11-18T08:43:04.379744"
+  }
+]
