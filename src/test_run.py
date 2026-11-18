@@ -1,7 +1,7 @@
 import json
 from job_evaluator import load_profile, evaluate_job, generate_cover_letter
 
-# Sample batch of alert emails (e.g. from LinkedIn, Indeed, Glassdoor)
+# Comprehensive sample batch from LinkedIn, Indeed, Glassdoor, Rozee.pk, PakTechJobs, Wellfound
 sample_jobs = [
     {
         "id": "job_001",
@@ -41,12 +41,57 @@ sample_jobs = [
     },
     {
         "id": "job_005",
-        "source": "Direct Company Alert",
+        "source": "Wellfound / AngelList",
         "title": "Junior Blockchain / Rust Engineer",
         "company": "ChainPulse Labs",
-        "location": "Remote",
+        "location": "Remote Worldwide",
         "description": "Entry-level position for engineers interested in Rust, smart contracts, and distributed ledgers. Fresh graduates encouraged to apply.",
-        "url": "https://chainpulse.io/careers/junior-rust"
+        "url": "https://wellfound.com/jobs/chainpulse-junior-rust"
+    },
+    {
+        "id": "job_006",
+        "source": "Rozee.pk Alerts",
+        "title": "Principal Systems Architect",
+        "company": "Enterprise Matrix",
+        "location": "Karachi (On-site)",
+        "description": "Leading large scale enterprise infrastructure with 8+ years of distributed systems engineering.",
+        "url": "https://rozee.pk/job/principal-systems-architect"
+    },
+    {
+        "id": "job_007",
+        "source": "PakTechJobs",
+        "title": "Entry-Level AI / ML Engineer",
+        "company": "NeuroCraft AI",
+        "location": "Islamabad (Remote)",
+        "description": "Looking for enthusiastic fresh graduates in Software Engineering or Computer Science with strong foundations in Python, machine learning, and LLM APIs.",
+        "url": "https://paktechjobs.com/job/neurocraft-ai-engineer"
+    },
+    {
+        "id": "job_008",
+        "source": "LinkedIn Alerts",
+        "title": "Junior Game Developer (Unity / C#)",
+        "company": "PixelForge Studios",
+        "location": "Lahore (Hybrid)",
+        "description": "Join our casual game division as an associate/junior game developer. Requires C# and Unity basics, 0-1 years experience.",
+        "url": "https://linkedin.com/jobs/view/pixelforge-unity-dev"
+    },
+    {
+        "id": "job_009",
+        "source": "Arc.dev Remote",
+        "title": "Senior Rust Core Protocol Engineer",
+        "company": "Solana Ecosystem Partners",
+        "location": "Remote",
+        "description": "Requires 4+ years of systems programming in Rust and deep knowledge of consensus algorithms.",
+        "url": "https://arc.dev/jobs/senior-rust-protocol-eng"
+    },
+    {
+        "id": "job_010",
+        "source": "Rozee.pk Alerts",
+        "title": "Social Media Marketing Executive",
+        "company": "Retail Growth Hub",
+        "location": "Karachi (On-site)",
+        "description": "Managing paid social ad campaigns, content creation, and copywriting. Freshers welcome.",
+        "url": "https://rozee.pk/job/marketing-executive"
     }
 ]
 

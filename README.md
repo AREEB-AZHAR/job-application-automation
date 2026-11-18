@@ -1,14 +1,20 @@
 # Autonomous Job Search & Application Automation
 
-An intelligent, safety-conscious agentic automation system that scans daily job alert emails (LinkedIn, Indeed, Glassdoor, Rozee, PakTechJobs), filters and scores matching opportunities against Areeb Azhar's candidate profile, prepares tailored application drafts with domain-specific CV routing, and tracks pipeline status in a persistent database.
+An intelligent, safety-conscious agentic automation system and interactive web dashboard that scans daily job alerts (LinkedIn, Indeed, Glassdoor, Rozee.pk, PakTechJobs, Wellfound), filters and scores matching opportunities against Areeb Azhar's candidate profile, prepares tailored application drafts with domain-specific CV routing, and tracks the entire scanning & application lifecycle with an audit command center.
 
 ---
 
 ## 🚀 Accomplishments & Recent Updates
 
-- **Autonomous Assistant Initialization & Operational Master Plan**: Comprehensive roadmap finalized in [job_search_assistant_plan.md](file:///C:/Users/areeb/.gemini/antigravity/brain/afc4de98-f6c8-4d9c-b23a-d789716be675/job_search_assistant_plan.md).
-- **Persistent Pipeline Tracker (`src/tracker.py`)**: Implemented full application lifecycle tracking in `data/applications.json` supporting statuses (`READY_FOR_REVIEW`, `SUBMITTED`, `INTERVIEWING`, `REJECTED`, `OFFER`).
-- **Interactive Assistant CLI (`src/assistant.py`)**: Built command-line coordinator with `--pipeline` visualizer and automated batch assessment engine.
+- **Interactive Showcase & Audit Website (`web/`)**: Built a full-stack dashboard served via a lightweight native Python server (`web/server.py`) and modern dark-mode single-page application (`web/index.html`, `web/styles.css`, `web/app.js`):
+  - **Applied & Ready for Review View**: Interactive cards for all qualified jobs, showcasing company meta, matched domain, status badges, attached CVs, direct job links, and a modal inspector with 1-click tailored cover letter copying.
+  - **All Scanned & Filtered Audit Trail**: Complete historical ledger of every evaluated opportunity with color-coded qualification pills (`QUALIFIED` vs `DISQUALIFIED`), detailed rejection reasons (e.g., senior keyword in title, experience > 1 yr, stack mismatch), source platforms, and timestamps.
+  - **Filter Analytics & Intelligence**: Live breakdown charts of rejection root causes and domain distribution across target verticals.
+  - **On-the-Fly Opportunity Evaluator**: Built-in modal allowing users to paste any job description to test filtering and draft a tailored packet instantly.
+  - **REST API Endpoints**: `/api/data` (metrics & records), `/api/status` (inline status updates), `/api/evaluate` (live scan).
+- **Audit Logging Engine (`src/tracker.py`)**: Dual-ledger persistence:
+  - `data/applications.json` — Tracks active and prepared application packets (`READY_FOR_REVIEW`, `SUBMITTED`, `INTERVIEWING`, `REJECTED`, `OFFER`).
+  - `data/scanned_jobs.json` — Complete historical audit trail of all scanned opportunities.
 - **Candidate Profile & CV Vault Mapping**: Integrated Areeb Azhar's credentials from `C:\Users\areeb\Desktop\cv` with domain-specific mappings:
   - Full-Stack Web: `Areeb_Azhar_Full_Stack_Web_CV.pdf`
   - AI / ML: `Areeb Azhar - AI Resume PDF.pdf`
@@ -16,8 +22,8 @@ An intelligent, safety-conscious agentic automation system that scans daily job 
   - Game Development: `Areeb Azhar - Game Developer.pdf`
   - Rust & Blockchain: `Areeb_Azhar_Rust_Blockchain_CV.pdf`
 - **Filtering Logic Verified**: Tested and verified strict `< 1 year of experience` qualification logic, rejecting senior roles (e.g., 3+ or 5+ years) and auto-routing entry-level/associate roles.
-- **Tailored Cover Letter Generator**: Programmed dynamic cover letter drafting highlighting actual projects (CryptoTrader, IqraDegreeChain, Bunetto, Rockstable x Hazara Rust internship).
-- **Sidecar Automation Configured**: Registered `Daily Job Search & Application Drafter` configured for daily execution at 8:00 AM Pakistan Standard Time (`CRON_TZ=Asia/Karachi 0 8 * * *`).
+- **Tailored Cover Letter Generator**: Programmed dynamic cover letter drafting highlighting actual projects (*CryptoTrader*, *IqraDegreeChain*, *Bunetto*, *Rockstable x Hazara Rust internship*).
+- **Daily Sidecar Automation**: Registered `Daily Job Search & Application Drafter` configured for daily execution at 8:00 AM Pakistan Standard Time (`CRON_TZ=Asia/Karachi 0 8 * * *`).
 
 ---
 
@@ -25,66 +31,71 @@ An intelligent, safety-conscious agentic automation system that scans daily job 
 
 ```
 job_application_automation/
-├── README.md                          # Documentation and setup instructions
+├── README.md                          # Documentation, architecture & setup instructions
 ├── config/
 │   ├── candidate_profile.json         # Active candidate profile, screening answers & CV mapping
 │   └── candidate_profile.template.json # Template schema
 ├── src/
 │   ├── assistant.py                   # Central CLI coordinator (batch ingestion, evaluation & pipeline)
-│   ├── tracker.py                     # Application tracking store and status lifecycle engine
+│   ├── tracker.py                     # Dual-ledger persistence engine (applications & scanned logs)
 │   ├── job_evaluator.py               # Domain matching, experience filter & cover letter engine
-│   └── test_run.py                    # Verification script testing multi-board alert batches
+│   └── test_run.py                    # Multi-board alert verification runner
+├── web/
+│   ├── index.html                     # Showcase dashboard layout & modal inspector
+│   ├── styles.css                     # Dark-mode styling, glassmorphism & responsive grid
+│   ├── app.js                         # Dynamic state, search/filter & REST API bindings
+│   └── server.py                      # Lightweight native Python HTTP server & REST API
 └── data/
-    └── applications.json              # Local persistent application tracking database
+    ├── applications.json              # Active and prepared applications database
+    └── scanned_jobs.json              # Historical ledger of all scanned & filtered jobs
 ```
 
 ---
 
 ## 🛠️ Prerequisites & Environment Setup
 
-- **Python**: Version 3.10 or higher.
-- **Git**: Configured with local repository.
+- **Python**: Version 3.10 or higher (no heavy external dependencies required; uses Python standard library `http.server`, `json`, `socketserver`).
+- **Operating System**: Windows (tested with Windows PowerShell).
 - **Recommended Plugins**:
   - **Gmail Plugin** (`antigravity-plugins-official/plugin/gmail`): To read incoming job alert emails directly.
-- **Operating System**: Windows (tested with Windows PowerShell).
 
-### Local Execution Instructions
+---
 
-1. Navigate to the project directory:
-   ```powershell
-   cd C:\Users\areeb\.gemini\antigravity\scratch\job_application_automation
-   ```
+## 🖥️ Local Execution & Running the Website
 
-2. Process a new batch of job opportunities:
-   ```powershell
-   python src\assistant.py
-   ```
+### 1. Launch the Job Showcase & Audit Website
 
-3. View current application pipeline & tracking status:
-   ```powershell
-   python src\assistant.py --pipeline
-   ```
+Navigate to the project directory and start the local web server:
+```powershell
+cd C:\Users\areeb\.gemini\antigravity\scratch\job_application_automation
+python web\server.py
+```
 
-4. Run the standalone unit and evaluation tests:
-   ```powershell
-   python src\test_run.py
-   ```
+Open your browser and navigate to:
+👉 **`http://localhost:5000`**
 
-   **Test Output Example:**
-   ```
-   [LinkedIn Alerts] Junior Full Stack Developer @ Apex Technologies (Lahore (Hybrid))
-    -> Assessment: Accepted: Matches domain and experience criteria (< 1 year)
-    -> Status: READY_FOR_REVIEW
-    -> Selected CV: C:\Users\areeb\Desktop\cv\Areeb_Azhar_Full_Stack_Web_CV.pdf
+From the dashboard you can:
+- Review all prepared job applications and their tailored cover letters.
+- Inspect the **Scanned & Filtered Log** to see why jobs were accepted or disqualified.
+- Update pipeline statuses (e.g., mark as `SUBMITTED`, `INTERVIEWING`).
+- Click **"+ Evaluate New Job"** to test any job post on the fly.
 
-   [Indeed Daily Alert] Senior Frontend Engineer @ Global Cloud Corp (Remote)
-    -> Assessment: Disqualified: Title contains senior keyword 'senior'
+---
 
-   [LinkedIn Alerts] Associate Flutter Developer @ MobileCraft Studios (Karachi (On-site))
-    -> Assessment: Accepted: Matches domain and experience criteria (< 1 year)
-    -> Status: READY_FOR_REVIEW
-    -> Selected CV: C:\Users\areeb\Desktop\cv\Areeb Azhar - Flutter Developer Resume PDF.pdf
-   ```
+### 2. Run the CLI Assistant & Verification Suite
+
+- **Process a batch of alert leads**:
+  ```powershell
+  python src\assistant.py
+  ```
+- **View current pipeline CLI metrics**:
+  ```powershell
+  python src\assistant.py --pipeline
+  ```
+- **Execute the test suite**:
+  ```powershell
+  python src\test_run.py
+  ```
 
 ---
 
@@ -104,7 +115,8 @@ To enable the automation:
 
 ## 📸 Screenshots & UI Previews
 
-*(Screenshots will be added once captured from the active dashboard)*.
-> **Screenshot Request**: After activating the automation in the Automations dashboard (`sidecar://dashboard`), please take a screenshot of:
-> 1. The active `Daily Job Search & Application Drafter` sidecar card in the Automations Dashboard.
-> 2. The morning digest summary card rendered in your conversation feed.
+*(Screenshots will be captured and placed here once verified in the UI)*.
+> **Screenshot Request**: After launching the dashboard at `http://localhost:5000`, please take a screenshot of:
+> 1. The main **Applied & Ready for Review** grid with the KPI summary header.
+> 2. The **All Scanned & Filtered Log** table showing qualification and disqualification audit tags.
+> 3. The **Inspect Application Packet** modal displaying the tailored cover letter and attached CV.

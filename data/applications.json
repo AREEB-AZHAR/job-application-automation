@@ -18,8 +18,9 @@
       "notice_period": "Immediate"
     },
     "status": "READY_FOR_REVIEW",
-    "updated_at": "2026-11-18T08:43:04.363706",
-    "created_at": "2026-11-18T08:43:04.363706"
+    "updated_at": "2026-11-18T09:00:24.816887",
+    "created_at": "2026-11-18T08:43:04.363706",
+    "description": "Seeking an entry level or junior developer with React, Node.js, and TypeScript skills. 0-1 years of experience or fresh graduates welcome."
   },
   {
     "id": "job_003",
@@ -40,16 +41,17 @@
       "notice_period": "Immediate"
     },
     "status": "READY_FOR_REVIEW",
-    "updated_at": "2026-11-18T08:43:04.371506",
-    "created_at": "2026-11-18T08:43:04.371506"
+    "updated_at": "2026-11-18T09:00:24.848188",
+    "created_at": "2026-11-18T08:43:04.371506",
+    "description": "Looking for a fresh graduate or associate developer with Flutter and Dart knowledge. Less than 1 year experience required."
   },
   {
     "id": "job_005",
-    "source": "Direct Company Alert",
+    "source": "Wellfound / AngelList",
     "title": "Junior Blockchain / Rust Engineer",
     "company": "ChainPulse Labs",
-    "location": "Remote",
-    "url": "https://chainpulse.io/careers/junior-rust",
+    "location": "Remote Worldwide",
+    "url": "https://wellfound.com/jobs/chainpulse-junior-rust",
     "domain": "rust_blockchain",
     "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Rust_Blockchain_CV.pdf",
     "cover_letter": "Dear Hiring Team at ChainPulse Labs,\n\nI am writing to express my strong interest in the Junior Blockchain / Rust Engineer position. As a Software Engineering graduate from Iqra University, Karachi (completed September 2026, scoring in the 88.1st percentile on the National Student Competency Test), I bring practical project experience and an eagerness to contribute immediately.\n\nI completed a specialized 9-week internship with Rockstable x Hazara University in Blockchain Technology & Rust programming, and engineered IqraDegreeChain with Hyperledger Fabric.\n\nI am adaptable, proactive, and ready to contribute to your team. Whether collaborating remotely, in hybrid setups, or on-site, I take ownership of clean code and responsive problem-solving.\n\nThank you for your time and consideration. I welcome the opportunity to discuss how my background aligns with your engineering goals.\n\nSincerely,\nAreeb Azhar\n+92 301 2343423 | areebazhar3@gmail.com | github.com/AREEB-AZHAR\n",
@@ -62,7 +64,77 @@
       "notice_period": "Immediate"
     },
     "status": "READY_FOR_REVIEW",
-    "updated_at": "2026-11-18T08:43:04.379744",
-    "created_at": "2026-11-18T08:43:04.379744"
+    "updated_at": "2026-11-18T09:00:24.877713",
+    "created_at": "2026-11-18T08:43:04.379744",
+    "description": "Entry-level position for engineers interested in Rust, smart contracts, and distributed ledgers. Fresh graduates encouraged to apply."
+  },
+  {
+    "id": "job_007",
+    "source": "PakTechJobs",
+    "title": "Entry-Level AI / ML Engineer",
+    "company": "NeuroCraft AI",
+    "location": "Islamabad (Remote)",
+    "url": "https://paktechjobs.com/job/neurocraft-ai-engineer",
+    "description": "Looking for enthusiastic fresh graduates in Software Engineering or Computer Science with strong foundations in Python, machine learning, and LLM APIs.",
+    "domain": "ai_ml",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - AI Resume PDF.pdf",
+    "cover_letter": "Dear Hiring Team at NeuroCraft AI,\n\nI am writing to express my strong interest in the Entry-Level AI / ML Engineer position. As a Software Engineering graduate from Iqra University, Karachi (completed September 2026, scoring in the 88.1st percentile on the National Student Competency Test), I bring practical project experience and an eagerness to contribute immediately.\n\nWith my background in Software Engineering and strong foundations in algorithms and Python, I have built data-driven solutions and evaluated model workflows, focusing on clean architecture and performance.\n\nI am adaptable, proactive, and ready to contribute to your team. Whether collaborating remotely, in hybrid setups, or on-site, I take ownership of clean code and responsive problem-solving.\n\nThank you for your time and consideration. I welcome the opportunity to discuss how my background aligns with your engineering goals.\n\nSincerely,\nAreeb Azhar\n+92 301 2343423 | areebazhar3@gmail.com | github.com/AREEB-AZHAR\n",
+    "screening_answers": {
+      "work_authorization_pk": "Yes",
+      "require_visa_sponsorship_abroad": "Yes",
+      "years_of_experience": 0.5,
+      "current_status": "Software Engineering Graduate (< 1 year experience)",
+      "education": "BS Software Engineering, Iqra University, Karachi",
+      "notice_period": "Immediate"
+    },
+    "status": "READY_FOR_REVIEW",
+    "updated_at": "2026-11-18T09:00:24.907722",
+    "created_at": "2026-11-18T09:00:24.907722"
+  },
+  {
+    "id": "job_008",
+    "source": "LinkedIn Alerts",
+    "title": "Junior Game Developer (Unity / C#)",
+    "company": "PixelForge Studios",
+    "location": "Lahore (Hybrid)",
+    "url": "https://linkedin.com/jobs/view/pixelforge-unity-dev",
+    "description": "Join our casual game division as an associate/junior game developer. Requires C# and Unity basics, 0-1 years experience.",
+    "domain": "game_dev",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - Game Developer.pdf",
+    "cover_letter": "Dear Hiring Team at PixelForge Studios,\n\nI am writing to express my strong interest in the Junior Game Developer (Unity / C#) position. As a Software Engineering graduate from Iqra University, Karachi (completed September 2026, scoring in the 88.1st percentile on the National Student Competency Test), I bring practical project experience and an eagerness to contribute immediately.\n\nI have hands-on experience designing gameplay mechanics, physics interactions, and UI architectures using Unity and C#.\n\nI am adaptable, proactive, and ready to contribute to your team. Whether collaborating remotely, in hybrid setups, or on-site, I take ownership of clean code and responsive problem-solving.\n\nThank you for your time and consideration. I welcome the opportunity to discuss how my background aligns with your engineering goals.\n\nSincerely,\nAreeb Azhar\n+92 301 2343423 | areebazhar3@gmail.com | github.com/AREEB-AZHAR\n",
+    "screening_answers": {
+      "work_authorization_pk": "Yes",
+      "require_visa_sponsorship_abroad": "Yes",
+      "years_of_experience": 0.5,
+      "current_status": "Software Engineering Graduate (< 1 year experience)",
+      "education": "BS Software Engineering, Iqra University, Karachi",
+      "notice_period": "Immediate"
+    },
+    "status": "READY_FOR_REVIEW",
+    "updated_at": "2026-11-18T09:00:24.927980",
+    "created_at": "2026-11-18T09:00:24.927980"
+  },
+  {
+    "id": "job_006",
+    "source": "Rozee.pk",
+    "title": "Junior Software Engineer",
+    "company": "Contour Software",
+    "location": "Karachi (Hybrid)",
+    "url": "https://rozee.pk/contour-junior",
+    "description": "Fresh graduate or junior developer with React and Node.js skills. 0-1 years experience.",
+    "domain": "full_stack",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "cover_letter": "Dear Hiring Team at Contour Software,\n\nI am writing to express my strong interest in the Junior Software Engineer position. As a Software Engineering graduate from Iqra University, Karachi (completed September 2026, scoring in the 88.1st percentile on the National Student Competency Test), I bring practical project experience and an eagerness to contribute immediately.\n\nDuring my BS in Software Engineering at Iqra University, I developed CryptoTrader, a responsive market dashboard and virtual trading simulator with React 19, Vite, and Zustand, as well as IqraDegreeChain, a verification portal using a TypeScript Express API gateway and Hyperledger Fabric.\n\nI am adaptable, proactive, and ready to contribute to your team. Whether collaborating remotely, in hybrid setups, or on-site, I take ownership of clean code and responsive problem-solving.\n\nThank you for your time and consideration. I welcome the opportunity to discuss how my background aligns with your engineering goals.\n\nSincerely,\nAreeb Azhar\n+92 301 2343423 | areebazhar3@gmail.com | github.com/AREEB-AZHAR\n",
+    "screening_answers": {
+      "work_authorization_pk": "Yes",
+      "require_visa_sponsorship_abroad": "Yes",
+      "years_of_experience": 0.5,
+      "current_status": "Software Engineering Graduate (< 1 year experience)",
+      "education": "BS Software Engineering, Iqra University, Karachi",
+      "notice_period": "Immediate"
+    },
+    "status": "SUBMITTED",
+    "updated_at": "2026-11-18T09:04:00.705535",
+    "created_at": "2026-11-18T09:03:51.717008"
   }
 ]

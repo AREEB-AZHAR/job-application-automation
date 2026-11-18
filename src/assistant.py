@@ -4,7 +4,13 @@ import argparse
 from typing import List, Dict, Any
 
 from job_evaluator import load_profile, evaluate_job, generate_cover_letter
-from tracker import record_application, load_applications, get_pipeline_summary, update_status
+from tracker import (
+    record_application, 
+    record_scanned_job, 
+    load_applications, 
+    get_pipeline_summary, 
+    update_status
+)
 
 DEFAULT_PROFILE_PATH = os.path.join(os.path.dirname(__file__), "..", "config", "candidate_profile.json")
 
@@ -20,9 +26,20 @@ def process_job_batch(jobs: List[Dict[str, Any]], profile_path: str = DEFAULT_PR
 
     for job in jobs:
         is_match, reason, domain, cv_path = evaluate_job(job, profile)
+        
+        # 1. Always record in scanned jobs ledger
+        record_scanned_job(
+            job=job,
+            is_match=is_match,
+            reason=reason,
+            domain=domain,
+            cv_path=cv_path
+        )
+
         print(f"[{job.get('source', 'Job Alert')}] {job.get('title')} @ {job.get('company')} ({job.get('location')})")
         print(f" -> Assessment: {reason}")
 
+        # 2. If matched, record into active applications pipeline
         if is_match:
             cover_letter = generate_cover_letter(job, domain, profile)
             app_record = record_application(
@@ -50,9 +67,11 @@ def display_pipeline():
     print("\n" + "=" * 80)
     print("CURRENT APPLICATION PIPELINE")
     print("=" * 80)
-    print(f"Total Tracked Applications: {summary['total']}")
+    print(f"Total Scanned: {summary['total_scanned']} | Qualified: {summary['total_qualified']} ({summary['qualification_rate']}%)")
+    print(f"Total Applications: {summary['total_applications']}")
     print("Status Breakdown:", summary["by_status"])
     print("Domain Breakdown:", summary["by_domain"])
+    print("Disqualification Breakdown:", summary["disqualification_reasons"])
     print("-" * 80)
 
     if not applications:
@@ -74,6 +93,5 @@ if __name__ == "__main__":
     if args.pipeline:
         display_pipeline()
     else:
-        # Default run with sample stream if called directly
         from test_run import sample_jobs
         process_job_batch(sample_jobs)
