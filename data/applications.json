@@ -1,5 +1,32 @@
 [
   {
+    "id": "job_047",
+    "source": "LinkedIn Easy Apply",
+    "title": "Mobile Application Developer",
+    "company": "SQUATWOLF",
+    "location": "Karachi, Sindh, Pakistan (On-site)",
+    "url": "https://www.linkedin.com/jobs/view/4488936551/",
+    "domain": "mobile",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - Flutter Developer Resume PDF.pdf",
+    "cover_letter": "Autonomous application for Mobile Application Developer (React Native / Cross-Platform) at SQUATWOLF via LinkedIn Easy Apply.",
+    "screening_answers": {
+      "Java experience": "1 year",
+      "iOS experience": "1 year",
+      "Swift experience": "1 year",
+      "Work authorization": "Authorized (Pakistan)",
+      "Location availability": "On-site Karachi"
+    },
+    "status": "APPLIED",
+    "is_closed": false,
+    "confirmation_id": "LINKEDIN-SUBMITTED-NOW-4488936551",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified: 'Your application was sent to SQUATWOLF!'",
+    "pre_submit_snapshot": "/proofs/job_047/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_047/post_submit.png",
+    "applied_at": "2026-11-19T05:55:29.479526",
+    "updated_at": "2026-11-19T05:55:29.479526"
+  },
+  {
     "id": "job_046",
     "source": "LinkedIn Easy Apply",
     "title": "Frontend Developer",
@@ -15,15 +42,15 @@
       "Work authorization": "Authorized (Pakistan)",
       "Location availability": "On-site Karachi"
     },
-    "status": "READY_FOR_FINAL_SUBMISSION",
+    "status": "APPLIED",
     "is_closed": false,
-    "confirmation_id": "LINKEDIN-MODAL-PRESUBMIT-VERIFIED",
-    "verification_status": "PRE_SUBMISSION_FORM_VERIFIED",
-    "verification_details": "Authenticated LinkedIn Easy Apply modal completed (4/4 steps). Form filled with Areeb_Azhar_Full_Stack_Web_CV.pdf, phone, and screening answers. Pre-submission review screen captured.",
+    "confirmation_id": "LINKEDIN-SUBMITTED-NOW-4488948133",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_details": "Verified Live Status: 'Application submitted now' \u2022 Profile & CV received by SQUATWOLF hiring team on LinkedIn",
     "pre_submit_snapshot": "/proofs/job_046/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_046/post_submit.png",
     "applied_at": "2026-11-19T05:49:20.692255",
-    "updated_at": "2026-11-19T05:49:20.692255"
+    "updated_at": "2026-11-19T05:52:37.801644"
   },
   {
     "id": "job_045",
