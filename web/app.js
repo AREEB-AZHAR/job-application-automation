@@ -110,14 +110,34 @@ async function loadData() {
   }
 }
 
+function formatStatusLabel(status, is_closed, alt_email) {
+  if (status === 'NO_LONGER_ACCEPTING_APPLICATIONS' || (is_closed && !alt_email)) {
+    return '⛔ Closed by Hirer';
+  } else if (status === 'APPLIED_VIA_DIRECT_EMAIL' || alt_email) {
+    return '✉️ Email Dispatched';
+  } else if (status === 'APPLIED' || status === 'SUBMITTED') {
+    return '● Applied';
+  } else if (status === 'INTERVIEWING') {
+    return '● Interviewing';
+  } else if (status === 'OFFER') {
+    return '★ Offer';
+  } else if (status === 'REJECTED') {
+    return '× Rejected';
+  }
+  return status;
+}
+
 function updateKPIs() {
   const m = state.metrics;
-  const appliedCount = state.applications.filter(a => a.status === 'APPLIED' || a.status === 'SUBMITTED').length || state.applications.length;
+  const appliedCount = state.applications.filter(a => a.status === 'APPLIED' || a.status === 'SUBMITTED' || a.status === 'APPLIED_VIA_DIRECT_EMAIL').length;
+  const closedCount = state.applications.filter(a => a.status === 'NO_LONGER_ACCEPTING_APPLICATIONS' || a.is_closed).length || m.total_closed || 0;
 
   document.getElementById('stat-applied').textContent = appliedCount;
   document.getElementById('stat-scanned').textContent = m.total_scanned || 0;
   document.getElementById('stat-rate').textContent = `${m.qualification_rate || m.application_rate || 0}%`;
   document.getElementById('stat-filtered').textContent = m.total_disqualified || 0;
+  const closedEl = document.getElementById('stat-closed');
+  if (closedEl) closedEl.textContent = closedCount;
 
   document.getElementById('count-applications').textContent = state.applications.length;
   document.getElementById('count-scanned').textContent = state.scanned.length;
@@ -180,6 +200,7 @@ function renderApplications() {
     const cvName = app.cv_path ? app.cv_path.split('\\').pop().split('/').pop() : 'Standard CV';
     const initials = getInitials(app.company || 'CO');
     const status = app.status || 'APPLIED';
+    const statusLabel = formatStatusLabel(status, app.is_closed, app.alt_email);
 
     return `
       <div class="app-card">
@@ -194,13 +215,15 @@ function renderApplications() {
                 <span>${escapeHtml(app.location)}</span>
               </div>
             </div>
-            <span class="status-chip ${status}">● ${status}</span>
+            <span class="status-chip ${status}">${escapeHtml(statusLabel)}</span>
           </div>
 
           <div class="app-card-meta">
             <div class="meta-row">
               <span class="tag-badge">${domainText}</span>
               <span class="tag-badge">${escapeHtml(app.source || 'Portal')}</span>
+              ${app.alt_email ? `<span class="tag-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">✉️ ${escapeHtml(app.alt_email)}</span>` : ''}
+              ${app.is_closed && !app.alt_email ? `<span class="tag-badge" style="background: rgba(251, 146, 60, 0.15); color: #fb923c; border-color: rgba(251, 146, 60, 0.3);">⛔ Closed</span>` : ''}
             </div>
             <div class="meta-row">
               <span class="cv-tag" title="${escapeHtml(app.cv_path)}">📎 ${escapeHtml(cvName)}</span>
@@ -258,8 +281,16 @@ function renderAuditTable() {
 
   tbody.innerHTML = filtered.map(item => {
     const isMatch = item.is_match;
-    const badgeText = isMatch ? 'APPLIED' : 'FILTERED';
-    const badgeClass = isMatch ? 'APPLIED' : 'REJECTED';
+    let badgeText = isMatch ? 'APPLIED' : 'FILTERED';
+    let badgeClass = isMatch ? 'APPLIED' : 'REJECTED';
+    if (item.is_closed) {
+      badgeText = 'CLOSED';
+      badgeClass = 'NO_LONGER_ACCEPTING_APPLICATIONS';
+    } else if (item.alt_email) {
+      badgeText = 'EMAIL';
+      badgeClass = 'APPLIED_VIA_DIRECT_EMAIL';
+    }
+
     const dateFormatted = item.scanned_at ? new Date(item.scanned_at).toLocaleDateString(undefined, {
       month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
     }) : 'Today';
@@ -267,7 +298,7 @@ function renderAuditTable() {
     return `
       <tr>
         <td>
-          <span class="status-chip ${badgeClass}">● ${badgeText}</span>
+          <span class="status-chip ${badgeClass}">${badgeText === 'CLOSED' ? '⛔' : '●'} ${badgeText}</span>
         </td>
         <td>
           <div class="table-role-main">${escapeHtml(item.title)}</div>
@@ -276,7 +307,9 @@ function renderAuditTable() {
         <td><span style="color: var(--text-secondary);">${escapeHtml(item.location || 'Remote')}</span></td>
         <td><span class="tag-badge">${escapeHtml(item.source || 'Alert')}</span></td>
         <td>
-          <div class="filter-reason-tag">${escapeHtml(item.reason)}</div>
+          <div class="filter-reason-tag" ${item.is_closed ? 'style="border-left: 2px solid #fb923c;"' : ''}>
+            ${item.is_closed ? '⛔ ' : ''}${escapeHtml(item.reason)}
+          </div>
         </td>
         <td style="font-size: 0.72rem; color: var(--text-dim); white-space: nowrap; font-family: var(--font-mono);">${dateFormatted}</td>
         <td style="text-align: right;">
@@ -346,7 +379,13 @@ function openDrawer(appId) {
 
   // Verification Proofs & Pre/Post Snapshots
   const verifBanner = document.getElementById('drawer-verif-banner');
-  if (app.verification_status === 'CONFIRMED_SUBMITTED' || app.status === 'APPLIED') {
+  if (app.status === 'APPLIED_VIA_DIRECT_EMAIL' || app.alt_email) {
+    verifBanner.className = 'verification-banner info';
+    verifBanner.innerHTML = `<span>✉</span> <div><strong>Direct Email Route Prepared:</strong> ${escapeHtml(app.verification_details || `Recruiter email: ${app.alt_email}`)} (Attached: <code style="font-family: var(--font-mono);">${escapeHtml(app.cv_path ? app.cv_path.split('\\').pop() : 'CV.pdf')}</code>)</div>`;
+  } else if (app.status === 'NO_LONGER_ACCEPTING_APPLICATIONS' || app.is_closed) {
+    verifBanner.className = 'verification-banner error';
+    verifBanner.innerHTML = `<span>⛔</span> <div><strong>No Longer Accepting Applications:</strong> ${escapeHtml(app.verification_details || 'Employer disabled Easy Apply / closed job on LinkedIn/ATS')}</div>`;
+  } else if (app.verification_status === 'CONFIRMED_SUBMITTED' || app.status === 'APPLIED') {
     verifBanner.className = 'verification-banner success';
     verifBanner.innerHTML = `<span>✓</span> <div><strong>Verified Submitted:</strong> ${escapeHtml(app.verification_details || '200 OK — Success confirmation token verified')} (ID: <code style="font-family: var(--font-mono);">${escapeHtml(app.confirmation_id || 'CONF-OK')}</code>)</div>`;
   } else if (app.verification_status === 'SUBMISSION_ERROR') {

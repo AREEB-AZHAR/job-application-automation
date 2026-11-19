@@ -41,7 +41,7 @@ def evaluate_job(job: Dict[str, Any], profile: Dict[str, Any]) -> Tuple[bool, st
 
     # 2. Domain matching
     mappings = profile.get("cv_mappings", {})
-    if any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["react", "node", "typescript", "frontend", "web developer", "full stack", "fullstack"]):
+    if any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["react", "node", "typescript", "frontend", "web developer", "full stack", "fullstack", "django", "python", "backend", "web", "html", "javascript"]):
         domain = "full_stack"
         cv_path = mappings.get("full_stack")
     elif any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["rust", "blockchain", "solidity", "hyperledger", "web3", "smart contract"]):
