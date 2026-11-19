@@ -1,0 +1,22 @@
+Dear Hiring Team at LeadingEdge HR Solutions,
+
+I am writing to express my strong interest in the Junior Flutter Developer position.
+
+With hands-on experience in cross-platform mobile development using Flutter and Dart, I have built production-ready mobile applications featuring clean state management (Bloc, Provider), REST API integrations, local persistence (Hive, SQLite), and smooth, responsive UI/UX across iOS and Android.
+
+Key highlights of my background:
+- Robust Flutter & Dart foundation with modular, clean architecture principles.
+- Experience integrating backend microservices, real-time feeds, and JSON serialization.
+- Familiarity with CI/CD deployment pipelines, Git workflows, and automated testing.
+- Immediate availability and passion for building high-performance mobile products.
+
+I have attached my detailed Flutter Developer resume for your review. I would welcome the opportunity to discuss how my technical skills and enthusiasm can contribute to your engineering initiatives.
+
+Best regards,
+
+Areeb Azhar
+Karachi, Pakistan
+Phone: +92 301 2343423
+Email: areebazhar3@gmail.com
+GitHub: https://github.com/AreebAzhar
+LinkedIn: https://www.linkedin.com/in/areeb-azhar-a15b802b3/
