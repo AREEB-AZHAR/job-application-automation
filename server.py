@@ -43,8 +43,9 @@ class JobShowcaseHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.serve_file(os.path.join(WEB_DIR, "styles.css"), "text/css; charset=utf-8")
         elif path == "/app.js":
             self.serve_file(os.path.join(WEB_DIR, "app.js"), "application/javascript; charset=utf-8")
-        elif path.startswith("/proofs/"):
-            rel_path = path[len("/proofs/"):].replace("/", os.sep)
+        elif path.startswith("/proofs/") or path.startswith("/static/proofs/"):
+            prefix = "/static/proofs/" if path.startswith("/static/proofs/") else "/proofs/"
+            rel_path = path[len(prefix):].replace("/", os.sep)
             proof_file = os.path.join(BASE_DIR, "data", "proofs", rel_path)
             self.serve_file(proof_file, "image/png")
         elif path.startswith("/screenshots/"):
