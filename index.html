@@ -91,6 +91,12 @@
         <div class="metric-num text-muted" id="stat-filtered">0</div>
         <div class="metric-sub">Senior roles & stack mismatches</div>
       </div>
+
+      <div class="metric-cell">
+        <div class="metric-meta">Closed by Hirer</div>
+        <div class="metric-num text-amber" id="stat-closed" style="color: #fb923c;">0</div>
+        <div class="metric-sub">No longer accepting applications</div>
+      </div>
     </section>
 
     <!-- Toolbar: Tabs & Search -->
@@ -127,7 +133,9 @@
 
         <select id="filter-status" class="select-refined">
           <option value="all">All Pipeline States</option>
-          <option value="APPLIED">Applied</option>
+          <option value="APPLIED">Applied (Web Form)</option>
+          <option value="APPLIED_VIA_DIRECT_EMAIL">Applied (Email Draft)</option>
+          <option value="NO_LONGER_ACCEPTING_APPLICATIONS">Closed by Hirer</option>
           <option value="INTERVIEWING">Interviewing</option>
           <option value="OFFER">Offer</option>
           <option value="REJECTED">Archived / Rejected</option>

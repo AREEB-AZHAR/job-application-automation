@@ -472,6 +472,20 @@ body {
   border: 1px solid rgba(16, 185, 129, 0.25);
 }
 
+.status-chip.APPLIED_VIA_DIRECT_EMAIL {
+  background-color: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.status-chip.NO_LONGER_ACCEPTING_APPLICATIONS,
+.status-chip.CLOSED,
+.status-chip.CLOSED_BY_EMPLOYER {
+  background-color: rgba(251, 146, 60, 0.12);
+  color: #fb923c;
+  border: 1px solid rgba(251, 146, 60, 0.3);
+}
+
 .status-chip.INTERVIEWING {
   background-color: rgba(56, 189, 248, 0.12);
   color: #38bdf8;
@@ -1044,6 +1058,12 @@ body {
   background-color: rgba(244, 63, 94, 0.12);
   border: 1px solid rgba(244, 63, 94, 0.25);
   color: #fb7185;
+}
+
+.verification-banner.info {
+  background-color: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
 }
 
 .proofs-grid {
