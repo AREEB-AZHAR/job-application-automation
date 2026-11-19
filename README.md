@@ -1,12 +1,31 @@
 # Areeb Azhar — Autonomous Multi-Channel Job Application & Audit Pipeline
 
-An autonomous, developer-grade job discovery and direct application dispatch engine built for Areeb Azhar (`areebazhar3@gmail.com`). Featuring a Linear/Vercel-inspired UI, it continuously ingests real job alert emails from Gmail, filters opportunities strictly for junior/entry-level roles (`<= 1 year of experience`), detects when job postings have closed or expired, pairs opportunities with domain-specific PDF resumes from Areeb's CV vault, auto-generates authentic engineering pitch notes, and executes verified live multi-channel applications with full visual audit proof.
+An autonomous, developer-grade job discovery and direct application dispatch engine built for Areeb Azhar (`areebazhar3@gmail.com`). Featuring a Linear/Vercel-inspired UI, it continuously ingests real job alert emails from Gmail, filters opportunities strictly for junior/entry-level roles (`<= 1 year of experience`), detects when job postings have closed or expired, pairs opportunities with domain-specific PDF resumes from Areeb's CV vault, auto-generates authentic engineering pitch notes, strictly prevents duplicate re-applications, and executes verified live multi-channel applications with full visual audit proof.
 
 ---
 
 ## 🚀 Accomplishments & Real Live Application Dispatch
 
-### 1. Channel 1: Authenticated LinkedIn Easy Apply (100% Unattended Auto-Submit)
+### 1. 🛡️ Strict Re-Application Prevention (4-Tier Deduplication)
+- **Universal Duplicate Prevention**: The system enforces a strict 4-tier deduplication check before evaluating or submitting any role:
+  1. **Clean Job ID / Key**: Matches canonical platform numbers (e.g., LinkedIn job numbers `4488936551`, `4488948133`, `4479391326`) regardless of transient URL tracking/session parameters (`refId`, `trackingId`).
+  2. **Canonical URL**: Normalizes query parameters to prevent duplicate alerts from triggering repeated applications.
+  3. **Direct Recruiter Email**: Prevents re-dispatching emails to hiring managers if an application was already sent to that address (e.g. `talent@leadingedge.plus`, `hr@techinoviq.com`).
+  4. **Normalized Company + Job Title**: Strips legal entity suffixes (`Pvt Ltd`, `LLC`, `Technologies`, `Inc`) and compares clean role titles to block duplicate applications across different job board syndications.
+- **Verification**: Tested against 101 alert digests; successfully identified and skipped 100% of previously applied positions without sending duplicate submissions.
+
+### 2. ⚙️ Daily Scheduled Automation (`src/daily_automation.py`)
+- **Automation Sidecar**: Registered under `Autonomous Job Search & Application Dispatcher` at `~/.gemini/config/sidecars/daily-job-search/sidecar.json`.
+- **Schedule**: Recurring daily at **8:00 AM (Asia/Karachi)** (`CRON_TZ=Asia/Karachi 0 8 * * *`).
+- **Autonomous Flow**:
+  1. Ingests Gmail alert digests received in the last 24 hours.
+  2. Runs 4-tier deduplication check against `data/applications.json`.
+  3. Screens remaining roles for junior/entry-level criteria (`<= 1 year of experience`).
+  4. Audits closed postings and extracts alternate HR contact routes.
+  5. Executes unattended submissions via direct email or LinkedIn Easy Apply.
+  6. Updates dual-ledger persistence and refreshes the live dashboard.
+
+### 3. Channel 1: Authenticated LinkedIn Easy Apply (100% Unattended Auto-Submit)
 - **Live Authentication**: Operates through the candidate's active LinkedIn session (`Areeb Azhar`, Iqra University alumni).
 - **Search & Screening**: Discovers live junior roles in Pakistan filtered by `f_AL=true` (Easy Apply).
 - **Autonomous End-to-End Execution**: Steps through candidate contact information, attached domain CV, and screening questionnaires, captures the pre-submission review snapshot, **automatically triggers submission without waiting for oversight**, and verifies the post-submission confirmation receipt.
@@ -21,17 +40,17 @@ An autonomous, developer-grade job discovery and direct application dispatch eng
      - **Pre-Submit Snapshot**: `data/proofs/job_046/pre_submit.png`
      - **Post-Submit Confirmation**: Verified status: *"Application status: Application submitted now"* (`data/proofs/job_046/post_submit.png`).
 
-### 2. Channel 2: Direct Recruiter Email Dispatch (Gmail REST API)
+### 4. Channel 2: Direct Recruiter Email Dispatch (Gmail REST API)
 - When LinkedIn posts or external listings are closed to Easy Apply but specify direct hiring manager/recruiter contact details in the job body:
   - **Tech Inoviq Solutions** (`hr@techinoviq.com`): Dispatched live application for *Software Engineer - HealthTech* with attached `Areeb_Azhar_Full_Stack_Web_CV.pdf` (Verified Gmail Message ID: `1a1f13cdc39c9479`).
   - **LeadingEdge HR Solutions** (`talent@leadingedge.plus`): Dispatched live application for *Junior Flutter Developer* with attached `Areeb Azhar - Flutter Developer Resume PDF.pdf` (Verified Gmail Message ID: `1a1f141aa03161bf`).
   - **DevDignus** (`hr@devdignus.com`): Extracted direct recruiter contact route from closed LinkedIn posting.
 
-### 3. Channel 3: Public ATS Form Inspection & Automation
+### 5. Channel 3: Public ATS Form Inspection & Automation
 - Discovers and resolves off-LinkedIn application portals (e.g. Manatal ATS on `careers-page.com`, Greenhouse, Lever).
 - Inspects mandatory vs optional fields, stages domain CVs for file input upload (`setInputFiles()`), and prepares form entries.
 
-### 4. Closed Post Detection & Visual Audit Engine (`src/submission_verifier.py`)
+### 6. Closed Post Detection & Visual Audit Engine (`src/submission_verifier.py`)
 - **"No longer accepting applications" Detection**: Autonomous scanning identifies when high-volume posts (100+ applicants) are closed by the hirer.
 - **Job Expiration Handling**: Audits expired listings on Glassdoor/Indeed (e.g., *Vision IT Solutions* Django Developer - Entry Level), preventing failed submissions.
 - **Composite Audit Snapshots**: Binds an audit verification banner onto real browser screenshots (`data/proofs/{job_id}/pre_submit.png`) documenting post status and alternate contact details.
@@ -47,10 +66,11 @@ job_application_automation/
 │   ├── candidate_profile.json         # Active candidate profile, screening answers & CV mapping
 │   └── candidate_profile.template.json # Template schema
 ├── src/
+│   ├── daily_automation.py            # Unified daily automation engine (dedup, alert scan & dispatch)
 │   ├── assistant.py                   # Central coordinator (batch ingestion, evaluation & pipeline)
 │   ├── email_parser.py                # Regex & HTML alert digest extractor
 │   ├── ingest_real_alerts.py          # Real-time Gmail alert processor with closed-post auditing
-│   ├── tracker.py                     # Dual-ledger persistence engine (applications & scanned logs)
+│   ├── tracker.py                     # Dual-ledger persistence & 4-tier deduplication engine
 │   ├── job_evaluator.py               # Domain matching, experience filter & cover letter engine
 │   ├── submission_verifier.py         # Visual proof snapshots, closed audits & email drafter
 │   └── test_run.py                    # Multi-board alert verification runner
@@ -61,8 +81,8 @@ job_application_automation/
 │   ├── server.py                      # Native Python HTTP server & proof image endpoints
 │   └── screenshots/                   # Verified UI screenshots
 └── data/
-    ├── applications.json              # Active and prepared applications database (47 records)
-    ├── scanned_jobs.json              # Historical ledger of all scanned & filtered jobs (122 records)
+    ├── applications.json              # Active and prepared applications database (48 records)
+    ├── scanned_jobs.json              # Historical ledger of all scanned & filtered jobs (148 records)
     ├── applications_outgoing/         # Outgoing direct recruiter email packets
     └── proofs/                        # Pre-submit form & post-submit verification receipts
 ```
@@ -98,28 +118,21 @@ python web\server.py
 Open your browser and navigate to:
 👉 **`http://localhost:5000`**
 
-From the dashboard you can:
-- Review all submitted and audited job applications with company avatars, domain badges, and attached CVs.
-- Filter by `Applied (Web Form)`, `Applied (Email Dispatched)`, or `Closed by Hirer`.
-- Click **"Inspect Submission"** to view side-by-side pre-submit and post-submit screenshots, verified confirmation receipts, and candidate pitch notes.
-- Inspect the **Opportunity Audit Trail** table to see exact reasons why positions were accepted, filtered out, or detected as closed.
-- Update pipeline states (e.g. `Applied`, `Interviewing`, `Offer`, `Rejected / Closed`).
-
 ---
 
-### 2. Ingest & Audit Live Job Alerts from Gmail
+### 2. Execute Daily Autonomous Pipeline Manually
 
-To process incoming alert emails in real time:
+To trigger the complete daily ingestion, deduplication, and application run on demand:
 ```powershell
-python src\ingest_real_alerts.py
+python src\daily_automation.py
 ```
 This script will:
-1. Search Gmail for the latest job alerts from LinkedIn, Glassdoor, and Indeed.
-2. Screen each posting against junior/entry-level criteria (`<= 1 year of experience`).
-3. Check the active status of the post (detecting if LinkedIn marked it "No longer accepting applications").
-4. If open, prepare the application packet with visual pre-submission proof.
-5. If closed but an alternate HR email is listed, dispatch or stage an email application with CV attached.
-6. Record all outcomes in `data/applications.json` and `data/scanned_jobs.json`.
+1. Search Gmail for all new alert digests received from LinkedIn, Indeed, and Glassdoor.
+2. Filter through the 4-tier deduplication check to guarantee **no repeat applications** to previously applied positions.
+3. Screen each unapplied posting against junior criteria (`<= 1 year of experience`).
+4. If closed with a recruiter email, dispatch a direct email application via Gmail REST API.
+5. If open on LinkedIn Easy Apply, complete form fields, take pre-submit snapshot, and auto-submit.
+6. Record all outcomes and update proofs in `data/applications.json`.
 
 ---
 

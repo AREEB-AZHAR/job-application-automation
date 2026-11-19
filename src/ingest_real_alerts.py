@@ -3,6 +3,7 @@ import json
 import re
 import os
 import sys
+from typing import List, Dict, Any, Optional
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SRC_DIR = os.path.join(BASE_DIR, "src")
@@ -11,7 +12,7 @@ if SRC_DIR not in sys.path:
 
 from bs4 import BeautifulSoup
 from job_evaluator import load_profile, evaluate_job, generate_cover_letter
-from tracker import record_scanned_job, record_application, load_applications
+from tracker import record_scanned_job, record_application, load_applications, is_already_applied
 from submission_verifier import detect_job_post_status
 
 PROFILE_PATH = os.path.join(BASE_DIR, "config", "candidate_profile.json")
@@ -179,6 +180,19 @@ def parse_email_message(msg_id):
 
     return jobs
 
+def fetch_all_alert_jobs(max_results: int = 15) -> List[Dict[str, Any]]:
+    msg_ids = search_job_alerts(max_results)
+    total_real_jobs = []
+    seen_urls = set()
+    for mid in msg_ids:
+        jobs = parse_email_message(mid)
+        for j in jobs:
+            url = j.get("url")
+            if url and url not in seen_urls and len(j.get("title", "")) > 2:
+                seen_urls.add(url)
+                total_real_jobs.append(j)
+    return total_real_jobs
+
 def ingest_and_evaluate_all():
     profile = load_profile(PROFILE_PATH)
     screening = profile.get("standard_screening_answers", {})
@@ -245,6 +259,13 @@ def ingest_and_evaluate_all():
         print(f"[{job['source']}] {job['title']} @ {job['company']}")
         print(f" -> Assessment: {reason}")
         print(f" -> URL: {job['url']}")
+
+        # Deduplication check: prevent applying to the same job again and again
+        dup_applied, matched_app, match_reason = is_already_applied(job)
+        if dup_applied and matched_app:
+            print(f" -> ⏭️ SKIPPED (ALREADY APPLIED): {match_reason}")
+            print(f" -> Existing Application ID: {matched_app.get('id')} ({matched_app.get('status')})")
+            continue
 
         if is_match:
             cover_letter = generate_cover_letter(job, domain, profile)

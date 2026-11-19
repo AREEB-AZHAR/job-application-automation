@@ -24,6 +24,85 @@ def get_next_scan_id(scanned_list: List[Dict[str, Any]]) -> str:
             max_num = max(max_num, int(m.group(1)))
     return f"scan_{max_num + 1:04d}"
 
+def extract_job_key(url: Optional[str]) -> Optional[str]:
+    if not url:
+        return None
+    m = re.search(r"/jobs/view/(\d+)", url)
+    if m:
+        return m.group(1)
+    m2 = re.search(r"currentJobId=(\d+)", url)
+    if m2:
+        return m2.group(1)
+    return None
+
+def normalize_text(text: Optional[str]) -> str:
+    if not text:
+        return ""
+    text = text.lower()
+    text = re.sub(r"[\(\)\[\]\{\}\.,\-_–—/\\|•]", " ", text)
+    text = re.sub(r"\b(pvt|ltd|limited|inc|llc|solutions|technologies|group|company|employer)\b", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+def is_already_applied(
+    job: Dict[str, Any],
+    applications: Optional[List[Dict[str, Any]]] = None
+) -> (bool, Optional[Dict[str, Any]], str):
+    """
+    Checks if an application has already been submitted or prepared for this job.
+    Deduplicates across:
+    1. Exact or normalized Job ID/Key (e.g. LinkedIn job number).
+    2. Exact clean URL.
+    3. Direct recruiter email address (if applying via email).
+    4. Normalized Company Name + Title match.
+    """
+    if applications is None:
+        applications = load_applications()
+
+    job_url = job.get("url") or ""
+    job_key = extract_job_key(job_url) or job.get("job_key")
+    job_comp = normalize_text(job.get("company", ""))
+    job_title = normalize_text(job.get("title", ""))
+    job_email = (job.get("alt_email") or "").strip().lower()
+
+    active_statuses = {
+        "APPLIED",
+        "APPLIED_VIA_DIRECT_EMAIL",
+        "CONFIRMED_SUBMITTED",
+        "INTERVIEWING",
+        "OFFER",
+        "READY_FOR_FINAL_SUBMISSION"
+    }
+
+    for app in applications:
+        if app.get("status") not in active_statuses:
+            continue
+
+        app_url = app.get("url") or ""
+        app_key = extract_job_key(app_url) or app.get("job_key")
+        app_comp = normalize_text(app.get("company", ""))
+        app_title = normalize_text(app.get("title", ""))
+        app_email = (app.get("alt_email") or "").strip().lower()
+
+        # Check 1: Job ID / Key match
+        if job_key and app_key and job_key == app_key:
+            return True, app, f"Already applied to Job ID {job_key} on {app.get('applied_at', 'earlier')}"
+
+        # Check 2: Clean URL match
+        if job_url and app_url and job_url.split("?")[0] == app_url.split("?")[0]:
+            return True, app, f"Already applied to URL on {app.get('applied_at', 'earlier')}"
+
+        # Check 3: Direct recruiter email match
+        if job_email and app_email and job_email == app_email:
+            return True, app, f"Already dispatched application to {job_email} (Msg: {app.get('confirmation_id', 'N/A')})"
+
+        # Check 4: Normalized Company + Title match
+        if job_comp and app_comp and job_comp == app_comp:
+            if job_title and app_title and (job_title == app_title or job_title in app_title or app_title in job_title):
+                return True, app, f"Already applied for {app.get('title')} @ {app.get('company')} ({app.get('id')})"
+
+    return False, None, "No previous application found"
+
 def ensure_data_store():
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR, exist_ok=True)
@@ -149,6 +228,10 @@ def record_application(
         existing = next((app for app in applications if app.get("id") == job.get("id")), None)
     if not existing and job.get("url"):
         existing = next((app for app in applications if app.get("url") == job.get("url")), None)
+    if not existing:
+        is_dup, matched_app, _ = is_already_applied(job, applications)
+        if is_dup and matched_app:
+            existing = matched_app
 
     job_id = existing["id"] if existing else (job.get("id") or get_next_job_id(applications))
     now = datetime.now().isoformat()

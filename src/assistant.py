@@ -9,7 +9,8 @@ from tracker import (
     record_scanned_job, 
     load_applications, 
     get_pipeline_summary, 
-    update_status
+    update_status,
+    is_already_applied
 )
 
 DEFAULT_PROFILE_PATH = os.path.join(os.path.dirname(__file__), "..", "config", "candidate_profile.json")
@@ -38,6 +39,13 @@ def process_job_batch(jobs: List[Dict[str, Any]], profile_path: str = DEFAULT_PR
 
         print(f"[{job.get('source', 'Job Alert')}] {job.get('title')} @ {job.get('company')} ({job.get('location')})")
         print(f" -> Assessment: {reason}")
+
+        # Check if already applied
+        dup_applied, matched_app, match_reason = is_already_applied(job)
+        if dup_applied and matched_app:
+            print(f" -> ⏭️ SKIPPED: {match_reason}")
+            print(f" -> Existing Application ID: {matched_app.get('id')} ({matched_app.get('status')})")
+            continue
 
         # 2. If matched, record into active applications pipeline with direct APPLIED status
         if is_match:

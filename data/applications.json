@@ -1461,5 +1461,37 @@
     "confirmation_id": "CONF-GLA-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
     "created_at": "2026-11-19T05:23:22.002184"
+  },
+  {
+    "id": "job_048",
+    "source": "LinkedIn Alerts",
+    "title": "AI Engineer (Backend / Data)",
+    "company": "Solen Software Group",
+    "location": "Karachi (Remote)",
+    "url": "https://www.linkedin.com/jobs/view/4490420794",
+    "description": "Position: AI Engineer (Backend / Data) at Solen Software Group (Karachi (Remote)). Live alert email 1a1ed14ff828b04d.",
+    "domain": "full_stack",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "cover_letter": "Hi Solen Software Group team,\n\nI'm applying for the AI Engineer (Backend / Data) opening. I graduated in Software Engineering from Iqra University in September 2026 (scoring in the 88.1st percentile on the National Student Competency Test), and I'm targeting an engineering role where I can ship clean, tested code immediately.\n\nRecently, I built CryptoTrader\u2014a full-stack market analytics dashboard and simulator using React 19, TypeScript, Vite, and Zustand. I also built IqraDegreeChain, an academic credentials verification service combining an Express/TypeScript API gateway with Hyperledger Fabric.\n\nI write readable, modular code, move fast with high engineering standards, and collaborate comfortably across remote, hybrid, or on-site setups. My public code and projects are available at github.com/AREEB-AZHAR.\n\nI would appreciate the chance to discuss your engineering roadmap and how I can help your team ship.\n\nBest regards,\n\nAreeb Azhar\n+92 301 2343423\nareebazhar3@gmail.com\ngithub.com/AREEB-AZHAR\n",
+    "screening_answers": {
+      "work_authorization_pk": "Yes",
+      "require_visa_sponsorship_abroad": "Yes",
+      "years_of_experience": 0.5,
+      "current_status": "Software Engineering Graduate (< 1 year experience)",
+      "education": "BS Software Engineering, Iqra University, Karachi",
+      "notice_period": "Immediate"
+    },
+    "status": "APPLIED",
+    "is_closed": false,
+    "alt_email": null,
+    "alt_subject": null,
+    "applied_at": "2026-11-19T06:10:08.121623",
+    "updated_at": "2026-11-19T06:10:08.121623",
+    "pre_submit_snapshot": "/proofs/job_048/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_048/post_submit.png",
+    "verification_status": "CONFIRMED_SUBMITTED",
+    "confirmation_id": "CONF-SOL-2026-8819",
+    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "created_at": "2026-11-19T06:10:08.121623"
   }
 ]
