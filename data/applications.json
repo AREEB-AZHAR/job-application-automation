@@ -1,5 +1,31 @@
 [
   {
+    "id": "job_046",
+    "source": "LinkedIn Easy Apply",
+    "title": "Frontend Developer",
+    "company": "SQUATWOLF",
+    "location": "Karachi, Sindh, Pakistan (On-site)",
+    "url": "https://www.linkedin.com/jobs/view/4488948133/",
+    "domain": "fullstack",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "cover_letter": "Application for Frontend Developer role at SQUATWOLF via LinkedIn Easy Apply.",
+    "screening_answers": {
+      "JavaScript experience": "1 year",
+      "HTML5 experience": "1 year",
+      "Work authorization": "Authorized (Pakistan)",
+      "Location availability": "On-site Karachi"
+    },
+    "status": "READY_FOR_FINAL_SUBMISSION",
+    "is_closed": false,
+    "confirmation_id": "LINKEDIN-MODAL-PRESUBMIT-VERIFIED",
+    "verification_status": "PRE_SUBMISSION_FORM_VERIFIED",
+    "verification_details": "Authenticated LinkedIn Easy Apply modal completed (4/4 steps). Form filled with Areeb_Azhar_Full_Stack_Web_CV.pdf, phone, and screening answers. Pre-submission review screen captured.",
+    "pre_submit_snapshot": "/proofs/job_046/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_046/post_submit.png",
+    "applied_at": "2026-11-19T05:49:20.692255",
+    "updated_at": "2026-11-19T05:49:20.692255"
+  },
+  {
     "id": "job_045",
     "source": "LinkedIn Alerts",
     "title": "Associate, Operations",
