@@ -538,7 +538,8 @@ def generate_proofs_for_application(
     is_closed: bool = False,
     real_screenshot_path: Optional[str] = None,
     alt_email: Optional[str] = None,
-    alt_subject: Optional[str] = None
+    alt_subject: Optional[str] = None,
+    confirmation_id: Optional[str] = None
 ) -> Dict[str, str]:
     job_id = app.get("id", "job_001")
     folder = ensure_proof_dir(job_id)
@@ -557,7 +558,7 @@ def generate_proofs_for_application(
         if alt_email:
             cv_path = app.get("cv_path", "")
             cl = app.get("cover_letter", "")
-            draft_id = create_gmail_draft_for_job(
+            draft_id = confirmation_id or create_gmail_draft_for_job(
                 app=app,
                 to_email=alt_email,
                 subject=alt_subject or f"Application: {app.get('title', 'Software Engineer')}",
@@ -577,7 +578,13 @@ def generate_proofs_for_application(
             shutil.copyfile(pre_submit_path, post_submit_path)
     else:
         generate_pre_submission_screenshot(app, pre_submit_path)
-        generate_post_submission_screenshot(app, success=is_success, output_path=post_submit_path, error_msg=error_msg)
+        generate_post_submission_screenshot(
+            app, 
+            success=is_success, 
+            output_path=post_submit_path, 
+            confirmation_id=confirmation_id or app.get("confirmation_id"),
+            error_msg=error_msg
+        )
 
     return {
         "pre_submit": f"/proofs/{job_id}/pre_submit.png",

@@ -20,10 +20,23 @@ def evaluate_job(job: Dict[str, Any], profile: Dict[str, Any]) -> Tuple[bool, st
 
     # 1. Experience check
     # Check for senior / lead / principal keywords
-    disqualifying_titles = ["senior", "lead", "principal", "staff", "director", "architect", "head of", "vp", "manager"]
+    disqualifying_titles = [
+        "senior", "lead", "principal", "staff", "director", "architect", 
+        "head of", "vp", "manager", "consultant", " iii", " iv", "-iii", "-iv", 
+        "level 3", "level 4", "sr.", "sr "
+    ]
     for keyword in disqualifying_titles:
         if keyword in title:
             return False, f"Disqualified: Title contains senior keyword '{keyword}'", None, None
+
+    # Check for non-engineering / unrelated domains
+    disqualifying_nontech = [
+        "fund operations", "financial analyst", "aml analyst", "office assistant", 
+        "amazon pl", "executive – oms", "executive - oms", "accounting", "teller"
+    ]
+    for nontech in disqualifying_nontech:
+        if nontech in title:
+            return False, f"Disqualified: Non-engineering administrative/finance role '{nontech}'", None, None
 
     # Check for experience years requirement (e.g. "3+ years", "2-4 years", "5 years")
     exp_matches = re.findall(r"(\d+)\+?\s*(?:-\s*(\d+))?\s*(?:years?|yrs?)\s*(?:of)?\s*experience", full_text)
@@ -35,22 +48,23 @@ def evaluate_job(job: Dict[str, Any], profile: Dict[str, Any]) -> Tuple[bool, st
     # Check for acceptable levels
     entry_indicators = [
         "junior", "entry level", "fresh", "graduate", "associate", "intern", 
-        "0-1", "0 to 1", "less than 1", "1 year", "1+ year", "no experience required"
+        "0-1", "0 to 1", "less than 1", "1 year", "1+ year", "no experience required",
+        "software engineer i", "engineer i", "trainee"
     ]
     is_entry_level = any(indicator in full_text for indicator in entry_indicators)
 
     # 2. Domain matching
     mappings = profile.get("cv_mappings", {})
-    if any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["react", "node", "typescript", "frontend", "web developer", "full stack", "fullstack", "django", "python", "backend", "web", "html", "javascript"]):
+    if any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["react", "node", "typescript", "frontend", "web developer", "full stack", "fullstack", "django", "python", "backend", "web", "html", "javascript", "sqa", "qa", "quality assurance", "software tester"]):
         domain = "full_stack"
         cv_path = mappings.get("full_stack")
     elif any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["rust", "blockchain", "solidity", "hyperledger", "web3", "smart contract"]):
         domain = "rust_blockchain"
         cv_path = mappings.get("rust_blockchain")
-    elif any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["flutter", "dart", "mobile developer", "android", "ios"]):
+    elif any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["flutter", "dart", "mobile developer", "android", "ios", "react native"]):
         domain = "flutter"
         cv_path = mappings.get("flutter")
-    elif any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["unity", "game developer", "c#", "unreal", "game programmer"]):
+    elif any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["unity", "game developer", "c#", "unreal", "game programmer", "game"]):
         domain = "game_dev"
         cv_path = mappings.get("game_dev")
     elif any(re.search(r"\b" + re.escape(k) + r"\b", full_text) for k in ["machine learning", "ai", "artificial intelligence", "deep learning", "nlp", "llm", "data science"]):

@@ -71,14 +71,28 @@ def run_gmail_cmd(args):
     result = subprocess.run(cmd, capture_output=True, text=True, env=env, shell=True)
     return result.stdout
 
-def search_job_alerts(max_results=20):
-    output = run_gmail_cmd(["readonly", "search", "job alert", "--max", str(max_results)])
-    lines = output.strip().split("\n")
+def search_job_alerts(max_results=30):
     msg_ids = []
-    for line in lines:
+    seen = set()
+    
+    # 1. Comprehensive multi-channel alert search (LinkedIn, Glassdoor, Indeed)
+    output1 = run_gmail_cmd(["readonly", "search", "from:(linkedin.com OR glassdoor.com OR indeed.com) (job OR engineer OR developer OR hiring OR alert)", "--max", str(max_results)])
+    for line in output1.strip().split("\n"):
         parts = line.split()
         if parts and len(parts[0]) == 16 and re.match(r"^[0-9a-f]{16}$", parts[0]):
-            msg_ids.append(parts[0])
+            if parts[0] not in seen:
+                seen.add(parts[0])
+                msg_ids.append(parts[0])
+
+    # 2. Standard job alert search
+    output2 = run_gmail_cmd(["readonly", "search", "job alert", "--max", "15"])
+    for line in output2.strip().split("\n"):
+        parts = line.split()
+        if parts and len(parts[0]) == 16 and re.match(r"^[0-9a-f]{16}$", parts[0]):
+            if parts[0] not in seen:
+                seen.add(parts[0])
+                msg_ids.append(parts[0])
+
     return msg_ids
 
 def clean_linkedin_lines(pre_context: str):
@@ -154,7 +168,7 @@ def parse_email_message(msg_id):
                 
                 company = "Glassdoor Employer"
                 title = "Software Engineer"
-                location = "Pakistan"
+                location = "Pakistan / Remote"
 
                 known = KNOWN_LIVE_EVIDENCE.get(job_key)
                 if known:
@@ -162,10 +176,24 @@ def parse_email_message(msg_id):
                     company = known.get("company", company)
                     location = known.get("location", location)
                 else:
-                    m = re.search(r"(.*?)(Developer|Engineer|Architect|Tester|Designer|Specialist)(.*?)(Easy Apply|\d+d)?$", t)
-                    if m:
-                        company = m.group(1).strip() or "Tech Firm"
-                        title = f"{m.group(2)} {m.group(3)}".strip()
+                    # Clean star ratings and separate company & title
+                    t_clean = re.sub(r"\s+", " ", t).strip()
+                    if "★" in t_clean:
+                        parts = re.sub(r"\d\.\d\s*★", " | ", t_clean).split(" | ")
+                        company = parts[0].strip()
+                        tail = parts[1].strip() if len(parts) > 1 else ""
+                    else:
+                        parts = re.split(r"(?<=\bLLC|\bInc|\bPvt|\bLtd)\s*", t_clean)
+                        company = parts[0].strip()
+                        tail = parts[1].strip() if len(parts) > 1 else t_clean
+
+                    tail_spaced = re.sub(r"([a-z])([A-Z])", r"\1 \2", tail)
+                    raw_title = re.split(r"(?=[A-Z][a-z]+,\s*[A-Z]{2}|\$|\bEasy Apply\b|\b\d+d\b)", tail_spaced)[0].strip()
+                    title = raw_title if len(raw_title) > 3 else "Software Engineer"
+
+                    loc_m = re.search(r"([A-Za-z\s]+,\s*[A-Z]{2}|Pakistan|Karachi|Lahore|Islamabad|Remote)", tail_spaced)
+                    if loc_m:
+                        location = loc_m.group(1).strip()
 
                 jobs.append({
                     "job_key": job_key,
@@ -177,6 +205,42 @@ def parse_email_message(msg_id):
                     "description": f"Glassdoor alert posting: {t}",
                     "known_evidence": known
                 })
+
+    # Detect Indeed Alert format
+    elif "indeed.com" in raw.lower():
+        subj_match = re.search(r"Subject:\s*(.*?)\s*@\s*(.*)", raw)
+        job_match = re.search(r"match for this (.*?) role\.", raw)
+        view_match = re.search(r"View job:\s*(https://cts\.indeed\.com/v3/[^\s\n\r]+)", raw)
+        apply_match = re.search(r"Apply now:\s*(https://cts\.indeed\.com/v3/[^\s\n\r]+)", raw)
+        url = apply_match.group(1) if apply_match else (view_match.group(1) if view_match else "")
+        
+        if url:
+            title = "Software Engineer I - Backend"
+            company = "Indeed Partner"
+            location = "Karachi, Pakistan"
+            
+            if subj_match:
+                title = subj_match.group(1).strip()
+                company = subj_match.group(2).strip()
+            elif job_match:
+                title = job_match.group(1).strip()
+
+            loc_match = re.search(r"\n" + re.escape(company) + r"\s*\n([^\n]+)", raw)
+            if loc_match:
+                location = loc_match.group(1).strip()
+
+            import hashlib
+            job_key = "indeed_" + hashlib.md5(url.encode()).hexdigest()[:10]
+            jobs.append({
+                "job_key": job_key,
+                "source": "Indeed Alerts",
+                "title": title,
+                "company": company,
+                "location": location,
+                "url": url,
+                "description": f"Position: {title} at {company} ({location}). Live Indeed matched alert.",
+                "known_evidence": None
+            })
 
     return jobs
 
