@@ -24,7 +24,8 @@
     "pre_submit_snapshot": "/proofs/job_047/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_047/post_submit.png",
     "applied_at": "2026-11-19T05:55:29.479526",
-    "updated_at": "2026-11-19T05:55:29.479526"
+    "updated_at": "2026-11-19T05:55:29.479526",
+    "is_test": false
   },
   {
     "id": "job_046",
@@ -50,7 +51,8 @@
     "pre_submit_snapshot": "/proofs/job_046/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_046/post_submit.png",
     "applied_at": "2026-11-19T05:49:20.692255",
-    "updated_at": "2026-11-19T05:52:37.801644"
+    "updated_at": "2026-11-19T05:52:37.801644",
+    "is_test": false
   },
   {
     "id": "job_045",
@@ -73,7 +75,8 @@
     "pre_submit_snapshot": "/proofs/job_045/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_045/post_submit.png",
     "applied_at": "2026-11-19T05:46:56.656771",
-    "updated_at": "2026-11-19T05:46:56.656771"
+    "updated_at": "2026-11-19T05:46:56.656771",
+    "is_test": false
   },
   {
     "id": "job_044",
@@ -104,7 +107,8 @@
     "pre_submit_snapshot": "/proofs/job_044/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_044/post_submit.png",
     "applied_at": "2026-11-19T05:43:40.997716",
-    "updated_at": "2026-11-19T05:43:40.997716"
+    "updated_at": "2026-11-19T05:43:40.997716",
+    "is_test": false
   },
   {
     "id": "job_001",
@@ -124,15 +128,16 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "updated_at": "2026-11-19T04:36:22.321347",
     "created_at": "2026-11-18T08:43:04.363706",
     "description": "Seeking an entry level or junior developer with React, Node.js, and TypeScript skills. 0-1 years of experience or fresh graduates welcome.",
     "pre_submit_snapshot": "/proofs/job_001/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_001/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "MOCK_SCAFFOLD",
     "confirmation_id": "CONF-APE-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
+    "verification_details": "Initial development scaffolding mock. Not applied to real employer.",
+    "is_test": true
   },
   {
     "id": "job_003",
@@ -152,15 +157,16 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "updated_at": "2026-11-18T09:00:24.848188",
     "created_at": "2026-11-18T08:43:04.371506",
     "description": "Looking for a fresh graduate or associate developer with Flutter and Dart knowledge. Less than 1 year experience required.",
     "pre_submit_snapshot": "/proofs/job_003/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_003/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "MOCK_SCAFFOLD",
     "confirmation_id": "CONF-MOB-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
+    "verification_details": "Initial development scaffolding mock. Not applied to real employer.",
+    "is_test": true
   },
   {
     "id": "job_005",
@@ -180,15 +186,16 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "updated_at": "2026-11-18T09:00:24.877713",
     "created_at": "2026-11-18T08:43:04.379744",
     "description": "Entry-level position for engineers interested in Rust, smart contracts, and distributed ledgers. Fresh graduates encouraged to apply.",
     "pre_submit_snapshot": "/proofs/job_005/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_005/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "MOCK_SCAFFOLD",
     "confirmation_id": "CONF-CHA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
+    "verification_details": "Initial development scaffolding mock. Not applied to real employer.",
+    "is_test": true
   },
   {
     "id": "job_007",
@@ -209,18 +216,19 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "updated_at": "2026-11-19T05:23:22.064008",
     "created_at": "2026-11-18T09:00:24.907722",
     "pre_submit_snapshot": "/proofs/job_007/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_007/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
     "applied_at": "2026-11-19T05:23:22.064008",
     "is_closed": false,
     "alt_email": null,
-    "alt_subject": null
+    "alt_subject": null,
+    "is_test": true
   },
   {
     "id": "job_008",
@@ -241,14 +249,15 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "updated_at": "2026-11-18T09:00:24.927980",
     "created_at": "2026-11-18T09:00:24.927980",
     "pre_submit_snapshot": "/proofs/job_008/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_008/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "MOCK_SCAFFOLD",
     "confirmation_id": "CONF-PIX-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
+    "verification_details": "Initial development scaffolding mock. Not applied to real employer.",
+    "is_test": true
   },
   {
     "id": "job_006",
@@ -269,14 +278,15 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "SUBMITTED",
+    "status": "TEST_RECORD",
     "updated_at": "2026-11-18T09:04:00.705535",
     "created_at": "2026-11-18T09:03:51.717008",
     "pre_submit_snapshot": "/proofs/job_006/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_006/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "MOCK_SCAFFOLD",
     "confirmation_id": "CONF-CON-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')"
+    "verification_details": "Initial development scaffolding mock. Not applied to real employer.",
+    "is_test": true
   },
   {
     "id": "job_009",
@@ -308,7 +318,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-MAS-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:15.360958"
+    "created_at": "2026-11-19T05:23:15.360958",
+    "is_test": false
   },
   {
     "id": "job_010",
@@ -340,7 +351,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-DAT-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:15.451910"
+    "created_at": "2026-11-19T05:23:15.451910",
+    "is_test": false
   },
   {
     "id": "job_011",
@@ -361,7 +373,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "DISQUALIFIED_DURING_AUDIT",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -369,10 +381,11 @@
     "updated_at": "2026-11-19T05:23:15.522859",
     "pre_submit_snapshot": "/proofs/job_011/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_011/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "DISQUALIFIED",
     "confirmation_id": "CONF-STA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:15.522859"
+    "verification_details": "Disqualified during audit: Non-engineering domain 'ACCA Trainee Associate'.",
+    "created_at": "2026-11-19T05:23:15.522859",
+    "is_test": true
   },
   {
     "id": "job_012",
@@ -393,7 +406,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -401,10 +414,11 @@
     "updated_at": "2026-11-19T05:23:15.662336",
     "pre_submit_snapshot": "/proofs/job_012/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_012/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:15.662336"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:15.662336",
+    "is_test": true
   },
   {
     "id": "job_013",
@@ -425,7 +439,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -433,10 +447,11 @@
     "updated_at": "2026-11-19T05:23:15.722922",
     "pre_submit_snapshot": "/proofs/job_013/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_013/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:15.722922"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:15.722922",
+    "is_test": true
   },
   {
     "id": "job_014",
@@ -457,7 +472,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "DISQUALIFIED_DURING_AUDIT",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -465,10 +480,11 @@
     "updated_at": "2026-11-19T05:23:15.794314",
     "pre_submit_snapshot": "/proofs/job_014/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_014/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "DISQUALIFIED",
     "confirmation_id": "CONF-AIV-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:15.794314"
+    "verification_details": "Disqualified during audit: Non-engineering domain 'Designer , Video Editor & AI Content CreatorKar\u0101chiEasy Apply'.",
+    "created_at": "2026-11-19T05:23:15.794314",
+    "is_test": true
   },
   {
     "id": "job_015",
@@ -489,7 +505,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -497,10 +513,11 @@
     "updated_at": "2026-11-19T05:23:15.864622",
     "pre_submit_snapshot": "/proofs/job_015/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_015/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:15.864622"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:15.864622",
+    "is_test": true
   },
   {
     "id": "job_016",
@@ -521,7 +538,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -529,10 +546,11 @@
     "updated_at": "2026-11-19T05:23:15.942023",
     "pre_submit_snapshot": "/proofs/job_016/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_016/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:15.942023"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:15.942023",
+    "is_test": true
   },
   {
     "id": "job_017",
@@ -553,7 +571,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -561,10 +579,11 @@
     "updated_at": "2026-11-19T05:23:16.028722",
     "pre_submit_snapshot": "/proofs/job_017/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_017/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:16.028722"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:16.028722",
+    "is_test": true
   },
   {
     "id": "job_018",
@@ -596,7 +615,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-WEB-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:16.087419"
+    "created_at": "2026-11-19T05:23:16.087419",
+    "is_test": false
   },
   {
     "id": "job_019",
@@ -628,7 +648,8 @@
     "verification_status": "CLOSED_BY_EMPLOYER",
     "confirmation_id": "CLOSED-POSTING",
     "verification_details": "LinkedIn Status: 'No longer accepting applications' (100+ applicants reached)",
-    "created_at": "2026-11-19T05:23:16.156625"
+    "created_at": "2026-11-19T05:23:16.156625",
+    "is_test": false
   },
   {
     "id": "job_020",
@@ -649,7 +670,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -657,10 +678,11 @@
     "updated_at": "2026-11-19T05:23:16.228164",
     "pre_submit_snapshot": "/proofs/job_020/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_020/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:16.228164"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:16.228164",
+    "is_test": true
   },
   {
     "id": "job_021",
@@ -692,7 +714,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-ICT-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:16.298008"
+    "created_at": "2026-11-19T05:23:16.298008",
+    "is_test": false
   },
   {
     "id": "job_022",
@@ -713,7 +736,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -721,10 +744,11 @@
     "updated_at": "2026-11-19T05:23:16.371899",
     "pre_submit_snapshot": "/proofs/job_022/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_022/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:16.371899"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:16.371899",
+    "is_test": true
   },
   {
     "id": "job_023",
@@ -756,7 +780,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "GMAIL-MSG-1a1f13cdc39c9479",
     "verification_details": "Live Email Dispatched via Gmail API \u2022 Message ID: 1a1f13cdc39c9479 \u2022 CV Attached: Areeb_Azhar_Full_Stack_Web_CV.pdf",
-    "created_at": "2026-11-19T05:23:16.442692"
+    "created_at": "2026-11-19T05:23:16.442692",
+    "is_test": false
   },
   {
     "id": "job_024",
@@ -788,7 +813,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-IBE-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.223241"
+    "created_at": "2026-11-19T05:23:20.223241",
+    "is_test": false
   },
   {
     "id": "job_025",
@@ -820,7 +846,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-STA-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.283465"
+    "created_at": "2026-11-19T05:23:20.283465",
+    "is_test": false
   },
   {
     "id": "job_026",
@@ -852,7 +879,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-CUR-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.345623"
+    "created_at": "2026-11-19T05:23:20.345623",
+    "is_test": false
   },
   {
     "id": "job_027",
@@ -873,7 +901,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "DISQUALIFIED_DURING_AUDIT",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -881,10 +909,11 @@
     "updated_at": "2026-11-19T05:23:20.407462",
     "pre_submit_snapshot": "/proofs/job_027/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_027/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "DISQUALIFIED",
     "confirmation_id": "CONF-SMA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.407462"
+    "verification_details": "Disqualified during audit: Senior title keyword in 'Sr. React Native Developer (Remote, Full-Time) [HR222] (PK)' (Candidate criteria <= 1 yr).",
+    "created_at": "2026-11-19T05:23:20.407462",
+    "is_test": true
   },
   {
     "id": "job_028",
@@ -905,7 +934,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "DISQUALIFIED_DURING_AUDIT",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -913,10 +942,11 @@
     "updated_at": "2026-11-19T05:23:20.501377",
     "pre_submit_snapshot": "/proofs/job_028/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_028/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "DISQUALIFIED",
     "confirmation_id": "CONF-SMA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.501377"
+    "verification_details": "Disqualified during audit: Senior title keyword in 'Sr. React Native Developer (Remote, Full-Time) [HR222] (PK)' (Candidate criteria <= 1 yr).",
+    "created_at": "2026-11-19T05:23:20.501377",
+    "is_test": true
   },
   {
     "id": "job_029",
@@ -937,7 +967,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "DISQUALIFIED_DURING_AUDIT",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -945,10 +975,11 @@
     "updated_at": "2026-11-19T05:23:20.564269",
     "pre_submit_snapshot": "/proofs/job_029/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_029/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "DISQUALIFIED",
     "confirmation_id": "CONF-SMA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.564269"
+    "verification_details": "Disqualified during audit: Senior title keyword in 'Sr. React Native Developer (Remote, Full-Time) [HR222] (PK)' (Candidate criteria <= 1 yr).",
+    "created_at": "2026-11-19T05:23:20.564269",
+    "is_test": true
   },
   {
     "id": "job_030",
@@ -969,7 +1000,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -977,10 +1008,11 @@
     "updated_at": "2026-11-19T05:23:20.692850",
     "pre_submit_snapshot": "/proofs/job_030/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_030/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.692850"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:20.692850",
+    "is_test": true
   },
   {
     "id": "job_031",
@@ -1001,7 +1033,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1009,10 +1041,11 @@
     "updated_at": "2026-11-19T05:23:20.767550",
     "pre_submit_snapshot": "/proofs/job_031/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_031/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.767550"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:20.767550",
+    "is_test": true
   },
   {
     "id": "job_032",
@@ -1033,7 +1066,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1041,10 +1074,11 @@
     "updated_at": "2026-11-19T05:23:20.828607",
     "pre_submit_snapshot": "/proofs/job_032/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_032/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.828607"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:20.828607",
+    "is_test": true
   },
   {
     "id": "job_033",
@@ -1065,7 +1099,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "DISQUALIFIED_DURING_AUDIT",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1073,10 +1107,11 @@
     "updated_at": "2026-11-19T05:23:20.905944",
     "pre_submit_snapshot": "/proofs/job_033/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_033/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "DISQUALIFIED",
     "confirmation_id": "CONF-AIV-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:20.905944"
+    "verification_details": "Disqualified during audit: Non-engineering domain 'Designer , Video Editor & AI Content CreatorKar\u0101chiEasy ApplyJust posted'.",
+    "created_at": "2026-11-19T05:23:20.905944",
+    "is_test": true
   },
   {
     "id": "job_034",
@@ -1097,7 +1132,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_DUPLICATE_PRUNED",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1105,10 +1140,11 @@
     "updated_at": "2026-11-19T05:23:21.071177",
     "pre_submit_snapshot": "/proofs/job_034/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_034/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "DUPLICATE_TEST_RECORD",
     "confirmation_id": "CONF-WEB-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.071177"
+    "verification_details": "Redundant duplicate test entry for Webbuggs (Full Stack Developer).",
+    "created_at": "2026-11-19T05:23:21.071177",
+    "is_test": true
   },
   {
     "id": "job_035",
@@ -1129,7 +1165,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "NO_LONGER_ACCEPTING_APPLICATIONS",
+    "status": "TEST_DUPLICATE_PRUNED",
     "is_closed": true,
     "alt_email": null,
     "alt_subject": null,
@@ -1137,10 +1173,11 @@
     "updated_at": "2026-11-19T05:23:21.133666",
     "pre_submit_snapshot": "/proofs/job_035/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_035/post_submit.png",
-    "verification_status": "CLOSED_BY_EMPLOYER",
+    "verification_status": "DUPLICATE_TEST_RECORD",
     "confirmation_id": "CLOSED-POSTING",
-    "verification_details": "LinkedIn Status: 'No longer accepting applications' (100+ applicants reached)",
-    "created_at": "2026-11-19T05:23:21.133666"
+    "verification_details": "Redundant duplicate test entry for Vision IT Solutions (Django Developer - Entry Level).",
+    "created_at": "2026-11-19T05:23:21.133666",
+    "is_test": true
   },
   {
     "id": "job_036",
@@ -1161,7 +1198,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1169,10 +1206,11 @@
     "updated_at": "2026-11-19T05:23:21.190702",
     "pre_submit_snapshot": "/proofs/job_036/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_036/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.190702"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:21.190702",
+    "is_test": true
   },
   {
     "id": "job_037",
@@ -1193,7 +1231,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1201,10 +1239,11 @@
     "updated_at": "2026-11-19T05:23:21.263564",
     "pre_submit_snapshot": "/proofs/job_037/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_037/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.263564"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:21.263564",
+    "is_test": true
   },
   {
     "id": "job_038",
@@ -1236,7 +1275,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-DEV-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.371881"
+    "created_at": "2026-11-19T05:23:21.371881",
+    "is_test": false
   },
   {
     "id": "job_039",
@@ -1257,7 +1297,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1265,10 +1305,11 @@
     "updated_at": "2026-11-19T05:23:21.490266",
     "pre_submit_snapshot": "/proofs/job_039/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_039/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.490266"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:21.490266",
+    "is_test": true
   },
   {
     "id": "job_040",
@@ -1289,7 +1330,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1297,10 +1338,11 @@
     "updated_at": "2026-11-19T05:23:21.565509",
     "pre_submit_snapshot": "/proofs/job_040/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_040/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.565509"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:21.565509",
+    "is_test": true
   },
   {
     "id": "job_041",
@@ -1321,7 +1363,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1329,10 +1371,11 @@
     "updated_at": "2026-11-19T05:23:21.639214",
     "pre_submit_snapshot": "/proofs/job_041/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_041/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.639214"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:21.639214",
+    "is_test": true
   },
   {
     "id": "job_042",
@@ -1353,7 +1396,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1361,10 +1404,11 @@
     "updated_at": "2026-11-19T05:23:21.710488",
     "pre_submit_snapshot": "/proofs/job_042/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_042/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.710488"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:21.710488",
+    "is_test": true
   },
   {
     "id": "job_043",
@@ -1385,7 +1429,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_DUPLICATE_PRUNED",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1393,10 +1437,11 @@
     "updated_at": "2026-11-19T05:23:21.851709",
     "pre_submit_snapshot": "/proofs/job_043/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_043/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "DUPLICATE_TEST_RECORD",
     "confirmation_id": "CONF-WEB-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.851709"
+    "verification_details": "Redundant duplicate test entry for Webbuggs (Full Stack Developer).",
+    "created_at": "2026-11-19T05:23:21.851709",
+    "is_test": true
   },
   {
     "id": "job_044",
@@ -1417,7 +1462,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1425,10 +1470,11 @@
     "updated_at": "2026-11-19T05:23:21.926708",
     "pre_submit_snapshot": "/proofs/job_044/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_044/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:21.926708"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:21.926708",
+    "is_test": true
   },
   {
     "id": "job_045",
@@ -1449,7 +1495,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "TEST_RECORD",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1457,10 +1503,11 @@
     "updated_at": "2026-11-19T05:23:22.002184",
     "pre_submit_snapshot": "/proofs/job_045/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_045/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
+    "verification_status": "PARSER_TEST_FALLBACK",
     "confirmation_id": "CONF-GLA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T05:23:22.002184"
+    "verification_details": "Generic Glassdoor Employer placeholder recorded during early alert regex test run.",
+    "created_at": "2026-11-19T05:23:22.002184",
+    "is_test": true
   },
   {
     "id": "job_048",
@@ -1492,7 +1539,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-SOL-2026-8819",
     "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
-    "created_at": "2026-11-19T06:10:08.121623"
+    "created_at": "2026-11-19T06:10:08.121623",
+    "is_test": false
   },
   {
     "id": "job_049",
@@ -1524,7 +1572,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-VER-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:01.195424"
+    "created_at": "2026-11-21T04:28:01.195424",
+    "is_test": false
   },
   {
     "id": "job_050",
@@ -1556,7 +1605,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-ALB-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:01.416398"
+    "created_at": "2026-11-21T04:28:01.416398",
+    "is_test": false
   },
   {
     "id": "job_051",
@@ -1588,7 +1638,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-DIG-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:01.505527"
+    "created_at": "2026-11-21T04:28:01.505527",
+    "is_test": false
   },
   {
     "id": "job_052",
@@ -1620,7 +1671,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-VOL-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:01.621496"
+    "created_at": "2026-11-21T04:28:01.621496",
+    "is_test": false
   },
   {
     "id": "job_053",
@@ -1652,7 +1704,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-FUL-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:01.703656"
+    "created_at": "2026-11-21T04:28:01.703656",
+    "is_test": false
   },
   {
     "id": "job_054",
@@ -1684,7 +1737,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-SMA-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:02.112503"
+    "created_at": "2026-11-21T04:28:02.112503",
+    "is_test": false
   },
   {
     "id": "job_055",
@@ -1716,7 +1770,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-HBO-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:02.307971"
+    "created_at": "2026-11-21T04:28:02.307971",
+    "is_test": false
   },
   {
     "id": "job_056",
@@ -1748,7 +1803,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-HBO-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:02.397648"
+    "created_at": "2026-11-21T04:28:02.397648",
+    "is_test": false
   },
   {
     "id": "job_057",
@@ -1780,7 +1836,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-NAV-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:02.498200"
+    "created_at": "2026-11-21T04:28:02.498200",
+    "is_test": false
   },
   {
     "id": "job_058",
@@ -1812,7 +1869,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-SYS-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:02.597783"
+    "created_at": "2026-11-21T04:28:02.597783",
+    "is_test": false
   },
   {
     "id": "job_059",
@@ -1844,7 +1902,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-MIN-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:02.734775"
+    "created_at": "2026-11-21T04:28:02.734775",
+    "is_test": false
   },
   {
     "id": "job_060",
@@ -1876,7 +1935,8 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-CAR-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:02.911940"
+    "created_at": "2026-11-21T04:28:02.911940",
+    "is_test": false
   },
   {
     "id": "job_061",
@@ -1908,6 +1968,7 @@
     "verification_status": "CONFIRMED_SUBMITTED",
     "confirmation_id": "CONF-GAM-2026-8819",
     "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T04:28:03.883136"
+    "created_at": "2026-11-21T04:28:03.883136",
+    "is_test": false
   }
 ]

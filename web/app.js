@@ -8,6 +8,7 @@ let state = {
   searchQuery: '',
   selectedDomain: 'all',
   selectedStatus: 'all',
+  selectedSort: 'time_desc',
   currentDrawerApp: null
 };
 
@@ -52,6 +53,15 @@ function initEventListeners() {
     }
   });
 
+  // Sort Dropdown
+  const sortSelect = document.getElementById('filter-sort');
+  if (sortSelect) {
+    sortSelect.addEventListener('change', (e) => {
+      state.selectedSort = e.target.value;
+      renderActiveView();
+    });
+  }
+
   // Filters
   document.getElementById('filter-domain').addEventListener('change', (e) => {
     state.selectedDomain = e.target.value;
@@ -91,11 +101,66 @@ function initEventListeners() {
   document.getElementById('form-evaluate').addEventListener('submit', handleEvaluateSubmit);
 }
 
+function resolveProofPath(path) {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) return path;
+  
+  // Clean relative path
+  const cleanPath = path.replace(/^\/+/, '');
+  
+  // If hosted on GitHub Pages (with repository subpath)
+  if (window.location.hostname.includes('github.io')) {
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    const repoName = segments.length > 0 ? segments[0] : '';
+    return repoName ? `/${repoName}/${cleanPath}` : `/${cleanPath}`;
+  }
+  return `/${cleanPath}`;
+}
+
+function formatCardDate(isoStr) {
+  if (!isoStr) return 'Today';
+  try {
+    const d = new Date(isoStr);
+    if (isNaN(d.getTime())) return 'Today';
+    return d.toLocaleDateString(undefined, {
+      month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+    });
+  } catch (e) {
+    return 'Today';
+  }
+}
+
 async function loadData() {
   try {
-    const res = await fetch('/api/data');
-    if (!res.ok) throw new Error('Data fetch failed');
-    const data = await res.json();
+    let data = null;
+
+    // 1. Try local server API endpoint first
+    try {
+      const res = await fetch('/api/data');
+      if (res.ok) {
+        data = await res.json();
+      }
+    } catch (e) {
+      // Local server offline or running on static hosting
+    }
+
+    // 2. Resilient fallback for static hosting / GitHub Pages
+    if (!data) {
+      const staticCandidates = ['data.json', './data.json', 'api/data.json', './api/data.json'];
+      for (const candidate of staticCandidates) {
+        try {
+          const resStatic = await fetch(candidate);
+          if (resStatic.ok) {
+            data = await resStatic.json();
+            break;
+          }
+        } catch (err) {
+          // try next candidate
+        }
+      }
+    }
+
+    if (!data) throw new Error('Data fetch failed across all local API and static endpoints.');
 
     state.metrics = data.metrics || {};
     state.applications = data.applications || [];
@@ -111,7 +176,11 @@ async function loadData() {
 }
 
 function formatStatusLabel(status, is_closed, alt_email) {
-  if (status === 'NO_LONGER_ACCEPTING_APPLICATIONS' || (is_closed && !alt_email)) {
+  if (status === 'TEST_RECORD' || status === 'TEST_DUPLICATE_PRUNED') {
+    return '🧪 Test Record';
+  } else if (status === 'DISQUALIFIED_DURING_AUDIT') {
+    return '🚫 Disqualified';
+  } else if (status === 'NO_LONGER_ACCEPTING_APPLICATIONS' || (is_closed && !alt_email)) {
     return '⛔ Closed by Hirer';
   } else if (status === 'APPLIED_VIA_DIRECT_EMAIL' || alt_email) {
     return '✉️ Email Dispatched';
@@ -129,8 +198,9 @@ function formatStatusLabel(status, is_closed, alt_email) {
 
 function updateKPIs() {
   const m = state.metrics;
-  const appliedCount = state.applications.filter(a => a.status === 'APPLIED' || a.status === 'SUBMITTED' || a.status === 'APPLIED_VIA_DIRECT_EMAIL').length;
-  const closedCount = state.applications.filter(a => a.status === 'NO_LONGER_ACCEPTING_APPLICATIONS' || a.is_closed).length || m.total_closed || 0;
+  const genuineApps = state.applications.filter(a => !a.is_test);
+  const appliedCount = genuineApps.filter(a => a.status === 'APPLIED' || a.status === 'SUBMITTED' || a.status === 'APPLIED_VIA_DIRECT_EMAIL').length;
+  const closedCount = genuineApps.filter(a => a.status === 'NO_LONGER_ACCEPTING_APPLICATIONS' || a.is_closed).length || m.total_closed || 0;
 
   document.getElementById('stat-applied').textContent = appliedCount;
   document.getElementById('stat-scanned').textContent = m.total_scanned || 0;
@@ -188,6 +258,23 @@ function renderApplications() {
     return matchSearch && matchDomain && matchStatus;
   });
 
+  // Apply sorting
+  filtered.sort((a, b) => {
+    if (state.selectedSort === 'time_asc') {
+      const tA = new Date(a.applied_at || a.created_at || 0).getTime();
+      const tB = new Date(b.applied_at || b.created_at || 0).getTime();
+      return tA - tB;
+    } else if (state.selectedSort === 'company_asc') {
+      return (a.company || '').localeCompare(b.company || '');
+    } else if (state.selectedSort === 'title_asc') {
+      return (a.title || '').localeCompare(b.title || '');
+    } else { // default: 'time_desc'
+      const tA = new Date(a.applied_at || a.created_at || 0).getTime();
+      const tB = new Date(b.applied_at || b.created_at || 0).getTime();
+      return tB - tA;
+    }
+  });
+
   if (filtered.length === 0) {
     grid.innerHTML = '';
     empty.classList.remove('hidden');
@@ -201,9 +288,10 @@ function renderApplications() {
     const initials = getInitials(app.company || 'CO');
     const status = app.status || 'APPLIED';
     const statusLabel = formatStatusLabel(status, app.is_closed, app.alt_email);
+    const dateFormatted = formatCardDate(app.applied_at || app.created_at);
 
     return `
-      <div class="app-card">
+      <div class="app-card" onclick="openDrawer('${app.id}')" tabindex="0" role="button" aria-label="View application details for ${escapeHtml(app.title)}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDrawer('${app.id}');}">
         <div>
           <div class="app-card-top">
             <div class="company-avatar">${escapeHtml(initials)}</div>
@@ -222,6 +310,7 @@ function renderApplications() {
             <div class="meta-row">
               <span class="tag-badge">${domainText}</span>
               <span class="tag-badge">${escapeHtml(app.source || 'Portal')}</span>
+              <span class="tag-badge" style="background: rgba(148, 163, 184, 0.1); color: var(--text-dim); border-color: rgba(148, 163, 184, 0.2);">⏱️ ${dateFormatted}</span>
               ${app.alt_email ? `<span class="tag-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">✉️ ${escapeHtml(app.alt_email)}</span>` : ''}
               ${app.is_closed && !app.alt_email ? `<span class="tag-badge" style="background: rgba(251, 146, 60, 0.15); color: #fb923c; border-color: rgba(251, 146, 60, 0.3);">⛔ Closed</span>` : ''}
             </div>
@@ -232,11 +321,11 @@ function renderApplications() {
         </div>
 
         <div class="app-card-foot">
-          <button class="btn btn-secondary btn-sm" onclick="openDrawer('${app.id}')">
+          <button class="btn btn-secondary btn-sm" onclick="event.stopPropagation(); openDrawer('${app.id}')">
             Inspect Submission
           </button>
           ${app.url ? `
-            <a href="${app.url}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+            <a href="${app.url}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" onclick="event.stopPropagation()">
               Open Portal ↗
             </a>
           ` : ''}
@@ -272,6 +361,23 @@ function renderAuditTable() {
     return matchSearch && matchDomain && matchStatus;
   });
 
+  // Apply sorting
+  filtered.sort((a, b) => {
+    if (state.selectedSort === 'time_asc') {
+      const tA = new Date(a.scanned_at || 0).getTime();
+      const tB = new Date(b.scanned_at || 0).getTime();
+      return tA - tB;
+    } else if (state.selectedSort === 'company_asc') {
+      return (a.company || '').localeCompare(b.company || '');
+    } else if (state.selectedSort === 'title_asc') {
+      return (a.title || '').localeCompare(b.title || '');
+    } else { // default: 'time_desc'
+      const tA = new Date(a.scanned_at || 0).getTime();
+      const tB = new Date(b.scanned_at || 0).getTime();
+      return tB - tA;
+    }
+  });
+
   if (filtered.length === 0) {
     tbody.innerHTML = '';
     empty.classList.remove('hidden');
@@ -295,8 +401,10 @@ function renderAuditTable() {
       month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
     }) : 'Today';
 
+    const canOpen = Boolean(item.id);
+
     return `
-      <tr>
+      <tr ${canOpen ? `onclick="openDrawer('${item.id}')" style="cursor: pointer;"` : ''} tabindex="0" role="button" aria-label="Inspect ${escapeHtml(item.title)}">
         <td>
           <span class="status-chip ${badgeClass}">${badgeText === 'CLOSED' ? '⛔' : '●'} ${badgeText}</span>
         </td>
@@ -313,8 +421,8 @@ function renderAuditTable() {
         </td>
         <td style="font-size: 0.72rem; color: var(--text-dim); white-space: nowrap; font-family: var(--font-mono);">${dateFormatted}</td>
         <td style="text-align: right;">
-          ${isMatch ? `
-            <button class="btn btn-secondary btn-xs" onclick="openDrawer('${item.id}')">
+          ${canOpen ? `
+            <button class="btn btn-secondary btn-xs" onclick="event.stopPropagation(); openDrawer('${item.id}')">
               Details
             </button>
           ` : `
@@ -398,8 +506,14 @@ function openDrawer(appId) {
 
   const preImg = document.getElementById('drawer-img-pre');
   const postImg = document.getElementById('drawer-img-post');
-  preImg.src = app.pre_submit_snapshot || `/proofs/${app.id}/pre_submit.png`;
-  postImg.src = app.post_submit_snapshot || `/proofs/${app.id}/post_submit.png`;
+  preImg.onerror = () => {
+    preImg.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240"><rect width="100%" height="100%" fill="%231e293b"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%2364748b" font-family="sans-serif" font-size="14">No pre-submit image captured</text></svg>';
+  };
+  postImg.onerror = () => {
+    postImg.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240"><rect width="100%" height="100%" fill="%231e293b"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%2364748b" font-family="sans-serif" font-size="14">No post-submit receipt captured</text></svg>';
+  };
+  preImg.src = resolveProofPath(app.pre_submit_snapshot || `/proofs/${app.id}/pre_submit.png`);
+  postImg.src = resolveProofPath(app.post_submit_snapshot || `/proofs/${app.id}/post_submit.png`);
 
   const cvName = app.cv_path ? app.cv_path.split('\\').pop().split('/').pop() : 'Standard Resume';
   document.getElementById('drawer-cv-name').textContent = cvName;
@@ -455,8 +569,12 @@ function openLightbox(type) {
   const title = document.getElementById('lightbox-title');
   const badge = document.getElementById('lightbox-badge');
 
-  const prePath = state.currentDrawerApp.pre_submit_snapshot || `/proofs/${state.currentDrawerApp.id}/pre_submit.png`;
-  const postPath = state.currentDrawerApp.post_submit_snapshot || `/proofs/${state.currentDrawerApp.id}/post_submit.png`;
+  const prePath = resolveProofPath(state.currentDrawerApp.pre_submit_snapshot || `/proofs/${state.currentDrawerApp.id}/pre_submit.png`);
+  const postPath = resolveProofPath(state.currentDrawerApp.post_submit_snapshot || `/proofs/${state.currentDrawerApp.id}/post_submit.png`);
+
+  img.onerror = () => {
+    img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360"><rect width="100%" height="100%" fill="%231e293b"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%2364748b" font-family="sans-serif" font-size="16">No visual proof image captured</text></svg>';
+  };
 
   if (type === 'pre') {
     img.src = prePath;

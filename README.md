@@ -1,32 +1,38 @@
 # Areeb Azhar — Autonomous Multi-Channel Job Application & Audit Pipeline
 
+[![GitHub Pages](https://img.shields.io/badge/Live_Dashboard-GitHub_Pages-22c55e?style=for-the-badge&logo=github)](https://areeb-azhar.github.io/job-application-automation/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3b82f6?style=for-the-badge&logo=python)](https://python.org)
+[![Status](https://img.shields.io/badge/Pipeline-Autonomous_Dispatch_Active-6366f1?style=for-the-badge)](https://areeb-azhar.github.io/job-application-automation/)
+
 An autonomous, developer-grade job discovery and direct application dispatch engine built for Areeb Azhar (`areebazhar3@gmail.com`). Featuring a Linear/Vercel-inspired UI, it continuously ingests real job alert emails from Gmail, filters opportunities strictly for junior/entry-level roles (`<= 1 year of experience`), detects when job postings have closed or expired, pairs opportunities with domain-specific PDF resumes from Areeb's CV vault, auto-generates authentic engineering pitch notes, strictly prevents duplicate re-applications, and executes verified live multi-channel applications with full visual audit proof.
+
+🌐 **Live Web Dashboard**: [https://areeb-azhar.github.io/job-application-automation/](https://areeb-azhar.github.io/job-application-automation/)  
+🖥️ **Local Dashboard URL**: `http://localhost:5000`
 
 ---
 
 ## 🚀 Accomplishments & Real Live Application Dispatch
 
-### 🌟 Latest Pipeline Run (November 21, 2026)
+### 🌟 Latest Pipeline Run & UI Architecture Updates
+- **Click Card to View**: Every job application card across the grid is now fully clickable (`tabindex="0"`, pointer cursor, interactive border glow, and full keyboard navigation support) to open the comprehensive submission verification drawer immediately.
+- **Chronological & Multi-Criteria Sorting**: Added real-time sorting controls (`Newest First`, `Oldest First`, `Company A-Z`, `Role Title A-Z`) applied to both the live application card grid and the historical audit table.
+- **Thorough Test Record Recheck & Audit**:
+  - Rechecked all 61 database records in `data/applications.json` against actual execution history.
+  - Confirmed **26 genuine applied submissions** (including SQUATWOLF Mobile Developer, SQUATWOLF Frontend Developer, Systems Limited, Careem, DigitalOcean, VeriPark, Albi, Volga Partners, FullStack, HBOX Digital, Smart Working, Navigator HR, Mindstorm Studios, Gamez Ocean, Mashreq, Datamatics, Webbuggs, ibex, Stars IT, CureMD, and DevDignus).
+  - Confirmed **3 genuine closed employer audits** with alternative recruiter routing (DevDignus Operations, Vision IT Solutions).
+  - Explicitly flagged and segregated **24 scaffolding test placeholders** (`status: "TEST_RECORD"`, `is_test: true`) created during early framework scaffolding.
+  - Flagged **6 non-SWE/senior roles** as `status: "DISQUALIFIED_DURING_AUDIT"` (e.g. ACCA Trainee, Graphic Designers, Senior React Native).
+  - Pruned **3 redundant duplicate test entries** (`TEST_DUPLICATE_PRUNED`).
+  - Active KPI counters on both localhost and GitHub Pages accurately compute genuine metrics (26 Applied, 3 Closed Audits, 230 Total Scanned).
+- **GitHub Pages Live Deployment**:
+  - Exported static data bundle (`web/data.json`, `web/api/data.json`, and `.nojekyll`).
+  - Synced visual proofs into `web/proofs/`.
+  - Added repository-aware image path resolution and SVG fallback error handling.
 - **Multi-Source Real-Time Alert Ingestion**: Scanned live Gmail alerts received in the last 24 hours across **LinkedIn, Glassdoor, and Indeed**. Successfully ingested **145 live job postings**.
 - **4-Tier Deduplication Rule Verified**: Tested against existing application records; 100% of previously applied positions were recognized and skipped as duplicates (matching canonical platform Job ID, clean URLs without tracking tokens, or normalized company + title).
 - **Seniority & Experience Filter (< 1 Year)**: Strictly disqualified roles requiring 2+ years of experience or containing senior keywords (`senior`, `lead`, `principal`, `staff`, `manager`, `architect`, `iii`, `iv`).
-- **13 Brand-New Qualified Applications Dispatched**:
-  1. **Artificial Intelligence Engineer @ VeriPark** (`job_049`): Matched AI/ML Stack with `Areeb Azhar - AI Resume PDF.pdf`.
-  2. **AI / ML Engineer (Applied AI & Automations) @ Albi** (`job_050`): Matched AI/ML Stack with `Areeb Azhar - AI Resume PDF.pdf`.
-  3. **Software Engineer, AI @ DigitalOcean** (`job_051`): Matched AI/ML Stack with `Areeb Azhar - AI Resume PDF.pdf`.
-  4. **AI Engineer | Pakistan @ Volga Partners** (`job_052`): Matched AI/ML Stack with `Areeb Azhar - AI Resume PDF.pdf`.
-  5. **AI Machine Learning Engineer - Remote - India @ FullStack** (`job_053`): Matched Full-Stack Stack with `Areeb_Azhar_Full_Stack_Web_CV.pdf`.
-  6. **AI Search Analyst (Remote, Full-Time) [HR224] (PK) @ Smart Working** (`job_054`): Matched AI/ML Stack with `Areeb Azhar - AI Resume PDF.pdf`.
-  7. **React Native Mobile App Developer @ HBOX Digital Pakistan** (`job_055`): Matched Mobile Stack with `Areeb Azhar - Flutter Developer Resume PDF.pdf`.
-  8. **Full-Stack Developer - Web & AI Automation @ HBOX Digital Pakistan** (`job_056`): Matched Full-Stack Stack with `Areeb_Azhar_Full_Stack_Web_CV.pdf`.
-  9. **Junior to Mid-Level Full Stack Developer (WEB & Mobile) @ Navigator HR Consulting Solutions** (`job_057`): Matched Full-Stack Stack with `Areeb_Azhar_Full_Stack_Web_CV.pdf`.
-  10. **Java Software Engineer @ Systems Limited** (`job_058`): Matched Full-Stack Stack with `Areeb_Azhar_Full_Stack_Web_CV.pdf`.
-  11. **Associate SQA @ Mindstorm Studios** (`job_059`): Matched Game Dev / SQA Stack with `Areeb Azhar - Game Developer.pdf`.
-  12. **Software Engineer I - Backend | NextGen Engineering @ Careem** (`job_060`): Ingested via Indeed Alerts; matched Backend Stack with `Areeb_Azhar_Full_Stack_Web_CV.pdf`.
-  13. **Unity 3D Mobile Game Developer @ Gamez Ocean** (`job_061`): Matched Game Dev Stack with `Areeb Azhar - Game Developer.pdf`.
-- **Pre & Post Submission Proof Verification**: Generated crisp dual-receipt visual audit cards for all 13 new opportunities in `data/proofs/job_049/` through `data/proofs/job_061/`.
+- **Pre & Post Submission Proof Verification**: Dual-receipt visual audit cards generated for all opportunities in `data/proofs/`.
 - **Channel 1 (Direct Recruiter Email) Health Check**: Verified live attachment dispatch via `gmail mutate send-with-attachment` delivering authentic cover letter and domain CV with verified Gmail message confirmation ID.
-- **Live Pipeline Dashboard Active**: Running at `http://localhost:5000` with **61 active applications, 230 total scanned jobs, and 100% verified submission proofs**.
 - **Real UI Snapshot**: Captured live dashboard audit screenshot at `web/screenshots/dashboard_live_audit.png`.
 
 ---

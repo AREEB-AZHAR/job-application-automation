@@ -329,18 +329,23 @@ def get_full_metrics() -> Dict[str, Any]:
     total_disqualified = total_scanned - total_qualified
 
     by_status = {}
+    total_test_records = 0
     for app in applications:
         st = app.get("status", "UNKNOWN")
+        if app.get("is_test"):
+            total_test_records += 1
         by_status[st] = by_status.get(st, 0) + 1
 
-    total_applied = by_status.get("APPLIED", 0) + by_status.get("SUBMITTED", 0) + by_status.get("APPLIED_VIA_DIRECT_EMAIL", 0)
-    total_closed = by_status.get("NO_LONGER_ACCEPTING_APPLICATIONS", 0)
-    total_email_applied = by_status.get("APPLIED_VIA_DIRECT_EMAIL", 0)
-    total_verified = sum(1 for a in applications if a.get("verification_status") in ["CONFIRMED_SUBMITTED", "DIRECT_EMAIL_DRAFT_ATTACHED", "DIRECT_EMAIL_DISPATCHED", "CLOSED_BY_EMPLOYER"])
-    total_errors = sum(1 for a in applications if a.get("verification_status") == "SUBMISSION_ERROR")
+    # Active genuine applied vs closed
+    genuine_apps = [a for a in applications if not a.get("is_test")]
+    total_applied = sum(1 for a in genuine_apps if a.get("status") in ["APPLIED", "SUBMITTED", "APPLIED_VIA_DIRECT_EMAIL"])
+    total_closed = sum(1 for a in genuine_apps if a.get("status") == "NO_LONGER_ACCEPTING_APPLICATIONS" or a.get("is_closed"))
+    total_email_applied = sum(1 for a in genuine_apps if a.get("status") == "APPLIED_VIA_DIRECT_EMAIL")
+    total_verified = sum(1 for a in genuine_apps if a.get("verification_status") in ["CONFIRMED_SUBMITTED", "DIRECT_EMAIL_DRAFT_ATTACHED", "DIRECT_EMAIL_DISPATCHED", "CLOSED_BY_EMPLOYER"])
+    total_errors = sum(1 for a in genuine_apps if a.get("verification_status") == "SUBMISSION_ERROR")
 
     by_domain = {}
-    for app in applications:
+    for app in genuine_apps:
         dom = app.get("domain", "other")
         by_domain[dom] = by_domain.get(dom, 0) + 1
 
@@ -366,6 +371,7 @@ def get_full_metrics() -> Dict[str, Any]:
         "total_applied": total_applied,
         "total_closed": total_closed,
         "total_email_applied": total_email_applied,
+        "total_test_records": total_test_records,
         "total_verified": total_verified,
         "total_errors": total_errors,
         "application_rate": round((total_qualified / total_scanned * 100) if total_scanned else 0, 1),
