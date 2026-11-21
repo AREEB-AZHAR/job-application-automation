@@ -1,5 +1,479 @@
 [
   {
+    "id": "job_063",
+    "source": "LinkedIn Easy Apply",
+    "title": "Field Software Engineer (C++) (NEW GRAD)",
+    "company": "Dune AI",
+    "location": "Pakistan (On-site / Field)",
+    "url": "https://www.linkedin.com/jobs/view/4490867446/",
+    "description": "Field Software Engineer (C++) for New Graduates. Linux, Git, hardware/systems, C++ fundamentals.",
+    "is_match": true,
+    "reason": "Matches New Grad criteria (<= 1 yr experience), Systems/C++ stack, live Easy Apply in Pakistan",
+    "domain": "rust_blockchain",
+    "cv_path": "C:\\\\Users\\\\areeb\\\\Desktop\\\\cv\\\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_closed": false,
+    "scanned_at": "2026-11-21T08:19:10.000Z"
+  },
+  {
+    "id": "scan_0258",
+    "source": "Glassdoor Alerts",
+    "title": "Social Champ Senior Product Designer Kar\u0101chi Easy Apply4d",
+    "company": "Social ChampSenior Product DesignerKar\u0101chiEasy Apply4d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=113&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_8333fed0&cb=1795220680327&jobListingId=1010327341336&jrtk=5-yul1-0-1k7tnrbfvj71l800-c1c2bf54f7c0c1a2&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos13-age4d-1010327341336&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: Social ChampSenior Product DesignerKar\u0101chiEasy Apply4d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.277435"
+  },
+  {
+    "id": "scan_0257",
+    "source": "Glassdoor Alerts",
+    "title": "UPEPE Media SEO Specialist Lahore Easy Apply2d",
+    "company": "UPEPE MediaSEO SpecialistLahoreEasy Apply2d",
+    "location": "Lahore",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=112&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_f905e34e&cb=1795220680327&jobListingId=1010329169522&jrtk=5-yul1-0-1k7tnrbfvj71l800-b58b3866ecf8b72f&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos12-age2d-1010329169522&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: UPEPE MediaSEO SpecialistLahoreEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.254848"
+  },
+  {
+    "id": "scan_0256",
+    "source": "Glassdoor Alerts",
+    "title": "HR. Mustafa Developers Performance Marketer Islamabad Easy Apply2d",
+    "company": "HR. Mustafa DevelopersPerformance MarketerIslamabadEasy Apply2d",
+    "location": "Islamabad",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=111&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_debc4bbc&cb=1795220680327&jobListingId=1010329487161&jrtk=5-yul1-0-1k7tnrbfvj71l800-b13493bcb2124fa6&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos11-age2d-1010329487161&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: HR. Mustafa DevelopersPerformance MarketerIslamabadEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.230158"
+  },
+  {
+    "id": "scan_0255",
+    "source": "Glassdoor Alerts",
+    "title": "HR. Mustafa Developers Social Media Handler Islamabad Easy Apply2d",
+    "company": "HR. Mustafa DevelopersSocial Media HandlerIslamabadEasy Apply2d",
+    "location": "Islamabad",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_d42b3c29&cb=1795220680327&jobListingId=1010329664523&jrtk=5-yul1-0-1k7tnrbfvj71l800-4c81020acce60aa9&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age2d-1010329664523&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: HR. Mustafa DevelopersSocial Media HandlerIslamabadEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.208692"
+  },
+  {
+    "id": "scan_0254",
+    "source": "Glassdoor Alerts",
+    "title": "Softmatic Solutions Power Platform Developer | Power Apps - Power Automate Lahore Easy Apply2d",
+    "company": "Softmatic SolutionsPower Platform Developer | Power Apps - Power AutomateLahoreEasy Apply2d",
+    "location": "Lahore",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=109&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_2420fc20&cb=1795220680327&jobListingId=1010329509942&jrtk=5-yul1-0-1k7tnrbfvj71l800-1c3e4f7b2239651a&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos9-age2d-1010329509942&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: Softmatic SolutionsPower Platform Developer | Power Apps - Power AutomateLahoreEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.186802"
+  },
+  {
+    "id": "scan_0253",
+    "source": "Glassdoor Alerts",
+    "title": "Axis Cyber Technologies Senior Agentic AI Engineer / AI Automation Developer Pakistan Easy Apply3d",
+    "company": "Axis Cyber TechnologiesSenior Agentic AI Engineer / AI Automation DeveloperPakistanEasy Apply3d",
+    "location": "Pakistan",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_9569ba0b&cb=1795220680327&jobListingId=1010328425209&jrtk=5-yul1-0-1k7tnrbfvj71l800-0b5606a36a9d703f&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos8-age3d-1010328425209&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: Axis Cyber TechnologiesSenior Agentic AI Engineer / AI Automation DeveloperPakistanEasy Apply3d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.162550"
+  },
+  {
+    "id": "scan_0252",
+    "source": "Glassdoor Alerts",
+    "title": ". Ltd",
+    "company": "Techsurge Pvt",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_d050637f&cb=1795220680327&jobListingId=1010329652180&jrtk=5-yul1-0-1k7tnrbfvj71l800-e94f907dcc2ecd79&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age2d-1010329652180&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: Techsurge Pvt. Ltd.Sharepoint Developer - Onsite KarachiKar\u0101chiEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.138583"
+  },
+  {
+    "id": "scan_0251",
+    "source": "Glassdoor Alerts",
+    "title": "Glowingsoft Technologies Glowingsoft Hiring - QA Engineer (Manual & Automation)Lahore Easy Apply2d",
+    "company": "Glowingsoft TechnologiesGlowingsoft Hiring - QA Engineer (Manual & Automation)LahoreEasy Apply2d",
+    "location": "Lahore",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_66bad21f&cb=1795220680327&jobListingId=1010329426628&jrtk=5-yul1-0-1k7tnrbfvj71l800-c842c4df16d3770a&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-age2d-1010329426628&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: Glowingsoft TechnologiesGlowingsoft Hiring - QA Engineer (Manual & Automation)LahoreEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.116573"
+  },
+  {
+    "id": "scan_0250",
+    "source": "Glassdoor Alerts",
+    "title": "Human Capital HR Solutions JUNIOR DOT NET DEVELOPERKar\u0101chi Easy Apply3d",
+    "company": "Human Capital HR SolutionsJUNIOR DOT NET DEVELOPERKar\u0101chiEasy Apply3d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_f6ab602c&cb=1795220680326&jobListingId=1010328545237&jrtk=5-yul1-0-1k7tnrbfvj71l800-7c0f21bca14bcfea&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos5-age3d-1010328545237&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: Human Capital HR SolutionsJUNIOR DOT NET DEVELOPERKar\u0101chiEasy Apply3d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.093244"
+  },
+  {
+    "id": "scan_0249",
+    "source": "Glassdoor Alerts",
+    "title": "INQLINESenior Full-Stack Software Developer Kar\u0101chi Easy Apply3d",
+    "company": "INQLINESenior Full-Stack Software DeveloperKar\u0101chiEasy Apply3d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_6d9f4b5c&cb=1795220680327&jobListingId=1010328530012&jrtk=5-yul1-0-1k7tnrbfvj71l800-05aebf5e4f1d8775&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age3d-1010328530012&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: INQLINESenior Full-Stack Software DeveloperKar\u0101chiEasy Apply3d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.069855"
+  },
+  {
+    "id": "scan_0248",
+    "source": "Glassdoor Alerts",
+    "title": "Full Stack Developer Hyder\u0101b\u0101d2d",
+    "company": "ValueMomentum",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_08034d0a&cb=1795220680326&jobListingId=1010329490017&jrtk=5-yul1-0-1k7tnrbfvj71l800-dc7ff87d2cbb5b01&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age2d-1010329490017&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: ValueMomentum3.5 \u2605Full Stack DeveloperHyder\u0101b\u0101d2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.044435"
+  },
+  {
+    "id": "scan_0247",
+    "source": "Glassdoor Alerts",
+    "title": ".Net Developer Lahore Easy Apply2d",
+    "company": "Tech Bridge Consultancy",
+    "location": "Lahore",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_d4b1b1ef&cb=1795220680326&jobListingId=1010329981546&jrtk=5-yul1-0-1k7tnrbfvj71l800-255f4fb49746d734&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos2-age2d-1010329981546&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: Tech Bridge Consultancy4.0 \u2605.Net DeveloperLahoreEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.023223"
+  },
+  {
+    "id": "scan_0246",
+    "source": "Glassdoor Alerts",
+    "title": "Pivotize Consulting Software Quality Assurance Engineer Kar\u0101chi Easy Apply3d",
+    "company": "Pivotize ConsultingSoftware Quality Assurance EngineerKar\u0101chiEasy Apply3d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=58&guid=000001a1fb7a8b408c270b881d833701&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_7aee39a7&cb=1795220680326&jobListingId=1010328640948&jrtk=5-yul1-0-1k7tnrbfvj71l800-9ab513e61dd565c7&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age3d-1010328640948&utm_term=jasublinelenvar&ja=437643641",
+    "description": "Glassdoor alert posting: Pivotize ConsultingSoftware Quality Assurance EngineerKar\u0101chiEasy Apply3d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:23.006757"
+  },
+  {
+    "id": "scan_0245",
+    "source": "Glassdoor Alerts",
+    "title": "Trainee Graphic Designer Korangi Easy Apply4d",
+    "company": "Modest Needs Foundation",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=113&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_df2ba9fb&cb=1795220817624&jobListingId=1010327240748&jrtk=5-yul1-0-1k7tnvhdvk8i9803-1da6b8e9952d7e3e&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos13-age4d-1010327240748&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: Modest Needs Foundation3.2 \u2605Trainee Graphic DesignerKorangiEasy Apply4d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.989228"
+  },
+  {
+    "id": "scan_0244",
+    "source": "Glassdoor Alerts",
+    "title": "TSLooking for a Creative Graphic Designer \u2013 Rebranding Kar\u0101chi Easy Apply3d",
+    "company": "TSLooking for a Creative Graphic Designer \u2013 RebrandingKar\u0101chiEasy Apply3d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=112&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_ec2d5e66&cb=1795220817624&jobListingId=1010328454327&jrtk=5-yul1-0-1k7tnvhdvk8i9803-164a841da4b263d4&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos12-age3d-1010328454327&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: TSLooking for a Creative Graphic Designer \u2013 RebrandingKar\u0101chiEasy Apply3d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.971495"
+  },
+  {
+    "id": "scan_0243",
+    "source": "Glassdoor Alerts",
+    "title": "Artania Digital Agency Senior Graphic Designer Kar\u0101chi Easy Apply5d",
+    "company": "Artania Digital AgencySenior Graphic DesignerKar\u0101chiEasy Apply5d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=111&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_2c847509&cb=1795220817624&jobListingId=1010326830665&jrtk=5-yul1-0-1k7tnvhdvk8i9803-369e86bacb54f175&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos11-age5d-1010326830665&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: Artania Digital AgencySenior Graphic DesignerKar\u0101chiEasy Apply5d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.945972"
+  },
+  {
+    "id": "scan_0242",
+    "source": "Glassdoor Alerts",
+    "title": "COLOR STUDIO PROFESSIONALPACKAGING GRAPHICS DESIGNERKorangi Easy Apply4d",
+    "company": "COLOR STUDIO PROFESSIONALPACKAGING GRAPHICS DESIGNERKorangiEasy Apply4d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_b24f053b&cb=1795220817624&jobListingId=1010327040030&jrtk=5-yul1-0-1k7tnvhdvk8i9803-23d92b7a11f974ac&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age4d-1010327040030&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: COLOR STUDIO PROFESSIONALPACKAGING GRAPHICS DESIGNERKorangiEasy Apply4d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.925913"
+  },
+  {
+    "id": "scan_0241",
+    "source": "Glassdoor Alerts",
+    "title": "Winklin Junior Graphic Designer Kar\u0101chi Easy Apply6d",
+    "company": "WinklinJunior Graphic DesignerKar\u0101chiEasy Apply6d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=109&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_bde932a5&cb=1795220817624&jobListingId=1010326454465&jrtk=5-yul1-0-1k7tnvhdvk8i9803-d6016bf2ac6f6535&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos9-age6d-1010326454465&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: WinklinJunior Graphic DesignerKar\u0101chiEasy Apply6d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.906031"
+  },
+  {
+    "id": "scan_0240",
+    "source": "Glassdoor Alerts",
+    "title": "Multimedia Designer Kar\u0101chi Easy Apply2d",
+    "company": "Inovio Tech",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_647e632a&cb=1795220817624&jobListingId=1010329389734&jrtk=5-yul1-0-1k7tnvhdvk8i9803-8f0b2058488f5ea6&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos8-age2d-1010329389734&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: Inovio Tech3.7 \u2605Multimedia DesignerKar\u0101chiEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.883085"
+  },
+  {
+    "id": "scan_0239",
+    "source": "Glassdoor Alerts",
+    "title": "Tens Sourcing Junior Graphic Designer Kar\u0101chi Easy Apply2d",
+    "company": "Tens SourcingJunior Graphic DesignerKar\u0101chiEasy Apply2d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_ae9d9ea3&cb=1795220817624&jobListingId=1010329622338&jrtk=5-yul1-0-1k7tnvhdvk8i9803-cb32a7910726a0c9&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age2d-1010329622338&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: Tens SourcingJunior Graphic DesignerKar\u0101chiEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.867673"
+  },
+  {
+    "id": "scan_0238",
+    "source": "Glassdoor Alerts",
+    "title": "Aroma-247 Pakistan Graphic Designer at Aroma 24/7 Pakistan Kar\u0101chi Easy Apply3d",
+    "company": "Aroma-247 PakistanGraphic Designer at Aroma 24/7 PakistanKar\u0101chiEasy Apply3d",
+    "location": "Pakistan",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_b8d73f61&cb=1795220817624&jobListingId=1010328424464&jrtk=5-yul1-0-1k7tnvhdvk8i9803-a62e54f11dd1226a&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-age3d-1010328424464&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: Aroma-247 PakistanGraphic Designer at Aroma 24/7 PakistanKar\u0101chiEasy Apply3d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.845576"
+  },
+  {
+    "id": "scan_0237",
+    "source": "Glassdoor Alerts",
+    "title": "PIXARCHCreative Designer Kar\u0101chi Easy Apply6d",
+    "company": "PIXARCHCreative DesignerKar\u0101chiEasy Apply6d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_c957381e&cb=1795220817624&jobListingId=1010326568001&jrtk=5-yul1-0-1k7tnvhdvk8i9803-8da51332f67dea6b&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos5-age6d-1010326568001&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: PIXARCHCreative DesignerKar\u0101chiEasy Apply6d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.825141"
+  },
+  {
+    "id": "scan_0236",
+    "source": "Glassdoor Alerts",
+    "title": "Ozbix Junior Graphic Designer & Video Editor Kar\u0101chi Easy Apply4d",
+    "company": "OzbixJunior Graphic Designer & Video EditorKar\u0101chiEasy Apply4d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_52b7f626&cb=1795220817624&jobListingId=1010327489478&jrtk=5-yul1-0-1k7tnvhdvk8i9803-43ea2bcb3f408a57&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age4d-1010327489478&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: OzbixJunior Graphic Designer & Video EditorKar\u0101chiEasy Apply4d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.807185"
+  },
+  {
+    "id": "scan_0235",
+    "source": "Glassdoor Alerts",
+    "title": "Graphic Designer Pakistan Easy Apply2d",
+    "company": "Vision Properties",
+    "location": "Pakistan",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_de5cdc4b&cb=1795220817624&jobListingId=1010329678328&jrtk=5-yul1-0-1k7tnvhdvk8i9803-61906e6cc4a4c407&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age2d-1010329678328&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: Vision Properties2.5 \u2605Graphic DesignerPakistanEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.789513"
+  },
+  {
+    "id": "scan_0234",
+    "source": "Glassdoor Alerts",
+    "title": "It's Britz Education Canva Graphic Designer Kar\u0101chi Easy Apply2d",
+    "company": "It's Britz EducationCanva Graphic DesignerKar\u0101chiEasy Apply2d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_ab8c4c64&cb=1795220817624&jobListingId=1010329771426&jrtk=5-yul1-0-1k7tnvhdvk8i9803-01f7bfef707b5724&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos2-age2d-1010329771426&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: It's Britz EducationCanva Graphic DesignerKar\u0101chiEasy Apply2d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.771877"
+  },
+  {
+    "id": "scan_0233",
+    "source": "Glassdoor Alerts",
+    "title": "Astro Zon Jr Graphic Designer Kar\u0101chi Easy Apply3d",
+    "company": "AstroZonJr Graphic DesignerKar\u0101chiEasy Apply3d",
+    "location": "Pakistan / Remote",
+    "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=58&guid=000001a1fb7a8e61a4ddceaf1165f7de&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_deb18b55&cb=1795220817623&jobListingId=1010328514372&jrtk=5-yul1-0-1k7tnvhdvk8i9803-9ab55f0f09311373&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age3d-1010328514372&utm_term=jasublinelenvar&ja=437643845",
+    "description": "Glassdoor alert posting: AstroZonJr Graphic DesignerKar\u0101chiEasy Apply3d",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
+    "domain": null,
+    "cv_path": null,
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.753993"
+  },
+  {
+    "id": "scan_0232",
+    "source": "Indeed Alerts",
+    "title": "Hiring: Web / Mobile App Developer Intern",
+    "company": "Outsource origin Limited",
+    "location": "Karachi",
+    "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_42Ry27iMBRA_yXSsBpK7DyIkdAICrTlGSghhU3kOCYPx7EJToBW_fcGjdRKs5rVlc7R1ZXu-dAqraclSslzr9OR7CEtIkqjByJ4pyQdkrM_GesfqW52j5aNHKBbhKDWsRS8n4kwhThoBseKJO2SYqLSGqtUFG1atN1ZQDlO85ZifcC6qpKlrLJuJB0dtMKwD43VGxYT6vKaL1znUF8nB2IH8kaI79Z8bOVoOs9B4CZgdooAYGzsbajrFnjrdG0vOq3P8IStAeXJdQc38zp_XfLBWcbFarndmf4K7cw426z382QTC0OMqDX3Js-hv6cTuduv3xeDcUQr_5Jdnx_Xs2VQWnHse9M3mCPn4kn76RaU2_mqGp7rMBzIm_BPSwdFTz4hHlgOC26Y4OyhZPTyyxi1royE_VcxVHZ3AQkCQsKDo0t9Fr6z6DFy3VaZyZ9XEBZjq3B0Xfutca33oWFCRFWol6gJAhBEzbct27xrHMdTEf4VumFACE0boUaQPCVsm5SiipNGqrKi3_QmaYPqlF6aQA29J2vA_0ZrNhS7H_wnnPb5-QXPTVOKNAIAAA/Lm3H2CXETHNebENTi2MGQciV3KY55rGV8OrN45bx8TM",
+    "description": "Position: Hiring: Web / Mobile App Developer Intern at Outsource origin Limited (Karachi). Live Indeed matched alert.",
+    "is_match": true,
+    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
+    "domain": "full_stack",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": null,
+    "scanned_at": "2026-11-21T08:10:22.605045"
+  },
+  {
     "id": "scan_0231",
     "source": "LinkedIn Alerts",
     "title": "Key Account Manager",
@@ -14,7 +488,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.955371"
+    "scanned_at": "2026-11-21T08:10:24.955386"
   },
   {
     "id": "scan_0230",
@@ -31,7 +505,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.939913"
+    "scanned_at": "2026-11-21T08:10:24.934459"
   },
   {
     "id": "scan_0229",
@@ -41,14 +515,14 @@
     "location": "Lahore",
     "url": "https://www.linkedin.com/jobs/view/4490895694",
     "description": "Position: Unity 3D Mobile Game Developer at Gamez Ocean (Lahore). Live alert email 1a1f23b5497d57be.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "game_dev",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - Game Developer.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4490895694 on 2026-11-21T04:28:03.883136",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.857148"
+    "scanned_at": "2026-11-21T08:10:24.908406"
   },
   {
     "id": "scan_0228",
@@ -65,7 +539,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.834906"
+    "scanned_at": "2026-11-21T08:10:24.884862"
   },
   {
     "id": "scan_0227",
@@ -82,7 +556,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.809621"
+    "scanned_at": "2026-11-21T08:10:24.868441"
   },
   {
     "id": "scan_0226",
@@ -99,7 +573,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.783450"
+    "scanned_at": "2026-11-21T08:10:24.851213"
   },
   {
     "id": "scan_0225",
@@ -110,13 +584,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_e55ffdac&cb=1795080238194&jobListingId=1010327784433&jrtk=5-yul1-0-1k7phtcugj0ou801-27eaae7c9019b6e4&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age2d-1010327784433&ja=421694860",
     "description": "Glassdoor alert posting: Ryan4.1 \u2605Senior DevOps EngineerNashville, TN$103K - $151K (Employer est.)Easy ApplyBest Place to Work2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.761098"
+    "scanned_at": "2026-11-21T08:10:24.827181"
   },
   {
     "id": "scan_0224",
@@ -127,13 +601,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=109&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_851e7793&cb=1795080238194&jobListingId=1010326781302&jrtk=5-yul1-0-1k7phtcugj0ou801-f64b7ff2aed53443&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos9-age4d-1010326781302&ja=421694860",
     "description": "Glassdoor alert posting: Deloitte3.8 \u2605Supply Chain ALM Software Engineer ManagerNashville, TN$141K - $278K (Employer est.)4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.736116"
+    "scanned_at": "2026-11-21T08:10:24.809812"
   },
   {
     "id": "scan_0223",
@@ -144,13 +618,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_41eff65a&cb=1795080238194&jobListingId=1010326781231&jrtk=5-yul1-0-1k7phtcugj0ou801-25cc6955b4d2908b&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos8-age4d-1010326781231&ja=421694860",
     "description": "Glassdoor alert posting: Deloitte3.8 \u2605Supply Chain ALM Software Engineer Senior ConsultantNashville, TN$116K - $229K (Employer est.)4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.711525"
+    "scanned_at": "2026-11-21T08:10:24.793741"
   },
   {
     "id": "scan_0222",
@@ -161,13 +635,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_a621acd4&cb=1795080238194&jobListingId=1010329463816&jrtk=5-yul1-0-1k7phtcugj0ou801-6ac8a08ed63b1f88&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age1d-1010329463816&ja=421694860",
     "description": "Glassdoor alert posting: Deloitte3.8 \u2605Software Engineer Senior ConsultantHermitage, TN$105K - $166K (Employer est.)1d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.682971"
+    "scanned_at": "2026-11-21T08:10:24.772546"
   },
   {
     "id": "scan_0221",
@@ -178,13 +652,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_b8d45756&cb=1795080238194&jobListingId=1010330228435&jrtk=5-yul1-0-1k7phtcugj0ou801-63ba54aacd121ee6&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-agept-1010330228435&ja=421694860",
     "description": "Glassdoor alert posting: Oracle3.3 \u2605Principal Platform Software EngineerNashville, TN$127K - $171K (Glassdoor est.)8h",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.663470"
+    "scanned_at": "2026-11-21T08:10:24.749157"
   },
   {
     "id": "scan_0220",
@@ -195,13 +669,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_c013b11f&cb=1795080238194&jobListingId=1010330227270&jrtk=5-yul1-0-1k7phtcugj0ou801-51fd30500f4522af&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos5-agept-1010330227270&ja=421694860",
     "description": "Glassdoor alert posting: Oracle3.3 \u2605Principal Application Software EngineerNashville, TN$103K - $145K (Glassdoor est.)8h",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.639051"
+    "scanned_at": "2026-11-21T08:10:24.732259"
   },
   {
     "id": "scan_0219",
@@ -212,13 +686,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_fd747035&cb=1795080238194&jobListingId=1010329460649&jrtk=5-yul1-0-1k7phtcugj0ou801-857e33e43baead2c&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age1d-1010329460649&ja=421694860",
     "description": "Glassdoor alert posting: Deloitte3.8 \u2605Applied AI Software Engineer IIIHermitage, TN$103K - $211K (Employer est.)1d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.616689"
+    "scanned_at": "2026-11-21T08:10:24.717374"
   },
   {
     "id": "scan_0218",
@@ -229,13 +703,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_f316cbd7&cb=1795080238194&jobListingId=1010328084999&jrtk=5-yul1-0-1k7phtcugj0ou801-8ae31cd5c5944eea&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age2d-1010328084999&ja=421694860",
     "description": "Glassdoor alert posting: Robotics Technologies4.9 \u2605Python KafkaDeveloperNashville, TN$78 (Employer est.)2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.598142"
+    "scanned_at": "2026-11-21T08:10:24.701703"
   },
   {
     "id": "scan_0217",
@@ -246,13 +720,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_5f5185da&cb=1795080238194&jobListingId=1010328084653&jrtk=5-yul1-0-1k7phtcugj0ou801-19e3969fb3e9e36d&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos2-age2d-1010328084653&ja=421694860",
     "description": "Glassdoor alert posting: Robotics Technologies4.9 \u2605Oracle DeveloperNashville, TN$73 (Employer est.)2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.574719"
+    "scanned_at": "2026-11-21T08:10:24.684820"
   },
   {
     "id": "scan_0216",
@@ -263,13 +737,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=58&guid=000001a1f31c3c6caa4f1d23daef2784&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_26cc96e2&cb=1795080238193&jobListingId=1010324736306&jrtk=5-yul1-0-1k7phtcugj0ou801-77fd232a6046f0bf&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age6d-1010324736306&ja=421694860",
     "description": "Glassdoor alert posting: signitives IT SolutionsAI Full Stack EngineerNashville, TN$60 - $70 (Employer est.)Easy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.557356"
+    "scanned_at": "2026-11-21T08:10:24.662246"
   },
   {
     "id": "scan_0215",
@@ -280,13 +754,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=113&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_41f38524&cb=1795134299446&jobListingId=1010325763037&jrtk=5-yul1-0-1k7r5f74ti965800-8ed421f6f9be4f6f&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos13-age6d-1010325763037&ja=437643641",
     "description": "Glassdoor alert posting: GeekybugsFemale Technical Project ManagerLahoreEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.540233"
+    "scanned_at": "2026-11-21T08:10:24.638512"
   },
   {
     "id": "scan_0214",
@@ -297,13 +771,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=112&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_9b566d38&cb=1795134299446&jobListingId=1010327476286&jrtk=5-yul1-0-1k7r5f74ti965800-d19b3c43c07f0f7d&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos12-age3d-1010327476286&ja=437643641",
     "description": "Glassdoor alert posting: Eynvision Pvt LtdGTM Business Developer LeadIslamabadEasy Apply3d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.519752"
+    "scanned_at": "2026-11-21T08:10:24.619207"
   },
   {
     "id": "scan_0213",
@@ -314,13 +788,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=111&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_b1451733&cb=1795134299446&jobListingId=1010327747232&jrtk=5-yul1-0-1k7r5f74ti965800-ef45de2084b62ddb&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos11-age3d-1010327747232&ja=437643641",
     "description": "Glassdoor alert posting: MavenUpAssistant to CMOLahoreEasy Apply3d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.492674"
+    "scanned_at": "2026-11-21T08:10:24.595555"
   },
   {
     "id": "scan_0212",
@@ -331,13 +805,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_20aafcdf&cb=1795134299446&jobListingId=1010325878015&jrtk=5-yul1-0-1k7r5f74ti965800-b46af43e7e8e4171&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age6d-1010325878015&ja=437643641",
     "description": "Glassdoor alert posting: Clear Wave Information TechnologiesQA Engineer (Manual & Automation)PakistanEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.468967"
+    "scanned_at": "2026-11-21T08:10:24.574264"
   },
   {
     "id": "scan_0211",
@@ -348,13 +822,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=109&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_c8392171&cb=1795134299446&jobListingId=1010328448510&jrtk=5-yul1-0-1k7r5f74ti965800-5d4a0482d7a95c46&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos9-age2d-1010328448510&ja=437643641",
     "description": "Glassdoor alert posting: Sprouto GroupTechnical Project ManagerLahoreEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.447229"
+    "scanned_at": "2026-11-21T08:10:24.554156"
   },
   {
     "id": "scan_0210",
@@ -365,13 +839,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_0c4aa3a4&cb=1795134299446&jobListingId=1010327341336&jrtk=5-yul1-0-1k7r5f74ti965800-c1c2bf54f7c0c1a2&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos8-age3d-1010327341336&ja=437643641",
     "description": "Glassdoor alert posting: Social ChampSenior Product DesignerKar\u0101chiEasy Apply3d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.420275"
+    "scanned_at": "2026-11-21T08:10:24.533505"
   },
   {
     "id": "scan_0209",
@@ -382,13 +856,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_f6f517a1&cb=1795134299446&jobListingId=1010328545237&jrtk=5-yul1-0-1k7r5f74ti965800-7c0f21bca14bcfea&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age2d-1010328545237&ja=437643641",
     "description": "Glassdoor alert posting: Human Capital HR SolutionsJUNIOR DOT NET DEVELOPERKar\u0101chiEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.398172"
+    "scanned_at": "2026-11-21T08:10:24.508637"
   },
   {
     "id": "scan_0208",
@@ -399,13 +873,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_6dc13cd1&cb=1795134299446&jobListingId=1010328530012&jrtk=5-yul1-0-1k7r5f74ti965800-05aebf5e4f1d8775&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-age2d-1010328530012&ja=437643641",
     "description": "Glassdoor alert posting: INQLINESenior Full-Stack Software DeveloperKar\u0101chiEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.373344"
+    "scanned_at": "2026-11-21T08:10:24.493271"
   },
   {
     "id": "scan_0207",
@@ -416,13 +890,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_f25a2cda&cb=1795134299446&jobListingId=1010331283542&jrtk=5-yul1-0-1k7r5f74ti965800-90e5e908c0fb8f9c&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos5-agejp-1010331283542&ja=437643641",
     "description": "Glassdoor alert posting: Indus Moro general trading llcE-commerce Brand DeveloperKar\u0101chiEasy ApplyJust posted",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.353959"
+    "scanned_at": "2026-11-21T08:10:24.472048"
   },
   {
     "id": "scan_0206",
@@ -433,13 +907,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_5e3511d1&cb=1795134299446&jobListingId=1010325641786&jrtk=5-yul1-0-1k7r5f74ti965800-9edcc2d486dc8eef&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age6d-1010325641786&ja=437643641",
     "description": "Glassdoor alert posting: Appicoders4.3 \u2605SQA EngineerKar\u0101chiEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.334123"
+    "scanned_at": "2026-11-21T08:10:24.450607"
   },
   {
     "id": "scan_0205",
@@ -450,13 +924,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_6bd7b03d&cb=1795134299446&jobListingId=1010325472541&jrtk=5-yul1-0-1k7r5f74ti965800-b679154bbee92422&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age6d-1010325472541&ja=437643641",
     "description": "Glassdoor alert posting: STG InternationalAdvanced WordPress & E-Commerce Web DeveloperPakistanEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.308240"
+    "scanned_at": "2026-11-21T08:10:24.426558"
   },
   {
     "id": "scan_0204",
@@ -467,13 +941,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_3698d889&cb=1795134299446&jobListingId=1010328640948&jrtk=5-yul1-0-1k7r5f74ti965800-9ab513e61dd565c7&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos2-age2d-1010328640948&ja=437643641",
     "description": "Glassdoor alert posting: Pivotize ConsultingSoftware Quality Assurance EngineerKar\u0101chiEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.283922"
+    "scanned_at": "2026-11-21T08:10:24.406357"
   },
   {
     "id": "scan_0203",
@@ -484,13 +958,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=58&guid=000001a1f6540c5a9d703e96b2b5a54a&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_53acacfd&cb=1795134299446&jobListingId=1010325738978&jrtk=5-yul1-0-1k7r5f74ti965800-5275f93a223bbbf5&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age6d-1010325738978&ja=437643641",
     "description": "Glassdoor alert posting: ChildLife Foundation3.9 \u2605Junior Power BI DeveloperKar\u0101chiEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.264029"
+    "scanned_at": "2026-11-21T08:10:24.388391"
   },
   {
     "id": "scan_0202",
@@ -501,13 +975,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=111&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_e762cfe1&cb=1795134444469&jobListingId=1010328449400&jrtk=5-yul1-0-1k7r5jkq3i8on800-1e4cc924d164dc1c&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos11-age2d-1010328449400&ja=437643845",
     "description": "Glassdoor alert posting: Xpert DigitalSenior Marketing ManagerKar\u0101chiEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.236303"
+    "scanned_at": "2026-11-21T08:10:24.371344"
   },
   {
     "id": "scan_0201",
@@ -518,13 +992,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_8c135023&cb=1795134444469&jobListingId=1010327664942&jrtk=5-yul1-0-1k7r5jkq3i8on800-000bb7dca60fa405&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age3d-1010327664942&ja=437643845",
     "description": "Glassdoor alert posting: AheadTech360Graphic Designer \u2013 DTF & Large Format PrintingPakistanEasy Apply3d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.213235"
+    "scanned_at": "2026-11-21T08:10:24.350454"
   },
   {
     "id": "scan_0200",
@@ -535,13 +1009,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=109&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_c7ee1954&cb=1795134444469&jobListingId=1010326457086&jrtk=5-yul1-0-1k7r5jkq3i8on800-98b451ceffb8c732&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos9-age5d-1010326457086&ja=437643845",
     "description": "Glassdoor alert posting: Zero LifestyleCreative HeadKar\u0101chiEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.191235"
+    "scanned_at": "2026-11-21T08:10:24.325449"
   },
   {
     "id": "scan_0199",
@@ -552,13 +1026,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_77eea8ec&cb=1795134444469&jobListingId=1010326830665&jrtk=5-yul1-0-1k7r5jkq3i8on800-369e86bacb54f175&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos8-age4d-1010326830665&ja=437643845",
     "description": "Glassdoor alert posting: Artania Digital AgencySenior Graphic DesignerKar\u0101chiEasy Apply4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.174020"
+    "scanned_at": "2026-11-21T08:10:24.303652"
   },
   {
     "id": "scan_0198",
@@ -569,13 +1043,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_219bc898&cb=1795134444469&jobListingId=1010327240748&jrtk=5-yul1-0-1k7r5jkq3i8on800-1da6b8e9952d7e3e&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age3d-1010327240748&ja=437643845",
     "description": "Glassdoor alert posting: Modest Needs Foundation3.2 \u2605Trainee Graphic DesignerKorangiEasy Apply3d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.151697"
+    "scanned_at": "2026-11-21T08:10:24.262545"
   },
   {
     "id": "scan_0197",
@@ -586,13 +1060,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_40207d61&cb=1795134444469&jobListingId=1010331285475&jrtk=5-yul1-0-1k7r5jkq3i8on800-45be439b519d6ab4&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-agejp-1010331285475&ja=437643845",
     "description": "Glassdoor alert posting: Minerva Marine4.2 \u2605Performance Marketer (Evening Shift)Kar\u0101chiEasy ApplyJust posted",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.133440"
+    "scanned_at": "2026-11-21T08:10:24.243428"
   },
   {
     "id": "scan_0196",
@@ -603,13 +1077,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_1a8e133d&cb=1795134444469&jobListingId=1010327040030&jrtk=5-yul1-0-1k7r5jkq3i8on800-23d92b7a11f974ac&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos5-age3d-1010327040030&ja=437643845",
     "description": "Glassdoor alert posting: COLOR STUDIO PROFESSIONALPACKAGING GRAPHICS DESIGNERKorangiEasy Apply3d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.109411"
+    "scanned_at": "2026-11-21T08:10:24.219832"
   },
   {
     "id": "scan_0195",
@@ -620,13 +1094,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_af957427&cb=1795134444468&jobListingId=1010328424464&jrtk=5-yul1-0-1k7r5jkq3i8on800-a62e54f11dd1226a&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age2d-1010328424464&ja=437643845",
     "description": "Glassdoor alert posting: Aroma-247 PakistanGraphic Designer at Aroma 24/7 PakistanKar\u0101chiEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.083311"
+    "scanned_at": "2026-11-21T08:10:24.200559"
   },
   {
     "id": "scan_0194",
@@ -637,13 +1111,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_5d27063c&cb=1795134444468&jobListingId=1010327489478&jrtk=5-yul1-0-1k7r5jkq3i8on800-43ea2bcb3f408a57&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age3d-1010327489478&ja=437643845",
     "description": "Glassdoor alert posting: OzbixJunior Graphic Designer & Video EditorKar\u0101chiEasy Apply3d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.053680"
+    "scanned_at": "2026-11-21T08:10:24.181195"
   },
   {
     "id": "scan_0193",
@@ -654,13 +1128,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_c6c7c804&cb=1795134444468&jobListingId=1010326568001&jrtk=5-yul1-0-1k7r5jkq3i8on800-8da51332f67dea6b&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos2-age5d-1010326568001&ja=437643845",
     "description": "Glassdoor alert posting: PIXARCHCreative DesignerKar\u0101chiEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.028477"
+    "scanned_at": "2026-11-21T08:10:24.156623"
   },
   {
     "id": "scan_0192",
@@ -671,13 +1145,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=58&guid=000001a1f6540f40b5b45550a7bfe5c7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_e21dfa50&cb=1795134444468&jobListingId=1010325369177&jrtk=5-yul1-0-1k7r5jkq3i8on800-da836ce8601c72c7&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age6d-1010325369177&ja=437643845",
     "description": "Glassdoor alert posting: Nasa Auto Care1.0 \u2605Graphic DesignerKar\u0101chiEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.006983"
+    "scanned_at": "2026-11-21T08:10:24.137995"
   },
   {
     "id": "scan_0191",
@@ -687,14 +1161,14 @@
     "location": "Karachi",
     "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_42Ry46bMBRA_wWprIaJeQYiRVUS0jRJoTChSTubyBiDzctgzOQxmn-vR5WmUlddXekcXV3pnldlVGYKEaIbZpNJVz3SNsM4e0SsmXA0QXX1uazmyNZzw0DAQm5qYd1Rc86aeclSasCzHA0UiGgcQyToCxSUtRputWh_xg2ktSqquV5NOcpxX9e4Iy6w1DSdo7XIv7Cv48kMlidu3Z9_9v5zbA4UHxZ5JGjX3xLSOBFmutfXG21bxgGPzT1aFCAMErLuyvAOWHqsfetbzE5Zxxah2UMtIVW-Csv6YpU3COI9O-kkGAihd80uGxCE3ljE3-0mvQzacSj7tb9dIYmvF2PnGtenejNsrsujWGYON_GvtZ4dwfS8L-G2TbR2Y1NgRk-1FRad98OCvgbjT6avXiuUzg_M5840MNA0vi2ZfT_swD69V9kqiyKVl93fV3h207LBBYXyoDTK7FWBCLGxFdtMBtE9w3M813YsIDUsih1L_whgAg-Ynqm7UqCaoiohnI0FkVLwEX_QW4cleqH4IgNJ-p5Mgv-NJjdE9X7wn3DK29tvxiB0hzQCAAA/uZzlKIPfH4Z83zJ6b4HiYSPVcoF0Jjcp9FFEU8RBuvg",
     "description": "Position: Software Engineer I - Backend | NextGen Engineering at Careem (Karachi). Live Indeed matched alert.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "full_stack",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-21T04:28:02.911940",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.889684"
+    "scanned_at": "2026-11-21T08:10:24.119375"
   },
   {
     "id": "scan_0190",
@@ -711,7 +1185,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.871334"
+    "scanned_at": "2026-11-21T08:10:24.100932"
   },
   {
     "id": "scan_0189",
@@ -728,7 +1202,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.851531"
+    "scanned_at": "2026-11-21T08:10:24.084659"
   },
   {
     "id": "scan_0188",
@@ -745,7 +1219,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.834047"
+    "scanned_at": "2026-11-21T08:10:24.067343"
   },
   {
     "id": "scan_0187",
@@ -762,7 +1236,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.814392"
+    "scanned_at": "2026-11-21T08:10:24.046292"
   },
   {
     "id": "scan_0186",
@@ -772,14 +1246,14 @@
     "location": "Lahore",
     "url": "https://www.linkedin.com/jobs/view/4492142707",
     "description": "Position: Associate SQA at Mindstorm Studios (Lahore). Live alert email 1a1f6f3d425fe838.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "full_stack",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4492142707 on 2026-11-21T04:28:02.734775",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.717086"
+    "scanned_at": "2026-11-21T08:10:24.026870"
   },
   {
     "id": "scan_0185",
@@ -796,7 +1270,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.693730"
+    "scanned_at": "2026-11-21T08:10:24.010416"
   },
   {
     "id": "scan_0184",
@@ -813,7 +1287,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.672241"
+    "scanned_at": "2026-11-21T08:10:23.993479"
   },
   {
     "id": "scan_0183",
@@ -823,14 +1297,14 @@
     "location": "Lahore",
     "url": "https://www.linkedin.com/jobs/view/4492401752",
     "description": "Position: Java Software Engineer at Systems Limited (Lahore). Live alert email 1a1f761ad3bb0829.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "full_stack",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4492401752 on 2026-11-21T04:28:02.597783",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.575226"
+    "scanned_at": "2026-11-21T08:10:23.969682"
   },
   {
     "id": "scan_0182",
@@ -840,14 +1314,14 @@
     "location": "Lahore",
     "url": "https://www.linkedin.com/jobs/view/4492185272",
     "description": "Position: Junior to Mid-Level Full Stack Developer (WEB & Mobile) at Navigator HR Consulting Solutions (Lahore). Live alert email 1a1f761ad3bb0829.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "full_stack",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4492185272 on 2026-11-21T04:28:02.498200",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.476843"
+    "scanned_at": "2026-11-21T08:10:23.953244"
   },
   {
     "id": "scan_0181",
@@ -857,14 +1331,14 @@
     "location": "Karachi Division",
     "url": "https://www.linkedin.com/jobs/view/4492448334",
     "description": "Position: Full-Stack Developer - Web & AI Automation at HBOX Digital Pakistan (Karachi Division). Live alert email 1a1f7cf91c58e6e4.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "full_stack",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4492448334 on 2026-11-21T04:28:02.397648",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.377663"
+    "scanned_at": "2026-11-21T08:10:23.928465"
   },
   {
     "id": "scan_0180",
@@ -874,14 +1348,14 @@
     "location": "Karachi Division",
     "url": "https://www.linkedin.com/jobs/view/4492437619",
     "description": "Position: React Native Mobile App Developer at HBOX Digital Pakistan (Karachi Division). Live alert email 1a1f7cf91c58e6e4.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "full_stack",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4492437619 on 2026-11-21T04:28:02.307971",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.290161"
+    "scanned_at": "2026-11-21T08:10:23.907257"
   },
   {
     "id": "scan_0179",
@@ -898,7 +1372,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.269597"
+    "scanned_at": "2026-11-21T08:10:23.883784"
   },
   {
     "id": "scan_0178",
@@ -915,7 +1389,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.250720"
+    "scanned_at": "2026-11-21T08:10:23.857299"
   },
   {
     "id": "scan_0177",
@@ -932,7 +1406,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.227500"
+    "scanned_at": "2026-11-21T08:10:23.840860"
   },
   {
     "id": "scan_0176",
@@ -949,7 +1423,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.207812"
+    "scanned_at": "2026-11-21T08:10:23.817403"
   },
   {
     "id": "scan_0175",
@@ -966,7 +1440,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.190499"
+    "scanned_at": "2026-11-21T08:10:23.800754"
   },
   {
     "id": "scan_0174",
@@ -976,14 +1450,14 @@
     "location": "Kar\u0101chi",
     "url": "https://www.linkedin.com/jobs/view/4491622106",
     "description": "Position: AI Search Analyst (Remote, Full-Time) [HR224] (PK) at Smart Working (Kar\u0101chi). Live alert email 1a1f7cf91c58e6e4.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "ai_ml",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - AI Resume PDF.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4491622106 on 2026-11-21T04:28:02.112503",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.090488"
+    "scanned_at": "2026-11-21T08:10:23.784156"
   },
   {
     "id": "scan_0173",
@@ -994,13 +1468,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=112&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_e9a99b7f&cb=1795166642703&jobListingId=1010320416696&jrtk=5-yul1-0-1k7s4a8bekgrc801-4e9c8b16f863edb7--c8ZV4YFmTH4WY6cufL69H7CSbTpeurtA9JbPDTG4uQd6xXkwzIy_UImUuI3EWYwq80UDxZ320ve8KxW0uzAj9CmcZkDl4BQpWNY7IKELaVblPbH9MN06byMdGNhNDZU6X2DFqtdcZrNQ16sjFw0r6VjFwcknlXbnfw1gGF7totz_vdB_9HkTfkSg7MJUYmIjjvNDAeLVd5yFC8TlpOEx2g%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos12-age11d-1010320416696&ja=421694860",
     "description": "Glassdoor alert posting: Bluestone AppsMobile Application DeveloperNashville, TN$80K - $115K (Employer est.)Easy Apply11d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.065592"
+    "scanned_at": "2026-11-21T08:10:23.760910"
   },
   {
     "id": "scan_0172",
@@ -1011,13 +1485,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=111&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_f6e4766b&cb=1795166642701&jobListingId=1010320418792&jrtk=5-yul1-0-1k7s4a8bekgrc801-1a23b62edf1557a8--c8ZV4YFmTH4WY6cufL69H7CSbTpeurtA9JbPDTG4uQdDBszhRAM_lCAlDfvrnoZhdtzZSs7egkWidYaWtEKARvacr9EDxXnGSnWNwuNmc1HTvye60zkFxpQUko9QrwD3KerbtLhZ_S2umyzcu-OBkPy2H_TuQZNrs9juaDXSijmLBM5th2D9PhC8nbIQN4mSKwmFOevwAX7rSqHwIAWlPQ%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos11-age11d-1010320418792&ja=421694860",
     "description": "Glassdoor alert posting: ReadyPointApplication DeveloperNashville, TN$80K - $110K (Employer est.)Easy Apply11d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.043723"
+    "scanned_at": "2026-11-21T08:10:23.740812"
   },
   {
     "id": "scan_0171",
@@ -1028,13 +1502,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_7d16ffae&cb=1795166642701&jobListingId=1010320512743&jrtk=5-yul1-0-1k7s4a8bekgrc801-ac2d7e8caeab74f3--c8ZV4YFmTH4WY6cufL69H7CSbTpeurtA9JbPDTG4uQcHT_dLE-I0jdKdhiwKpMiLug7rNFN-rDzqSvD1ZdiGHNBDMj4tfJyrtoga_sylzz_l7b7VhxmuPYQxHlwV_jyFh93aumNv1100H8O2MmJMxIR2FMUCS-sF_4n07n0B4pzgdRw_hKCcnYR0QKKNARM_dpZyMGLVNBlFTKD8G72Uww%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age11d-1010320512743&ja=421694860",
     "description": "Glassdoor alert posting: Core Technologies3.4 \u2605Web Application DeveloperNashville, TN$80K - $110K (Employer est.)Easy Apply11d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.024053"
+    "scanned_at": "2026-11-21T08:10:23.723538"
   },
   {
     "id": "scan_0170",
@@ -1045,13 +1519,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=109&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_10fcf10b&cb=1795166642701&jobListingId=1010320404347&jrtk=5-yul1-0-1k7s4a8bekgrc801-2cd97992d009cf07--c8ZV4YFmTH4WY6cufL69H7CSbTpeurtA9JbPDTG4uQeu8LtKJ-rgQIyVGP1561XgEzdwwTUOHnpriFF-DU86x5_iFanm75ct27FcjRoZbPo91qCyr4L4S5yW9ntSkL2v5oAb63B-aAhrC1wNJToiPkJIVrzzlCir78_uqNawkiHzrCXskpiYD7__vjrjOCVtfmNSSNYGMOXWl2NdDCYlMg%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos9-age11d-1010320404347&ja=421694860",
     "description": "Glassdoor alert posting: FortyAU3.8 \u2605Application DeveloperNashville, TN$85K - $120K (Employer est.)Easy Apply11d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:02.001234"
+    "scanned_at": "2026-11-21T08:10:23.703678"
   },
   {
     "id": "scan_0169",
@@ -1062,13 +1536,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_1501f27c&cb=1795166642700&jobListingId=1010331346564&jrtk=5-yul1-0-1k7s4a7imgmuj802-b23c3b4de230bcc9--Ing1jNeez991hQHS9c-gYHazY4-UspylcEIyPBmf1knE28h-bHnkcH3r9iBTOJvGoUcBQjWaVdEvEFDfy0LEcS4t5ce0VqjCiRy88I2kz-TQf27DOI2cfD-bG7y_CKSv6Oyx9G8uMymtC3_3qyB9ZWnfMVFHY7-eiklZj6Nc2hBCRq-MNm_U92zYijaRlWeNlaQe4bGUJrdU5xhrFaM7uA%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos8-agept-1010331346564&ja=421694860",
     "description": "Glassdoor alert posting: Oracle3.3 \u2605Manager, Platform Software EngineeringNashville, TN$124K - $172K (Glassdoor est.)8h",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.975908"
+    "scanned_at": "2026-11-21T08:10:23.681640"
   },
   {
     "id": "scan_0168",
@@ -1079,13 +1553,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_d798006c&cb=1795166642700&jobListingId=1010329463816&jrtk=5-yul1-0-1k7s4a7imgmuj802-6ac8a08ed63b1f88--Ing1jNeez991hQHS9c-gYHazY4-UspylcEIyPBmf1kkCO8y81B7jYkcypElk05m9hxgbEYLu8tyPzMThGwpYh_LUM3p0m9mUfusANDRo5HCk3FxouxvQ63eSuS98Z9VES7dW4QixqiRpDVxtp2KHcVx1IYtnIdVFrmdSUKa-gwOvpthn-8n42uoieLemZpw9Gppi1VPMZ44D60DnqxTlEQ%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age2d-1010329463816&ja=421694860",
     "description": "Glassdoor alert posting: Deloitte3.8 \u2605Software Engineer Senior ConsultantHermitage, TN$105K - $166K (Employer est.)2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.948799"
+    "scanned_at": "2026-11-21T08:10:23.659445"
   },
   {
     "id": "scan_0167",
@@ -1096,13 +1570,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_80302782&cb=1795166642700&jobListingId=1010330780578&jrtk=5-yul1-0-1k7s4a7imgmuj802-bfb2e690b3534481--Ing1jNeez991hQHS9c-gYHazY4-UspylcEIyPBmf1kngz2f5eU1oCZHGd0ST21fcaFceS8svC0BuObwx2QuEdWjqfiUhGIe3PhUye1lRJy0gGJ25dHmPqXo9ABOOMGZxoQSe7VIGZrDlnrIjb-EKqvthtLSEEJkAYmf5-x2RGwoRC8uhaD3wxI2NuuYtLmCBUzRof63jRA4BB7hiIfHgDQ%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-agept-1010330780578&ja=421694860",
     "description": "Glassdoor alert posting: Oracle3.3 \u2605Principal Systems Software EngineerNashville, TN$140K - $180K (Glassdoor est.)20h",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.927143"
+    "scanned_at": "2026-11-21T08:10:23.635033"
   },
   {
     "id": "scan_0166",
@@ -1113,13 +1587,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_42e8e073&cb=1795166642700&jobListingId=1010329210817&jrtk=5-yul1-0-1k7s4a7imgmuj802-7ae7b14f13198be9--Ing1jNeez991hQHS9c-gYHazY4-UspylcEIyPBmf1klb7kblETVjE7mailMoeZUuwqHQdlbh2Zf8CDaVRJyKnuTmuMe9FvZ7erqou0W6IDAKzoQuCXUkxqTs4jd-yHnO-a6nA5mNH4qVGrLgHic9A8Ft1Onl9Uh932tDVwJdajxdhdc7vWKAyDyvgIoZRZ9SvkOpWdtetclM2zM7MwZDfA%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos5-age2d-1010329210817&ja=421694860",
     "description": "Glassdoor alert posting: Robotics Technologies4.9 \u2605Site Reliability Engineer (SRE)Nashville, TN$68 (Employer est.)2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.904347"
+    "scanned_at": "2026-11-21T08:10:23.609540"
   },
   {
     "id": "scan_0165",
@@ -1130,13 +1604,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_8ccddc8d&cb=1795166642700&jobListingId=1010329460649&jrtk=5-yul1-0-1k7s4a7imgmuj802-857e33e43baead2c--Ing1jNeez991hQHS9c-gYHazY4-UspylcEIyPBmf1km7uZbAgHEYmgAVjpH9orRzUuY9gIJ28H0T429wJF_G779P_zZgcH5yEKLbU0OiYJj41luDANkA_rsuclFvNWePmUvd3XYC8tTHjwBqKuTAvV51j319xWg7q8G92AMi9jdVWkhKIrzNkoABV9WdHVwnmX6aw-YOR9yHCsUMmP9C6g%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age2d-1010329460649&ja=421694860",
     "description": "Glassdoor alert posting: Deloitte3.8 \u2605Applied AI Software Engineer IIIHermitage, TN$103K - $211K (Employer est.)2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.872511"
+    "scanned_at": "2026-11-21T08:10:23.590490"
   },
   {
     "id": "scan_0164",
@@ -1147,13 +1621,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_82af676f&cb=1795166642700&jobListingId=1010328084999&jrtk=5-yul1-0-1k7s4a7imgmuj802-8ae31cd5c5944eea--Ing1jNeez991hQHS9c-gYHazY4-UspylcEIyPBmf1knVxPm9EW0UFp5nnDyRBfPwDTf3q6JfC-Wcw6Smzc-bp71DJZ_KsGOZ2FvXRyI1nKVikE8bjRxK33fcww4dEJ_8_K_v0naWk9p1NAdXNWxN_X5SfxUaMWa36Bza3CCeadz8O2PlTBtD0chLEgSozFt3PJHPNOlzQ8dCa_zCMXzxDA%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age3d-1010328084999&ja=421694860",
     "description": "Glassdoor alert posting: Robotics Technologies4.9 \u2605Python KafkaDeveloperNashville, TN$78 (Employer est.)3d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.849110"
+    "scanned_at": "2026-11-21T08:10:23.574090"
   },
   {
     "id": "scan_0163",
@@ -1164,13 +1638,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_0489e7fb&cb=1795166642700&jobListingId=1010331669585&jrtk=5-yul1-0-1k7s4a7imgmuj802-6c615908a5bbf18e--Ing1jNeez991hQHS9c-gYHazY4-UspylcEIyPBmf1kmk0ORLxaxMe5kde-R_DjdO6FQ_kqe63v1-VYaEQOFLwUCq0cQmB6hxqKas9wckOOyO7IGSAOdVMpaH_nSS7Aty8V-cvD4_UFWpj_M2t8tpZ0jvbHIcqIPhoXsyfs3wHrOvL_8iyncckM8lFDKEyXTrzGOSFNAIoRcBxn5lhtDqVA%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos2-agejp-1010331669585&ja=421694860",
     "description": "Glassdoor alert posting: CPI Card Group3.6 \u2605DevOps Engineer INashville, TN$76K - $104K (Glassdoor est.)Just posted",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.828107"
+    "scanned_at": "2026-11-21T08:10:23.554377"
   },
   {
     "id": "scan_0162",
@@ -1181,13 +1655,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=58&guid=000001a1f84247589980a0071549f1bf&src=GD_JOB_AD&t=MJA&vt=e&ja=421694860&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_143cd379&cb=1795166642700&jobListingId=1010328438809&jrtk=5-yul1-0-1k7s4a7imgmuj802-665a602395abba53--Ing1jNeez991hQHS9c-gYHazY4-UspylcEIyPBmf1kmdv5vZUil9QMb2DjBUzGM-9VZRchq0AsbvlLKLD2LBcXjLSlhQSLEl-qwZtrEwRAvElab_16bQ_ov03obI-xRqDtb8FUTTrzcel3vkuFvvMBQ39Z9VOJqSDT7XW9BPftK_X38a_A6EkhxT-w7O6H8Kc9ZP141NC2eD7s4WfyMFeg%3D%3D&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age2d-1010328438809&ja=421694860",
     "description": "Glassdoor alert posting: Hirebotics, LLCJunior Software Engineer, Beacon PlatformNashville, TN$70K - $90K (Employer est.)Easy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.805787"
+    "scanned_at": "2026-11-21T08:10:23.536390"
   },
   {
     "id": "scan_0161",
@@ -1204,7 +1678,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.784463"
+    "scanned_at": "2026-11-21T08:10:23.514018"
   },
   {
     "id": "scan_0160",
@@ -1214,14 +1688,14 @@
     "location": "Pakistan",
     "url": "https://www.linkedin.com/jobs/view/4475043374",
     "description": "Position: AI Machine Learning Engineer - Remote - India at FullStack (Pakistan). Live alert email 1a1f8ab48024982f.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "full_stack",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4475043374 on 2026-11-21T04:28:01.703656",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.688437"
+    "scanned_at": "2026-11-21T08:10:23.490792"
   },
   {
     "id": "scan_0159",
@@ -1231,14 +1705,14 @@
     "location": "Islamabad",
     "url": "https://www.linkedin.com/jobs/view/4483381476",
     "description": "Position: AI Engineer | Pakistan at Volga Partners (Islamabad). Live alert email 1a1f8ab48024982f.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "ai_ml",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - AI Resume PDF.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4483381476 on 2026-11-21T04:28:01.621496",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.605141"
+    "scanned_at": "2026-11-21T08:10:23.474183"
   },
   {
     "id": "scan_0158",
@@ -1255,7 +1729,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.587592"
+    "scanned_at": "2026-11-21T08:10:23.449057"
   },
   {
     "id": "scan_0157",
@@ -1265,14 +1739,14 @@
     "location": "Karachi Division",
     "url": "https://www.linkedin.com/jobs/view/4475823358",
     "description": "Position: Software Engineer, AI at DigitalOcean (Karachi Division). Live alert email 1a1f8ab48024982f.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "ai_ml",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - AI Resume PDF.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4475823358 on 2026-11-21T04:28:01.505527",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.482212"
+    "scanned_at": "2026-11-21T08:10:23.425211"
   },
   {
     "id": "scan_0156",
@@ -1282,14 +1756,14 @@
     "location": "Kar\u0101chi",
     "url": "https://www.linkedin.com/jobs/view/4328059055",
     "description": "Position: AI / ML Engineer (Applied AI & Automations) at Albi (Kar\u0101chi). Live alert email 1a1f8ab48024982f.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "ai_ml",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - AI Resume PDF.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4328059055 on 2026-11-21T04:28:01.416398",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.400252"
+    "scanned_at": "2026-11-21T08:10:23.408116"
   },
   {
     "id": "scan_0155",
@@ -1299,14 +1773,14 @@
     "location": "Pakistan",
     "url": "https://www.linkedin.com/jobs/view/4488686996",
     "description": "Position: Artificial Intelligence Engineer at VeriPark (Pakistan). Live alert email 1a1f8ab48024982f.",
-    "is_match": true,
-    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
-    "domain": "ai_ml",
-    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb Azhar - AI Resume PDF.pdf",
+    "is_match": false,
+    "reason": "Duplicate skipped: Already applied to Job ID 4488686996 on 2026-11-21T04:28:01.195424",
+    "domain": null,
+    "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.190056"
+    "scanned_at": "2026-11-21T08:10:23.392000"
   },
   {
     "id": "scan_0154",
@@ -1317,13 +1791,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=373&guid=000001a1f94afa4c9fdeb31f396ad175&src=GD_JOB_AD&t=REC_JOBS&vt=e&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_0b5a2a1c&cb=1795184282507&jobListingId=1010321450260&jrtk=5-yul1-1-1k7sl4idsj0rk801-64d04ba01cebc191&utm_medium=email&utm_source=jobsForYou&utm_campaign=jobsForYou&utm_content=jobs-for-you-jobsForYou-jobpos5-age10d-1010321450260&rdforyou=true",
     "description": "Glassdoor alert posting: Fidelity Investments4.1 \u2605Full Stack Software Engineer, PythonWestlake, TX$81K - $102K (Glassdoor est.)Best Place to Work10d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.172037"
+    "scanned_at": "2026-11-21T08:10:23.375152"
   },
   {
     "id": "scan_0153",
@@ -1334,13 +1808,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=373&guid=000001a1f94afa4c9fdeb31f396ad175&src=GD_JOB_AD&t=REC_JOBS&vt=e&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_85f10d71&cb=1795184282507&jobListingId=1010315922485&jrtk=5-yul1-1-1k7sl4idsj0rk801-aa4c6df060bf1d73&utm_medium=email&utm_source=jobsForYou&utm_campaign=jobsForYou&utm_content=jobs-for-you-jobsForYou-jobpos4-age16d-1010315922485&rdforyou=true",
     "description": "Glassdoor alert posting: Amentum3.6 \u2605Software Tools Developer, Entry LevelHuntsville, AL$61K - $90K (Glassdoor est.)",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.154311"
+    "scanned_at": "2026-11-21T08:10:23.356347"
   },
   {
     "id": "scan_0152",
@@ -1351,13 +1825,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=373&guid=000001a1f94afa4c9fdeb31f396ad175&src=GD_JOB_AD&t=REC_JOBS&vt=e&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_13558e01&cb=1795184282507&jobListingId=1010114936786&jrtk=5-yul1-1-1k7sl4idsj0rk801-4868f58041bd7bf9&utm_medium=email&utm_source=jobsForYou&utm_campaign=jobsForYou&utm_content=jobs-for-you-jobsForYou-jobpos3-age30d-1010114936786&rdforyou=true",
     "description": "Glassdoor alert posting: Black Canyon Consulting4.4 \u2605Junior/Mid Full Stack Software EngineerBethesda, MD$76K - $110K (Glassdoor est.)",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.129424"
+    "scanned_at": "2026-11-21T08:10:23.339387"
   },
   {
     "id": "scan_0151",
@@ -1368,13 +1842,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=373&guid=000001a1f94afa4c9fdeb31f396ad175&src=GD_JOB_AD&t=REC_JOBS&vt=e&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_22dc326b&cb=1795184282507&jobListingId=1010318424315&jrtk=5-yul1-1-1k7sl4idsj0rk801-05189fa4553d459a&utm_medium=email&utm_source=jobsForYou&utm_campaign=jobsForYou&utm_content=jobs-for-you-jobsForYou-jobpos2-age14d-1010318424315&rdforyou=true",
     "description": "Glassdoor alert posting: Sahajanand Developers3.0 \u2605Junior Full Stack EngineerWillow Grove, PA$65K (Employer est.)Easy Apply",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.110544"
+    "scanned_at": "2026-11-21T08:10:23.321132"
   },
   {
     "id": "scan_0150",
@@ -1385,13 +1859,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=373&guid=000001a1f94afa4c9fdeb31f396ad175&src=GD_JOB_AD&t=REC_JOBS&vt=e&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_594f512b&cb=1795184282507&jobListingId=1010326474482&jrtk=5-yul1-1-1k7sl4idsj0rk801-64c8232cf9363aae&utm_medium=email&utm_source=jobsForYou&utm_campaign=jobsForYou&utm_content=jobs-for-you-jobsForYou-jobpos1-age6d-1010326474482&rdforyou=true",
     "description": "Glassdoor alert posting: Keysight Technologies4.0 \u2605IT Engineer,Software,EntryColorado Springs, CO$65K - $96K (Glassdoor est.)6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:01.090286"
+    "scanned_at": "2026-11-21T08:10:23.303601"
   },
   {
     "id": "scan_0149",
@@ -1402,13 +1876,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=113&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_76b8b123&cb=1795047923017&jobListingId=1010329652180&jrtk=5-yul1-0-1k7oj371dk8js800-e94f907dcc2ecd79&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos13-agept-1010329652180&ja=437643641",
     "description": "Glassdoor alert posting: Techsurge Pvt. Ltd.Sharepoint Developer - Onsite KarachiKar\u0101chiEasy Apply12h",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.550433"
+    "scanned_at": "2026-11-21T08:10:25.522167"
   },
   {
     "id": "scan_0148",
@@ -1419,13 +1893,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=112&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_ace1cf71&cb=1795047923016&jobListingId=1010325878015&jrtk=5-yul1-0-1k7oj371dk8js800-b46af43e7e8e4171&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos12-age5d-1010325878015&ja=437643641",
     "description": "Glassdoor alert posting: Clear Wave Information TechnologiesQA Engineer (Manual & Automation)PakistanEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.527837"
+    "scanned_at": "2026-11-21T08:10:25.497432"
   },
   {
     "id": "scan_0147",
@@ -1436,13 +1910,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=111&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_0966e247&cb=1795047923015&jobListingId=1010324258143&jrtk=5-yul1-0-1k7oj371dk8js800-53c010685c9eef51&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos11-age6d-1010324258143&ja=437643641",
     "description": "Glassdoor alert posting: Ziauddin Hospital3.5 \u2605Functional Consultant - ITPakistanEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.503998"
+    "scanned_at": "2026-11-21T08:10:25.476242"
   },
   {
     "id": "scan_0146",
@@ -1453,13 +1927,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_0919e15e&cb=1795047923014&jobListingId=1010325796116&jrtk=5-yul1-0-1k7oj371dk8js800-935b6060f2f59043&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age5d-1010325796116&ja=437643641",
     "description": "Glassdoor alert posting: HR Core SolutionsSoftware Engineer LeadKar\u0101chiEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.480023"
+    "scanned_at": "2026-11-21T08:10:25.453068"
   },
   {
     "id": "scan_0145",
@@ -1470,13 +1944,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=109&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&cs=1_e048536f&cb=1795047923013&jobListingId=1010329490017&jrtk=5-yul1-0-1k7oj371dk8js800-dc7ff87d2cbb5b01&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos9-agept-1010329490017&ja=437643641",
     "description": "Glassdoor alert posting: ValueMomentum3.5 \u2605Full Stack DeveloperHyder\u0101b\u0101d16h",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.454650"
+    "scanned_at": "2026-11-21T08:10:25.430497"
   },
   {
     "id": "scan_0144",
@@ -1487,13 +1961,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_6476d894&cb=1795047923012&jobListingId=1010325750270&jrtk=5-yul1-0-1k7oj371dk8js800-5cb216453a651693&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos8-age5d-1010325750270&ja=437643641",
     "description": "Glassdoor alert posting: DigilaticsUI/UX & Creative DesignerPakistanEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.427276"
+    "scanned_at": "2026-11-21T08:10:25.406653"
   },
   {
     "id": "scan_0143",
@@ -1504,13 +1978,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_cbfdce39&cb=1795047923011&jobListingId=1010325650838&jrtk=5-yul1-0-1k7oj371dk8js800-7cbae7291828f3ae&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age5d-1010325650838&ja=437643641",
     "description": "Glassdoor alert posting: NexttechincBI Tableau Developers (Onsite) IslamabadIslamabadEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.403928"
+    "scanned_at": "2026-11-21T08:10:25.383963"
   },
   {
     "id": "scan_0142",
@@ -1521,13 +1995,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_c827c3b9&cb=1795047922979&jobListingId=1010325641786&jrtk=5-yul1-0-1k7oj371dk8js800-9edcc2d486dc8eef&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-age5d-1010325641786&ja=437643641",
     "description": "Glassdoor alert posting: Appicoders4.3 \u2605SQA EngineerKar\u0101chiEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.377643"
+    "scanned_at": "2026-11-21T08:10:25.366636"
   },
   {
     "id": "scan_0141",
@@ -1538,13 +2012,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_a93f4faa&cb=1795047923020&jobListingId=1010325472541&jrtk=5-yul1-0-1k7oj371dk8js800-b679154bbee92422&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos5-age5d-1010325472541&ja=437643641",
     "description": "Glassdoor alert posting: STG InternationalAdvanced WordPress & E-Commerce Web DeveloperPakistanEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.354973"
+    "scanned_at": "2026-11-21T08:10:25.345083"
   },
   {
     "id": "scan_0140",
@@ -1555,13 +2029,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_7df138f3&cb=1795047922968&jobListingId=1010324280607&jrtk=5-yul1-0-1k7oj371dk8js800-950d086ce5ee5a7e&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age6d-1010324280607&ja=437643641",
     "description": "Glassdoor alert posting: EM AdvisersQA Engineer / Software Tester \u2013 Manual Testing Junior levelIslamabadEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.333038"
+    "scanned_at": "2026-11-21T08:10:25.322419"
   },
   {
     "id": "scan_0139",
@@ -1572,13 +2046,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_c5be7e95&cb=1795047922967&jobListingId=1010325738978&jrtk=5-yul1-0-1k7oj371dk8js800-5275f93a223bbbf5&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age5d-1010325738978&ja=437643641",
     "description": "Glassdoor alert posting: ChildLife Foundation3.9 \u2605Junior Power BI DeveloperKar\u0101chiEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.311385"
+    "scanned_at": "2026-11-21T08:10:25.304791"
   },
   {
     "id": "scan_0138",
@@ -1589,13 +2063,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_e9755d27&cb=1795047923010&jobListingId=1010327909721&jrtk=5-yul1-0-1k7oj371dk8js800-230cfba81cb90df5&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos2-age2d-1010327909721&ja=437643641",
     "description": "Glassdoor alert posting: KASHMIR MARKETING (PRIVATE) LIMITEDWeb & Software DeveloperLahoreEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.287271"
+    "scanned_at": "2026-11-21T08:10:25.284269"
   },
   {
     "id": "scan_0137",
@@ -1606,13 +2080,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=58&guid=000001a1f12dc732b65bd9bfe37c28e7&src=GD_JOB_AD&t=MJA&vt=e&ja=437643641&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_9a017ac2&cb=1795047922966&jobListingId=1010324402710&jrtk=5-yul1-0-1k7oj371dk8js800-f2f1b50442571bfc&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age6d-1010324402710&ja=437643641",
     "description": "Glassdoor alert posting: K.H. SolutionzFull-Stack Developer & AI EngineerPakistanEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.260775"
+    "scanned_at": "2026-11-21T08:10:25.258867"
   },
   {
     "id": "scan_0136",
@@ -1623,13 +2097,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=113&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_65a6987b&cb=1795048049500&jobListingId=1010327831682&jrtk=5-yul1-0-1k7oj72mtgmvn808-b0d530be9b27bcb4&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos13-age2d-1010327831682&ja=437643845",
     "description": "Glassdoor alert posting: Aivora DigitalGraphic Designer, Video Editor & AI Content CreatorKar\u0101chiEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.236735"
+    "scanned_at": "2026-11-21T08:10:25.236233"
   },
   {
     "id": "scan_0135",
@@ -1640,13 +2114,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=112&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_5dff4c87&cb=1795048049499&jobListingId=1010326457086&jrtk=5-yul1-0-1k7oj72mtgmvn808-98b451ceffb8c732&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos12-age4d-1010326457086&ja=437643845",
     "description": "Glassdoor alert posting: Zero LifestyleCreative HeadKar\u0101chiEasy Apply4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.212955"
+    "scanned_at": "2026-11-21T08:10:25.212816"
   },
   {
     "id": "scan_0134",
@@ -1657,13 +2131,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=111&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_66cb5b55&cb=1795048049499&jobListingId=1010326454465&jrtk=5-yul1-0-1k7oj72mtgmvn808-d6016bf2ac6f6535&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos11-age4d-1010326454465&ja=437643845",
     "description": "Glassdoor alert posting: WinklinJunior Graphic DesignerKar\u0101chiEasy Apply4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.189367"
+    "scanned_at": "2026-11-21T08:10:25.195736"
   },
   {
     "id": "scan_0133",
@@ -1674,13 +2148,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=110&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_b03b3157&cb=1795048049499&jobListingId=1010327040030&jrtk=5-yul1-0-1k7oj72mtgmvn808-23d92b7a11f974ac&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos10-age2d-1010327040030&ja=437643845",
     "description": "Glassdoor alert posting: COLOR STUDIO PROFESSIONALPACKAGING GRAPHICS DESIGNERKorangiEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.165884"
+    "scanned_at": "2026-11-21T08:10:25.171642"
   },
   {
     "id": "scan_0132",
@@ -1691,13 +2165,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=109&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_39ed332f&cb=1795048049499&jobListingId=1010326550942&jrtk=5-yul1-0-1k7oj72mtgmvn808-527378918f4b1c80&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos9-age4d-1010326550942&ja=437643845",
     "description": "Glassdoor alert posting: Modest Needs Foundation3.2 \u2605Junior Graphic DesignerKorangiEasy Apply4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.144537"
+    "scanned_at": "2026-11-21T08:10:25.149749"
   },
   {
     "id": "scan_0131",
@@ -1708,13 +2182,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=108&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_a36809a9&cb=1795048049499&jobListingId=1010327489478&jrtk=5-yul1-0-1k7oj72mtgmvn808-43ea2bcb3f408a57&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos8-age2d-1010327489478&ja=437643845",
     "description": "Glassdoor alert posting: OzbixJunior Graphic Designer & Video EditorKar\u0101chiEasy Apply2d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.120028"
+    "scanned_at": "2026-11-21T08:10:25.125304"
   },
   {
     "id": "scan_0130",
@@ -1725,13 +2199,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=107&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_1ada2ce3&cb=1795048049499&jobListingId=1010324355429&jrtk=5-yul1-0-1k7oj72mtgmvn808-11fc6496f6f7af3d&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos7-age6d-1010324355429&ja=437643845",
     "description": "Glassdoor alert posting: K.H. SolutionzSocial Media MarketerPakistanEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.093588"
+    "scanned_at": "2026-11-21T08:10:25.103079"
   },
   {
     "id": "scan_0129",
@@ -1742,13 +2216,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=106&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_f8f23563&cb=1795048049499&jobListingId=1010326592518&jrtk=5-yul1-0-1k7oj72mtgmvn808-28bf4a301ff0f326&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos6-age4d-1010326592518&ja=437643845",
     "description": "Glassdoor alert posting: Kass Cosmeticsgraphic designer + video editorKar\u0101chiEasy Apply4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.078678"
+    "scanned_at": "2026-11-21T08:10:25.084452"
   },
   {
     "id": "scan_0128",
@@ -1759,13 +2233,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=105&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_cb230c72&cb=1795048049499&jobListingId=1010326568001&jrtk=5-yul1-0-1k7oj72mtgmvn808-8da51332f67dea6b&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos5-age4d-1010326568001&ja=437643845",
     "description": "Glassdoor alert posting: PIXARCHCreative DesignerKar\u0101chiEasy Apply4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.056647"
+    "scanned_at": "2026-11-21T08:10:25.059654"
   },
   {
     "id": "scan_0127",
@@ -1776,13 +2250,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=104&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_249f599f&cb=1795048049499&jobListingId=1010326370566&jrtk=5-yul1-0-1k7oj72mtgmvn808-874fbed6bbe0f7ae&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos4-age4d-1010326370566&ja=437643845",
     "description": "Glassdoor alert posting: Trigency 360Jr Graphic DesignerPakistanEasy Apply4d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.031351"
+    "scanned_at": "2026-11-21T08:10:25.038558"
   },
   {
     "id": "scan_0126",
@@ -1793,13 +2267,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=103&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_7799bf69&cb=1795048049499&jobListingId=1010324291411&jrtk=5-yul1-0-1k7oj72mtgmvn808-cf1a28b26fe42a3d&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos3-age6d-1010324291411&ja=437643845",
     "description": "Glassdoor alert posting: A.A Joyland (Pvt) LtdGraphic DesignerKar\u0101chiEasy Apply6d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.012049"
+    "scanned_at": "2026-11-21T08:10:25.015885"
   },
   {
     "id": "scan_0125",
@@ -1810,13 +2284,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=102&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_d76ddd19&cb=1795048049499&jobListingId=1010325203017&jrtk=5-yul1-0-1k7oj72mtgmvn808-985b83f88ed68fa8&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos2-age5d-1010325203017&ja=437643845",
     "description": "Glassdoor alert posting: Direct Building Solutions Australia Pty LtdCreative/Graphic DesignerKar\u0101chiEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.986549"
+    "scanned_at": "2026-11-21T08:10:24.991434"
   },
   {
     "id": "scan_0124",
@@ -1827,13 +2301,13 @@
     "url": "https://www.glassdoor.com/partner/jobListing.htm?pos=101&ao=1136043&s=58&guid=000001a1f12dc981a24e098f3ab5f051&src=GD_JOB_AD&t=MJA&vt=e&ja=437643845&uido=0C5407CDBB66173246A7E8B1CF7D48BD&ea=1&cs=1_2e7dd8e6&cb=1795048049499&jobListingId=1010325369177&jrtk=5-yul1-0-1k7oj72mtgmvn808-da836ce8601c72c7&tgt=GD_JOB_VIEW&utm_medium=email&utm_source=jobalert&utm_campaign=jobAlertAlert&utm_content=ja-jobpos1-age5d-1010325369177&ja=437643845",
     "description": "Glassdoor alert posting: Nasa Auto Care1.0 \u2605Graphic DesignerKar\u0101chiEasy Apply5d",
     "is_match": false,
-    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:22.064008",
+    "reason": "Duplicate skipped: Already applied to URL on 2026-11-19T05:23:16.087419",
     "domain": null,
     "cv_path": null,
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:03.971859"
+    "scanned_at": "2026-11-21T08:10:24.974875"
   },
   {
     "id": "scan_0123",
@@ -3414,7 +3888,7 @@
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null,
-    "scanned_at": "2026-11-21T04:28:04.802023"
+    "scanned_at": "2026-11-21T08:10:25.869151"
   },
   {
     "id": "scan_0030",
@@ -3445,7 +3919,7 @@
     "reason": "Disqualified: Tech stack does not match software engineering domains",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.779971",
+    "scanned_at": "2026-11-21T08:10:25.845493",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3462,7 +3936,7 @@
     "reason": "Disqualified: Tech stack does not match software engineering domains",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.752480",
+    "scanned_at": "2026-11-21T08:10:25.813920",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3479,7 +3953,7 @@
     "reason": "Disqualified: Tech stack does not match software engineering domains",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.730912",
+    "scanned_at": "2026-11-21T08:10:25.784533",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3492,11 +3966,11 @@
     "location": "Kar\u0101chi",
     "url": "https://www.linkedin.com/jobs/view/4491152798",
     "description": "Position: ACCA Trainee Associate at Standard Chartered (Kar\u0101chi). Live alert email 1a1eca71cb51920f.",
-    "is_match": false,
-    "reason": "Duplicate skipped: Already applied to Job ID 4491152798 on 2026-11-19T05:23:15.522859",
-    "domain": null,
-    "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.710009",
+    "is_match": true,
+    "reason": "Accepted: Matches domain and experience criteria (< 1 year)",
+    "domain": "full_stack",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "scanned_at": "2026-11-21T08:10:25.678649",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3513,7 +3987,7 @@
     "reason": "Disqualified: Tech stack does not match software engineering domains",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.685735",
+    "scanned_at": "2026-11-21T08:10:25.657405",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3530,7 +4004,7 @@
     "reason": "Duplicate skipped: Already applied to Job ID 4490435917 on 2026-11-19T05:23:15.451910",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.669456",
+    "scanned_at": "2026-11-21T08:10:25.638513",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3547,7 +4021,7 @@
     "reason": "Disqualified: Tech stack does not match software engineering domains",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.643936",
+    "scanned_at": "2026-11-21T08:10:25.613348",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3564,7 +4038,7 @@
     "reason": "Duplicate skipped: Already applied to Job ID 4484040948 on 2026-11-19T05:23:15.360958",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.620856",
+    "scanned_at": "2026-11-21T08:10:25.592636",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3581,7 +4055,7 @@
     "reason": "Duplicate skipped: Already applied for AI Engineer @ Datamatics Technologies (job_010)",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.596822",
+    "scanned_at": "2026-11-21T08:10:25.568540",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null
@@ -3598,7 +4072,7 @@
     "reason": "Duplicate skipped: Already applied to Job ID 4490420794 on 2026-11-19T06:10:08.121623",
     "domain": null,
     "cv_path": null,
-    "scanned_at": "2026-11-21T04:28:04.574602",
+    "scanned_at": "2026-11-21T08:10:25.545176",
     "is_closed": false,
     "closed_reason": null,
     "alt_email": null

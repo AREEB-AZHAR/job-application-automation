@@ -201,16 +201,19 @@ function updateKPIs() {
   const genuineApps = state.applications.filter(a => !a.is_test);
   const appliedCount = genuineApps.filter(a => a.status === 'APPLIED' || a.status === 'SUBMITTED' || a.status === 'APPLIED_VIA_DIRECT_EMAIL').length;
   const closedCount = genuineApps.filter(a => a.status === 'NO_LONGER_ACCEPTING_APPLICATIONS' || a.is_closed).length || m.total_closed || 0;
+  const scannedCount = state.scanned.length || m.total_scanned || 0;
+  const filteredCount = m.total_disqualified || Math.max(0, scannedCount - appliedCount - closedCount);
+  const yieldRate = scannedCount > 0 ? Math.round((appliedCount / scannedCount) * 1000) / 10 : 0;
 
   document.getElementById('stat-applied').textContent = appliedCount;
-  document.getElementById('stat-scanned').textContent = m.total_scanned || 0;
-  document.getElementById('stat-rate').textContent = `${m.qualification_rate || m.application_rate || 0}%`;
-  document.getElementById('stat-filtered').textContent = m.total_disqualified || 0;
+  document.getElementById('stat-scanned').textContent = scannedCount;
+  document.getElementById('stat-rate').textContent = `${yieldRate}%`;
+  document.getElementById('stat-filtered').textContent = filteredCount;
   const closedEl = document.getElementById('stat-closed');
   if (closedEl) closedEl.textContent = closedCount;
 
-  document.getElementById('count-applications').textContent = state.applications.length;
-  document.getElementById('count-scanned').textContent = state.scanned.length;
+  document.getElementById('count-applications').textContent = appliedCount;
+  document.getElementById('count-scanned').textContent = scannedCount;
 }
 
 function switchTab(tab) {
@@ -255,7 +258,12 @@ function renderApplications() {
       matchStatus = app.status === state.selectedStatus;
     }
 
-    return matchSearch && matchDomain && matchStatus;
+    // Default to genuine live applications only; show test scaffold only when explicitly filtered
+    const matchTest = (state.selectedStatus === 'TEST_RECORD' || state.selectedStatus === 'DISQUALIFIED_DURING_AUDIT')
+      ? true 
+      : !app.is_test;
+
+    return matchSearch && matchDomain && matchStatus && matchTest;
   });
 
   // Apply sorting

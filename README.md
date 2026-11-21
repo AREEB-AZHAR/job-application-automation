@@ -14,16 +14,21 @@ An autonomous, developer-grade job discovery and direct application dispatch eng
 ## 🚀 Accomplishments & Real Live Application Dispatch
 
 ### 🌟 Latest Pipeline Run & UI Architecture Updates
-- **Click Card to View**: Every job application card across the grid is now fully clickable (`tabindex="0"`, pointer cursor, interactive border glow, and full keyboard navigation support) to open the comprehensive submission verification drawer immediately.
+- **Mobile-Friendly Responsive Redesign**:
+  - Engineered dedicated responsive breakpoints for screens `< 900px`, `< 768px`, and `< 640px`.
+  - Stacking topbar and candidate context strip with zero horizontal overflow (`max-width: 100vw; overflow-x: hidden`).
+  - Touch-optimized 2-column KPI strip and full-width tab controls.
+  - Mobile full-screen slide-over drawer with comfortable touch targets.
+  - Horizontally swipeable Opportunity Audit Trail table with smooth iOS/Android native touch scrolling (`overflow-x: auto`).
+- **Live Portal Submissions via LinkedIn Easy Apply**:
+  - **Dune AI** (*Field Software Engineer (C++) (NEW GRAD)* - [Job ID: 4490867446](https://www.linkedin.com/jobs/view/4490867446/)): Executed 100% live Easy Apply application through candidate's authenticated LinkedIn session. Answered screening questions (hours written daily: 6, hardware experience: Yes, GPA: 3.4, 6 days a week: Yes, facility travel: Yes), attached `Areeb_Azhar_Full_Stack_Web_CV.pdf`, stepped through modal, and verified live confirmation: *"Application status: Application submitted now"* (`data/proofs/job_063/`).
+  - **SQUATWOLF** (*Mobile Application Developer* - [Job ID: 4488936551](https://www.linkedin.com/jobs/view/4488936551/)): Verified live Easy Apply submission.
+  - **SQUATWOLF** (*Frontend Developer* - [Job ID: 4488948133](https://www.linkedin.com/jobs/view/4488948133/)): Verified live Easy Apply submission.
+- **Accurate & Synchronized Metrics**:
+  - Reconciled counters across KPI cards, navigation tabs, and grid cards.
+  - Default view automatically hides early test scaffolding so only genuine applications are shown (**28 Live Applications Submitted**, **3 Closed Audits**, **258 Total Scanned**).
+- **Click Card to View**: Every job application card across the grid is fully clickable (`tabindex="0"`, pointer cursor, interactive border glow, and full keyboard navigation support) to open the comprehensive submission verification drawer immediately.
 - **Chronological & Multi-Criteria Sorting**: Added real-time sorting controls (`Newest First`, `Oldest First`, `Company A-Z`, `Role Title A-Z`) applied to both the live application card grid and the historical audit table.
-- **Thorough Test Record Recheck & Audit**:
-  - Rechecked all 61 database records in `data/applications.json` against actual execution history.
-  - Confirmed **26 genuine applied submissions** (including SQUATWOLF Mobile Developer, SQUATWOLF Frontend Developer, Systems Limited, Careem, DigitalOcean, VeriPark, Albi, Volga Partners, FullStack, HBOX Digital, Smart Working, Navigator HR, Mindstorm Studios, Gamez Ocean, Mashreq, Datamatics, Webbuggs, ibex, Stars IT, CureMD, and DevDignus).
-  - Confirmed **3 genuine closed employer audits** with alternative recruiter routing (DevDignus Operations, Vision IT Solutions).
-  - Explicitly flagged and segregated **24 scaffolding test placeholders** (`status: "TEST_RECORD"`, `is_test: true`) created during early framework scaffolding.
-  - Flagged **6 non-SWE/senior roles** as `status: "DISQUALIFIED_DURING_AUDIT"` (e.g. ACCA Trainee, Graphic Designers, Senior React Native).
-  - Pruned **3 redundant duplicate test entries** (`TEST_DUPLICATE_PRUNED`).
-  - Active KPI counters on both localhost and GitHub Pages accurately compute genuine metrics (26 Applied, 3 Closed Audits, 230 Total Scanned).
 - **GitHub Pages Live Deployment**:
   - Exported static data bundle (`web/data.json`, `web/api/data.json`, and `.nojekyll`).
   - Synced visual proofs into `web/proofs/`.
