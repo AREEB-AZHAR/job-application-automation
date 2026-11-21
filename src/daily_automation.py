@@ -240,9 +240,31 @@ def run_daily_automation(max_alerts: int = 15) -> Dict[str, Any]:
     print(f" -> Closed Posts Audited: {metrics['total_closed']}")
     print(f" -> Filtered / Disqualified: {metrics['total_disqualified']}")
 
-    # Step 4: Verification of Web Dashboard
-    print("\n🌐 [Step 4/4] Verifying pipeline web showcase at http://localhost:5000...")
-    print(" -> All applications and visual proofs synced.")
+    # Step 4: Export Static Assets for GitHub Pages
+    print("\n🌐 [Step 4/5] Exporting static web assets for GitHub Pages...")
+    try:
+        from export_static_web import export_static_assets
+        export_static_assets()
+        print(" -> Static bundle exported successfully.")
+    except Exception as e:
+        print(f" -> Export error: {e}")
+
+    # Step 5: Git & GitHub Pages Auto-Sync
+    print("\n🚀 [Step 5/5] Synchronizing Git repository and deploying to GitHub Pages...")
+    try:
+        subprocess.run(["git", "add", "."], cwd=BASE_DIR, check=False)
+        commit_res = subprocess.run(
+            ["git", "commit", "-m", f"chore(pipeline): daily autonomous job application run {datetime.now().strftime('%Y-%m-%d')}"],
+            cwd=BASE_DIR, capture_output=True, text=True
+        )
+        if commit_res.returncode == 0:
+            subprocess.run(["git", "push", "origin", "master"], cwd=BASE_DIR, check=False)
+            subprocess.run(["git", "subtree", "push", "--prefix", "web", "origin", "gh-pages"], cwd=BASE_DIR, check=False)
+            print(" -> Pushed updates to GitHub master and gh-pages branches!")
+        else:
+            print(" -> Working tree clean; no new changes to commit.")
+    except Exception as e:
+        print(f" -> Git sync error: {e}")
 
     print("\n" + "=" * 80)
     print("✅ DAILY AUTOMATION RUN COMPLETE")
