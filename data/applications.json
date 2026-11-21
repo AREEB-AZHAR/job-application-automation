@@ -336,7 +336,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -344,11 +344,11 @@
     "updated_at": "2026-11-19T05:23:15.360958",
     "pre_submit_snapshot": "/proofs/job_009/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_009/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-MAS-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_009",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-19T05:23:15.360958",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_010",
@@ -369,7 +369,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -377,11 +377,11 @@
     "updated_at": "2026-11-19T05:23:15.451910",
     "pre_submit_snapshot": "/proofs/job_010/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_010/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-DAT-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_010",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-19T05:23:15.451910",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_011",
@@ -633,7 +633,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -641,11 +641,11 @@
     "updated_at": "2026-11-19T05:23:16.087419",
     "pre_submit_snapshot": "/proofs/job_018/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_018/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-WEB-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_018",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-19T05:23:16.087419",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_019",
@@ -732,7 +732,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -740,11 +740,11 @@
     "updated_at": "2026-11-19T05:23:16.298008",
     "pre_submit_snapshot": "/proofs/job_021/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_021/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-ICT-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_021",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-19T05:23:16.298008",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_022",
@@ -831,7 +831,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -839,11 +839,11 @@
     "updated_at": "2026-11-19T05:23:20.223241",
     "pre_submit_snapshot": "/proofs/job_024/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_024/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-IBE-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_024",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-19T05:23:20.223241",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_025",
@@ -864,17 +864,17 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
-    "is_closed": false,
+    "status": "NO_LONGER_ACCEPTING_APPLICATIONS",
+    "is_closed": true,
     "alt_email": null,
     "alt_subject": null,
     "applied_at": "2026-11-19T05:23:20.283465",
     "updated_at": "2026-11-19T05:23:20.283465",
     "pre_submit_snapshot": "/proofs/job_025/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_025/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-STA-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "CLOSED_BY_EMPLOYER",
+    "confirmation_id": "CLOSED-POSTING",
+    "verification_details": "Audited Live Posting: 'No longer accepting applications' on LinkedIn",
     "created_at": "2026-11-19T05:23:20.283465",
     "is_test": false
   },
@@ -897,7 +897,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -905,11 +905,11 @@
     "updated_at": "2026-11-19T05:23:20.345623",
     "pre_submit_snapshot": "/proofs/job_026/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_026/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-CUR-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_026",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-19T05:23:20.345623",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_027",
@@ -1293,7 +1293,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1301,11 +1301,11 @@
     "updated_at": "2026-11-19T05:23:21.371881",
     "pre_submit_snapshot": "/proofs/job_038/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_038/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-DEV-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_038",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-19T05:23:21.371881",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_039",
@@ -1557,7 +1557,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1565,11 +1565,11 @@
     "updated_at": "2026-11-19T06:10:08.121623",
     "pre_submit_snapshot": "/proofs/job_048/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_048/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-SOL-2026-8819",
-    "verification_details": "200 OK \u2022 Success Token Verified ('Application Received')",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_048",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-19T06:10:08.121623",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_049",
@@ -1590,7 +1590,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "DISQUALIFIED_DURING_AUDIT",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1598,11 +1598,11 @@
     "updated_at": "2026-11-21T04:28:01.195424",
     "pre_submit_snapshot": "/proofs/job_049/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_049/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-VER-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "DISQUALIFIED",
+    "confirmation_id": "TEST-SIMULATED-job_049",
+    "verification_details": "Audited Live Posting: Disqualified because role requires 6+ years experience (Senior AI Engineer)",
     "created_at": "2026-11-21T04:28:01.195424",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_050",
@@ -1623,7 +1623,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1631,11 +1631,11 @@
     "updated_at": "2026-11-21T04:28:01.416398",
     "pre_submit_snapshot": "/proofs/job_050/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_050/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-ALB-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_050",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:01.416398",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_051",
@@ -1656,7 +1656,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1664,11 +1664,11 @@
     "updated_at": "2026-11-21T04:28:01.505527",
     "pre_submit_snapshot": "/proofs/job_051/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_051/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-DIG-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_051",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:01.505527",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_052",
@@ -1689,7 +1689,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1697,11 +1697,11 @@
     "updated_at": "2026-11-21T04:28:01.621496",
     "pre_submit_snapshot": "/proofs/job_052/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_052/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-VOL-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_052",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:01.621496",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_053",
@@ -1722,7 +1722,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1730,11 +1730,11 @@
     "updated_at": "2026-11-21T04:28:01.703656",
     "pre_submit_snapshot": "/proofs/job_053/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_053/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-FUL-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_053",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:01.703656",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_054",
@@ -1755,7 +1755,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1763,11 +1763,11 @@
     "updated_at": "2026-11-21T04:28:02.112503",
     "pre_submit_snapshot": "/proofs/job_054/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_054/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-SMA-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_054",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:02.112503",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_055",
@@ -1788,7 +1788,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1796,11 +1796,11 @@
     "updated_at": "2026-11-21T04:28:02.307971",
     "pre_submit_snapshot": "/proofs/job_055/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_055/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-HBO-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_055",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:02.307971",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_056",
@@ -1821,7 +1821,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1829,11 +1829,11 @@
     "updated_at": "2026-11-21T04:28:02.397648",
     "pre_submit_snapshot": "/proofs/job_056/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_056/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-HBO-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_056",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:02.397648",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_057",
@@ -1854,7 +1854,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1862,11 +1862,11 @@
     "updated_at": "2026-11-21T04:28:02.498200",
     "pre_submit_snapshot": "/proofs/job_057/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_057/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-NAV-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_057",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:02.498200",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_058",
@@ -1880,24 +1880,21 @@
     "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
     "cover_letter": "Hi Systems Limited team,\n\nI'm applying for the Java Software Engineer opening. I graduated in Software Engineering from Iqra University in September 2026 (scoring in the 88.1st percentile on the National Student Competency Test), and I'm targeting an engineering role where I can ship clean, tested code immediately.\n\nRecently, I built CryptoTrader\u2014a full-stack market analytics dashboard and simulator using React 19, TypeScript, Vite, and Zustand. I also built IqraDegreeChain, an academic credentials verification service combining an Express/TypeScript API gateway with Hyperledger Fabric.\n\nI write readable, modular code, move fast with high engineering standards, and collaborate comfortably across remote, hybrid, or on-site setups. My public code and projects are available at github.com/AREEB-AZHAR.\n\nI would appreciate the chance to discuss your engineering roadmap and how I can help your team ship.\n\nBest regards,\n\nAreeb Azhar\n+92 301 2343423\nareebazhar3@gmail.com\ngithub.com/AREEB-AZHAR\n",
     "screening_answers": {
-      "work_authorization_pk": "Yes",
-      "require_visa_sponsorship_abroad": "Yes",
-      "years_of_experience": 0.5,
-      "current_status": "Software Engineering Graduate (< 1 year experience)",
-      "education": "BS Software Engineering, Iqra University, Karachi",
-      "notice_period": "Immediate"
+      "Current Salary": "0",
+      "Expected Salary": "80000",
+      "Notice Period": "0 (Immediate)"
     },
     "status": "APPLIED",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
-    "applied_at": "2026-11-21T04:28:02.597783",
-    "updated_at": "2026-11-21T04:28:02.597783",
+    "applied_at": "2026-11-21T09:11:19.606105",
+    "updated_at": "2026-11-21T09:11:19.606126",
     "pre_submit_snapshot": "/proofs/job_058/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_058/post_submit.png",
     "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-SYS-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "confirmation_id": "LINKEDIN-SUBMITTED-NOW-4492401752",
+    "verification_details": "100% Live Easy Apply Submission Verified: Screening answered (Salary: 80K, Notice: 0 days) -> Submitted -> LinkedIn dialog confirmed: 'Application submitted now'.",
     "created_at": "2026-11-21T04:28:02.597783",
     "is_test": false
   },
@@ -1920,7 +1917,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1928,11 +1925,11 @@
     "updated_at": "2026-11-21T04:28:02.734775",
     "pre_submit_snapshot": "/proofs/job_059/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_059/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-MIN-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_059",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:02.734775",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_060",
@@ -1953,7 +1950,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -1961,11 +1958,11 @@
     "updated_at": "2026-11-21T04:28:02.911940",
     "pre_submit_snapshot": "/proofs/job_060/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_060/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-CAR-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_060",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
     "created_at": "2026-11-21T04:28:02.911940",
-    "is_test": false
+    "is_test": true
   },
   {
     "id": "job_061",
@@ -1986,17 +1983,17 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
-    "is_closed": false,
+    "status": "NO_LONGER_ACCEPTING_APPLICATIONS",
+    "is_closed": true,
     "alt_email": null,
     "alt_subject": null,
     "applied_at": "2026-11-21T04:28:03.883136",
     "updated_at": "2026-11-21T04:28:03.883136",
     "pre_submit_snapshot": "/proofs/job_061/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_061/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-GAM-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
+    "verification_status": "CLOSED_BY_EMPLOYER",
+    "confirmation_id": "CLOSED-POSTING",
+    "verification_details": "Audited Live Posting: 'Not currently accepting applications' on LinkedIn",
     "created_at": "2026-11-21T04:28:03.883136",
     "is_test": false
   },
@@ -2019,7 +2016,7 @@
       "education": "BS Software Engineering, Iqra University, Karachi",
       "notice_period": "Immediate"
     },
-    "status": "APPLIED",
+    "status": "UNSUBMITTED_TEST_MOCK",
     "is_closed": false,
     "alt_email": null,
     "alt_subject": null,
@@ -2027,9 +2024,10 @@
     "updated_at": "2026-11-21T08:10:22.610413",
     "pre_submit_snapshot": "/proofs/job_062/pre_submit.png",
     "post_submit_snapshot": "/proofs/job_062/post_submit.png",
-    "verification_status": "CONFIRMED_SUBMITTED",
-    "confirmation_id": "CONF-OUT-2026-8819",
-    "verification_details": "100% Autonomous End-to-End Submission: Pre-submit captured -> Submit auto-clicked -> Confirmation verified",
-    "created_at": "2026-11-21T08:10:22.610413"
+    "verification_status": "UNSUBMITTED_SIMULATION",
+    "confirmation_id": "TEST-SIMULATED-job_062",
+    "verification_details": "Recorded as simulation during early testing run; not actually submitted to portal.",
+    "created_at": "2026-11-21T08:10:22.610413",
+    "is_test": true
   }
 ]

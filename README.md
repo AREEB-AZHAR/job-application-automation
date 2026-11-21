@@ -14,19 +14,33 @@ An autonomous, developer-grade job discovery and direct application dispatch eng
 ## 🚀 Accomplishments & Real Live Application Dispatch
 
 ### 🌟 Latest Pipeline Run & UI Architecture Updates
+- **Rigorous Live Verification Audit**:
+  - Rechecked every single record in `data/applications.json` against real external platform execution logs.
+  - Confirmed **6 Genuine Live Submissions** with verified external tokens and dual-receipt snapshots:
+    1. **Systems Limited** (*Java Software Engineer* - [Job ID: 4492401752](https://www.linkedin.com/jobs/view/4492401752/)): **Executed Live via LinkedIn Easy Apply**. Stepped through 4-stage modal, attached `Areeb_Azhar_Full_Stack_Web_CV.pdf`, answered salary (80K PKR) and notice period (0 days), submitted, and verified confirmation: *"Application status: Application submitted now"* (`data/proofs/job_058/`).
+    2. **Dune AI** (*Field Software Engineer (C++) (NEW GRAD)* - [Job ID: 4490867446](https://www.linkedin.com/jobs/view/4490867446/)): **Executed Live via LinkedIn Easy Apply**. Verified submission with `Areeb_Azhar_Full_Stack_Web_CV.pdf` (`data/proofs/job_063/`).
+    3. **SQUATWOLF** (*Mobile Application Developer* - [Job ID: 4488936551](https://www.linkedin.com/jobs/view/4488936551/)): Verified live Easy Apply submission (`data/proofs/job_047/`).
+    4. **SQUATWOLF** (*Frontend Developer* - [Job ID: 4488948133](https://www.linkedin.com/jobs/view/4488948133/)): Verified live Easy Apply submission (`data/proofs/job_046/`).
+    5. **LeadingEdge HR Solutions** (*Junior Flutter Developer*): Dispatched live via Gmail REST API with attached CV (Message ID: `1a1f141aa03161bf`).
+    6. **Tech Inoviq Solutions** (*Software Engineer*): Dispatched live via Gmail REST API with attached CV (Message ID: `1a1f13cdc39c9479`).
+  - Confirmed **5 Verified Closed Post Audits**:
+    1. **Stars IT Developer** (*Intern Web Developers* - `4489765290`): Verified closed on LinkedIn: *"No longer accepting applications"*.
+    2. **Gamez Ocean** (*Unity 3D Mobile Game Developer* - `4490895694`): Verified closed on LinkedIn: *"Not currently accepting applications"*.
+    3. **DevDignus** (*Associate, Operations*): Verified closed posting with alternate recruiter contact routing.
+    4. **Vision IT Solutions** (*Django Developer - Entry Level* - `job_019`): Expired Glassdoor listing.
+    5. **Vision IT Solutions** (*Django Developer - Entry Level* - `job_035`): Expired Glassdoor listing.
+  - Reclassified **19 Unsubmitted Simulated Entries** (`status: "UNSUBMITTED_TEST_MOCK"`, `is_test: true`) that were recorded with mock tokens during earlier script testing and had not been executed on portals.
+  - Flagged **6 Roles as Disqualified** (including *VeriPark AI Engineer* requiring 6+ yrs experience, ACCA Trainee, Senior React Native).
+  - Maintained **32 Scaffold Test Records** segregated in the background.
+- **Accurate & Synchronized Metrics**:
+  - Reconciled counters across KPI cards, navigation tabs, and grid cards.
+  - Default view automatically displays **ONLY genuine live applications** (**6 Applications Submitted**, **5 Closed Audits**, **258 Total Scanned**).
 - **Mobile-Friendly Responsive Redesign**:
   - Engineered dedicated responsive breakpoints for screens `< 900px`, `< 768px`, and `< 640px`.
   - Stacking topbar and candidate context strip with zero horizontal overflow (`max-width: 100vw; overflow-x: hidden`).
   - Touch-optimized 2-column KPI strip and full-width tab controls.
   - Mobile full-screen slide-over drawer with comfortable touch targets.
   - Horizontally swipeable Opportunity Audit Trail table with smooth iOS/Android native touch scrolling (`overflow-x: auto`).
-- **Live Portal Submissions via LinkedIn Easy Apply**:
-  - **Dune AI** (*Field Software Engineer (C++) (NEW GRAD)* - [Job ID: 4490867446](https://www.linkedin.com/jobs/view/4490867446/)): Executed 100% live Easy Apply application through candidate's authenticated LinkedIn session. Answered screening questions (hours written daily: 6, hardware experience: Yes, GPA: 3.4, 6 days a week: Yes, facility travel: Yes), attached `Areeb_Azhar_Full_Stack_Web_CV.pdf`, stepped through modal, and verified live confirmation: *"Application status: Application submitted now"* (`data/proofs/job_063/`).
-  - **SQUATWOLF** (*Mobile Application Developer* - [Job ID: 4488936551](https://www.linkedin.com/jobs/view/4488936551/)): Verified live Easy Apply submission.
-  - **SQUATWOLF** (*Frontend Developer* - [Job ID: 4488948133](https://www.linkedin.com/jobs/view/4488948133/)): Verified live Easy Apply submission.
-- **Accurate & Synchronized Metrics**:
-  - Reconciled counters across KPI cards, navigation tabs, and grid cards.
-  - Default view automatically hides early test scaffolding so only genuine applications are shown (**28 Live Applications Submitted**, **3 Closed Audits**, **258 Total Scanned**).
 - **Click Card to View**: Every job application card across the grid is fully clickable (`tabindex="0"`, pointer cursor, interactive border glow, and full keyboard navigation support) to open the comprehensive submission verification drawer immediately.
 - **Chronological & Multi-Criteria Sorting**: Added real-time sorting controls (`Newest First`, `Oldest First`, `Company A-Z`, `Role Title A-Z`) applied to both the live application card grid and the historical audit table.
 - **GitHub Pages Live Deployment**:
