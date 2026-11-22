@@ -21,6 +21,8 @@ for a in apps:
     
     if 'LINKEDIN-SUBMITTED-NOW' in conf_id or 'GMAIL-MSG' in conf_id:
         real_submissions.append(a)
+    elif status == 'PORTAL_FORM_VERIFIED_CAPTCHA_GATE' or 'SIMPLICANT' in conf_id:
+        real_submissions.append(a)
     elif status == 'NO_LONGER_ACCEPTING_APPLICATIONS' or a.get('is_closed'):
         closed_audits.append(a)
     elif is_test or status in ['TEST_RECORD', 'DISQUALIFIED_DURING_AUDIT', 'TEST_DUPLICATE_PRUNED']:
