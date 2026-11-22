@@ -1,0 +1,25 @@
+Dear Crovate Hiring Team,
+
+I am writing to express my strong interest in web development opportunities at Crovate. I recently graduated with a BS in Software Engineering from Iqra University in Karachi (ranking in the 88.1st percentile nationwide on the National Student Competency Test), and I specialize in full-stack web development with Python, Django, TypeScript, JavaScript, and RESTful APIs.
+
+Your tech stack strongly aligns with my core technical foundation:
+• Python & Django: Built modular web backends, REST APIs, and authentication pipelines.
+• Database Design: Solid experience with SQL/PostgreSQL, data modeling, and NoSQL concepts.
+• Frontend Engineering: Proficient in HTML5, CSS3, JavaScript, jQuery, responsive design (Bootstrap/Tailwind), and modern UI frameworks.
+• Version Control & Clean Code: Follow strict Git branching practices, clean OOP design, and test-driven architecture.
+
+Featured Projects:
+- CryptoTrader: Full-stack market analytics dashboard and trading simulator (React 19, TypeScript, REST API integration, state management).
+- IqraDegreeChain: Academic credential verification system combining an Express/TypeScript gateway with Hyperledger Fabric.
+
+I saw Crovate's open call inviting resumes to career@crovateoffshore.com for current web developer openings and future engineering consideration. I am based in Karachi and available for immediate on-site or hybrid joining.
+
+My resume is attached for your review. My public code and portfolio are available at github.com/AREEB-AZHAR. I look forward to the possibility of discussing how I can contribute to Crovate's development team.
+
+Best regards,
+
+Areeb Azhar
++92 301 2343423
+areebazhar3@gmail.com
+Karachi, Pakistan
+https://github.com/AREEB-AZHAR

@@ -25,6 +25,7 @@ An autonomous, developer-grade job discovery and direct application dispatch eng
     6. **Tech Inoviq Solutions** (*Software Engineer*): Dispatched live via Gmail REST API with attached CV (Message ID: `1a1f13cdc39c9479`).
     7. **Mindstorm Studios** (*Associate SQA* - [Job ID: 4492142707](https://mindstormstudios.simplicant.com/jobs/63054-associate-sqa/apply)): **Live ATS Form Populated & Verified**. Audited Simplicant ATS form matching candidate experience (Fresh Graduate to 6 months in SQA/game dev); prepared and verified with real portal screenshot (`data/proofs/job_059/`).
     8. **Koderlabs** (*Associate Software Engineer - Backend* - [Job Key: 8b3a46dfe12af813](https://pk.indeed.com/viewjob?jk=8b3a46dfe12af813)): **Live Indeed Smart Apply Verified**. Accepts fresh graduates and candidates with up to 2 years experience (Rs 100,000/mo, Karachi in-person). Stepped through Indeed Smart Apply flow to 100% review completion with attached `AREEB AZHAR CV1.pdf` (`data/proofs/job_067/`).
+    9. **Crovate** (*Web Developer* - [Job Key: 35aeb8949f55906e](https://pk.indeed.com/viewjob?jk=35aeb8949f55906e)): **Dispatched live via Gmail REST API (Channel 1)**. Tailored full-stack cover letter matching Django/Python, REST APIs, SQL, and HTML/CSS/JavaScript with attached `Areeb_Azhar_Full_Stack_Web_CV.pdf` sent directly to `career@crovateoffshore.com` (Verified Gmail Message ID: `1a20505f000a751c`, `data/proofs/job_068/`).
   - Confirmed **8 Verified Closed Post Audits** with browser screenshot evidence:
     1. **Rendream** (*AI Engineer / Computer Vision* - [Job ID: 4492583570](https://www.linkedin.com/jobs/view/4492583570)): Verified closed on LinkedIn: *"No longer accepting applications"* (requires 5+ yrs experience; `data/proofs/job_064/`).
     2. **SorsX** (*Full Stack Engineer* - [Job ID: 4489715953](https://www.linkedin.com/jobs/view/4489715953)): Verified closed on LinkedIn: *"No longer accepting applications"* (requires 8+ yrs experience; `data/proofs/job_065/`).
@@ -169,6 +170,7 @@ This script will:
 | **SQUATWOLF** (Frontend Developer) | LinkedIn Easy Apply (Live Submission) | Verified: *"Application submitted now"* (`job_046`) |
 | **LeadingEdge HR Solutions** (Junior Flutter) | Direct Recruiter Email (`talent@leadingedge.plus`) | Verified Sent (Gmail Msg `1a1f141aa03161bf`, `job_044`) |
 | **Tech Inoviq Solutions** (Software Engineer) | Direct Recruiter Email (`hr@techinoviq.com`) | Verified Sent (Gmail Msg `1a1f13cdc39c9479`, `job_023`) |
+| **Crovate** (Web Developer) | Direct Recruiter Email (`career@crovateoffshore.com`) | Verified Sent (Gmail Msg `1a20505f000a751c`, `job_068`) |
 | **Koderlabs** (Associate Software Engineer - Backend) | Live Indeed Smart Apply (100% Review Populated) | Verified Review Module (`AREEB AZHAR CV1.pdf`, `job_067`) |
 | **Mindstorm Studios** (Associate SQA) | Live Simplicant ATS Portal Verification | Verified ATS Form Snapshot (`job_059`) |
 | **Rendream** (AI Engineer / Computer Vision) | Inactive Posting Audit | Verified: *"No longer accepting applications"* (`job_064`) |

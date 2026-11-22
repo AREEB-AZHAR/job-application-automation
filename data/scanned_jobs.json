@@ -1,5 +1,22 @@
 [
   {
+    "id": "scan_0350",
+    "source": "Indeed Alerts / Direct",
+    "title": "Web Developer",
+    "company": "Crovate",
+    "location": "Karachi, Pakistan",
+    "url": "https://pk.indeed.com/viewjob?jk=35aeb8949f55906e",
+    "description": "Web Developer required at Crovate. Direct email application to career@crovateoffshore.com with domain CV.",
+    "is_match": true,
+    "reason": "Accepted: Matches Full-Stack (Django/Python) domain; direct recruiter email channel dispatched",
+    "domain": "full_stack",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\Areeb_Azhar_Full_Stack_Web_CV.pdf",
+    "is_closed": false,
+    "closed_reason": null,
+    "alt_email": "career@crovateoffshore.com",
+    "scanned_at": "2026-11-23T01:50:44.267915"
+  },
+  {
     "id": "scan_0349",
     "source": "LinkedIn Alerts",
     "title": "Senior Video Streaming Engineer/Architect",
