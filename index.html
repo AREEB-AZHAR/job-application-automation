@@ -66,36 +66,42 @@
   <!-- Main Container -->
   <main class="shell">
     
-    <!-- KPI Header Strip -->
+    <!-- KPI Header Strip (6 Symmetric Cards) -->
     <section class="metrics-strip">
-      <div class="metric-cell">
+      <div class="metric-cell" onclick="switchTab('applications')" style="cursor: pointer;" title="View submitted applications">
         <div class="metric-meta">Applications Submitted</div>
         <div class="metric-num text-emerald" id="stat-applied">0</div>
         <div class="metric-sub">Tailored CV & letter dispatched</div>
       </div>
 
-      <div class="metric-cell">
+      <div class="metric-cell" onclick="filterByActionNeeded()" style="cursor: pointer;" title="View pre-filled portal applications awaiting 1-click CAPTCHA">
+        <div class="metric-meta">Action Needed (Portals)</div>
+        <div class="metric-num" id="stat-action" style="color: #38bdf8;">0</div>
+        <div class="metric-sub">Pre-filled forms awaiting CAPTCHA</div>
+      </div>
+
+      <div class="metric-cell" onclick="switchTab('closed')" style="cursor: pointer;" title="View positions closed or moved on by employers">
+        <div class="metric-meta">Closed / Moved On</div>
+        <div class="metric-num text-amber" id="stat-closed" style="color: #fb923c;">0</div>
+        <div class="metric-sub">Hirer closed post / moved on</div>
+      </div>
+
+      <div class="metric-cell" onclick="switchTab('audit')" style="cursor: pointer;" title="View full opportunity audit trail">
         <div class="metric-meta">Opportunities Analyzed</div>
         <div class="metric-num" id="stat-scanned">0</div>
-        <div class="metric-sub">LinkedIn, Indeed, Rozee, PakTechJobs</div>
+        <div class="metric-sub">LinkedIn, Indeed, Glassdoor</div>
       </div>
 
-      <div class="metric-cell">
+      <div class="metric-cell" onclick="switchTab('analytics')" style="cursor: pointer;" title="View conversion rate & pipeline graphs">
         <div class="metric-meta">Application Yield</div>
         <div class="metric-num text-indigo" id="stat-rate">0%</div>
-        <div class="metric-sub">Satisfied seniority & stack criteria</div>
+        <div class="metric-sub">Qualified &le; 1 yr seniority criteria</div>
       </div>
 
-      <div class="metric-cell">
+      <div class="metric-cell" onclick="switchTab('audit')" style="cursor: pointer;" title="View filtered out senior & mismatch roles">
         <div class="metric-meta">Filtered Out</div>
         <div class="metric-num text-muted" id="stat-filtered">0</div>
         <div class="metric-sub">Senior roles & stack mismatches</div>
-      </div>
-
-      <div class="metric-cell">
-        <div class="metric-meta">Closed by Hirer</div>
-        <div class="metric-num text-amber" id="stat-closed" style="color: #fb923c;">0</div>
-        <div class="metric-sub">No longer accepting applications</div>
       </div>
     </section>
 
@@ -106,12 +112,16 @@
           <span>Applications Submitted</span>
           <span class="seg-count" id="count-applications">0</span>
         </button>
+        <button class="seg-btn" data-tab="closed">
+          <span>Closed / Moved On</span>
+          <span class="seg-count" id="count-closed" style="background: rgba(251, 146, 60, 0.2); color: #fb923c;">0</span>
+        </button>
         <button class="seg-btn" data-tab="audit">
           <span>Opportunity Audit Trail</span>
           <span class="seg-count" id="count-scanned">0</span>
         </button>
         <button class="seg-btn" data-tab="analytics">
-          <span>Criteria & Rules</span>
+          <span>📊 Analytics & Graphs</span>
         </button>
       </div>
 
@@ -140,9 +150,10 @@
 
         <select id="filter-status" class="select-refined">
           <option value="all">All Pipeline States</option>
-          <option value="APPLIED">Applied (Web Form)</option>
-          <option value="APPLIED_VIA_DIRECT_EMAIL">Applied (Email Dispatched)</option>
-          <option value="NO_LONGER_ACCEPTING_APPLICATIONS">Closed by Hirer</option>
+          <option value="APPLIED">● Applied (Web Form / Easy Apply)</option>
+          <option value="APPLIED_VIA_DIRECT_EMAIL">✉️ Applied (Email Dispatched)</option>
+          <option value="ACTION_NEEDED">⏳ Action Needed (Captcha Gate)</option>
+          <option value="NO_LONGER_ACCEPTING_APPLICATIONS">⛔ Closed / Moved On by Hirer</option>
           <option value="TEST_RECORD">🧪 Test / Scaffold Records</option>
           <option value="DISQUALIFIED_DURING_AUDIT">🚫 Disqualified (Audit)</option>
           <option value="INTERVIEWING">Interviewing</option>
@@ -162,7 +173,25 @@
       </div>
     </section>
 
-    <!-- Tab 2: Audit Trail Table -->
+    <!-- Tab 2: Closed / Moved On by Hirer -->
+    <section id="view-closed" class="view-panel">
+      <div class="panel-box full-span" style="margin-bottom: 1.25rem; border-left: 3px solid #fb923c; background: linear-gradient(90deg, rgba(251, 146, 60, 0.08) 0%, rgba(30, 41, 59, 0.4) 100%);">
+        <div class="panel-head" style="color: #fb923c; display: flex; align-items: center; gap: 0.5rem;">
+          <span>⛔</span> Verified Closed & Expired Postings (Employer Moved On)
+        </div>
+        <p class="panel-sub" style="margin-bottom: 0;">
+          These opportunities were analyzed and audited through our autonomous scraper, but the hiring team has either marked the listing as 'No longer accepting applications', expired the post, or filled the requisition. Visual audit proofs and alternate recruiter emails are preserved below.
+        </p>
+      </div>
+      <div id="closed-grid" class="app-cards-grid">
+        <!-- Rendered dynamically -->
+      </div>
+      <div id="closed-empty" class="empty-state hidden">
+        <div class="empty-text">No closed postings match your current filter criteria.</div>
+      </div>
+    </section>
+
+    <!-- Tab 3: Audit Trail Table -->
     <section id="view-audit" class="view-panel">
       <div class="table-card">
         <table class="data-table">
@@ -187,11 +216,78 @@
       </div>
     </section>
 
-    <!-- Tab 3: Analytics & Rules -->
+    <!-- Tab 4: Analytics & Interactive Graphs -->
     <section id="view-analytics" class="view-panel">
       <div class="analytics-layout">
+        <!-- Hero Header -->
+        <div class="analytics-hero-banner">
+          <div>
+            <div class="hero-banner-title">
+              <span>📊</span> Autonomous Pipeline Analytics & Visual Intelligence
+            </div>
+            <div class="hero-banner-sub">
+              Real-time conversion funnel, domain distribution, submission channels, and exclusion criteria
+            </div>
+          </div>
+          <button id="btn-refresh-charts" class="btn btn-secondary btn-sm" onclick="renderAnalyticsCharts()">
+            ↻ Refresh Graphs
+          </button>
+        </div>
+
+        <!-- 4 Interactive Charts in 2x2 Grid -->
+        <div class="charts-grid">
+          <!-- Chart 1: Application Funnel -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title"><span>🔻</span> Sourcing & Conversion Funnel</div>
+              <span class="tag-badge" style="background: rgba(52, 211, 153, 0.15); color: #34d399;">Conversion Rate</span>
+            </div>
+            <div class="chart-sub">Progression from raw alerts to filtered, audited, and submitted applications</div>
+            <div class="chart-container">
+              <canvas id="chart-funnel"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 2: Submission Channels -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title"><span>🚀</span> Submission Channels & Routes</div>
+              <span class="tag-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">Multi-Channel</span>
+            </div>
+            <div class="chart-sub">Volume distribution across Easy Apply, Direct Email, ATS Portals, and Closed Audits</div>
+            <div class="chart-container">
+              <canvas id="chart-channels"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 3: Target Verticals & Tech Stacks -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title"><span>💻</span> Engineering Verticals Distribution</div>
+              <span class="tag-badge" style="background: rgba(129, 140, 248, 0.15); color: #818cf8;">CV Mapping</span>
+            </div>
+            <div class="chart-sub">Targeted roles distributed across candidate domain specializations</div>
+            <div class="chart-container">
+              <canvas id="chart-domains"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 4: Disqualification & Exclusion Reasons -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title"><span>🛡️</span> Disqualification Reasons Breakdown</div>
+              <span class="tag-badge" style="background: rgba(244, 63, 94, 0.15); color: #fb7185;">Filter Safeguards</span>
+            </div>
+            <div class="chart-sub">Opportunities excluded by autonomous qualification filters (&le; 1 yr threshold)</div>
+            <div class="chart-container">
+              <canvas id="chart-exclusions"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breakdown Details & Rules Matrix -->
         <div class="panel-box">
-          <div class="panel-head">Filter Exclusion Breakdown</div>
+          <div class="panel-head">Detailed Exclusion Counts</div>
           <p class="panel-sub">Breakdown of opportunities excluded by qualification filters</p>
           <div id="rejection-breakdown" class="breakdown-list">
             <!-- Dynamic list -->
@@ -207,11 +303,11 @@
         </div>
 
         <div class="panel-box full-span">
-          <div class="panel-head">Evaluation & Screening Rules</div>
+          <div class="panel-head">Autonomous Evaluation & Screening Rules</div>
           <div class="rules-table">
             <div class="rule-row">
               <span class="rule-key">Seniority Threshold</span>
-              <span class="rule-val">Maximum 1 year experience required. Disqualifies Senior, Lead, Principal, Architect, and Manager titles.</span>
+              <span class="rule-val">Maximum 1 year experience required. Strictly disqualifies Senior, Lead, Principal, Architect, and Manager titles.</span>
             </div>
             <div class="rule-row">
               <span class="rule-key">Domain Alignments</span>
@@ -224,6 +320,10 @@
             <div class="rule-row">
               <span class="rule-key">CV Vault Mapping</span>
               <span class="rule-val">Dynamic 1-to-1 resume binding from <code>C:\Users\areeb\Desktop\cv</code> based on extracted domain keywords.</span>
+            </div>
+            <div class="rule-row">
+              <span class="rule-key">Closed Post Protocol</span>
+              <span class="rule-val">Audits closed postings, logs visual evidence, extracts alternate recruiter contacts, and dispatches via Direct Email if valid email is discovered.</span>
             </div>
           </div>
         </div>
@@ -397,6 +497,7 @@
     </div>
   </div>
 
+  <script src="chart.umd.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
