@@ -2087,5 +2087,32 @@
     "post_submit_snapshot": "/proofs/job_065/post_submit.png",
     "applied_at": "2026-11-23T01:18:31.846997",
     "updated_at": "2026-11-23T01:18:31.847006"
+  },
+  {
+    "id": "job_067",
+    "source": "Indeed Apply",
+    "title": "Associate Software Engineer - Backend",
+    "company": "Koderlabs",
+    "location": "Karachi, Pakistan (In person)",
+    "url": "https://pk.indeed.com/viewjob?jk=8b3a46dfe12af813",
+    "domain": "full_stack",
+    "cv_path": "C:\\Users\\areeb\\Desktop\\cv\\AREEB AZHAR CV1.pdf",
+    "cover_letter": "Application prepared and populated via Indeed Smart Apply for Associate Software Engineer - Backend at Koderlabs. Experience requirement: Fresh graduates and candidates with up to 2 years relevant experience.",
+    "screening_answers": {
+      "location": "Karachi, Pakistan",
+      "education": "BS Software Engineering, Iqra University",
+      "experience": "0.5 years (Fresh Graduate < 1 year)",
+      "salary": "Rs 100,000 / month"
+    },
+    "status": "READY_FOR_FINAL_SUBMISSION",
+    "is_closed": false,
+    "is_test": false,
+    "confirmation_id": "INDEED-SMARTAPPLY-8b3a46dfe12af813",
+    "verification_status": "READY_FOR_ONE_CLICK_SUBMISSION",
+    "verification_details": "100% Populated Indeed Smart Apply Review Module: Profile, Contact, and CV attached. Final submission requires one-click reCAPTCHA completion in browser.",
+    "pre_submit_snapshot": "/proofs/job_067/pre_submit.png",
+    "post_submit_snapshot": "/proofs/job_067/post_submit.png",
+    "applied_at": "2026-11-23T01:31:56.280265",
+    "updated_at": "2026-11-23T01:31:56.280265"
   }
 ]
