@@ -340,7 +340,9 @@ def get_full_metrics() -> Dict[str, Any]:
     genuine_apps = [a for a in applications if not a.get("is_test")]
     total_applied = sum(1 for a in genuine_apps if a.get("status") in ["APPLIED", "SUBMITTED", "APPLIED_VIA_DIRECT_EMAIL"])
     total_closed = sum(1 for a in genuine_apps if a.get("status") == "NO_LONGER_ACCEPTING_APPLICATIONS" or a.get("is_closed"))
-    total_email_applied = sum(1 for a in genuine_apps if a.get("status") == "APPLIED_VIA_DIRECT_EMAIL")
+    total_action_needed = sum(1 for a in genuine_apps if a.get("status") in ["PORTAL_FORM_VERIFIED_CAPTCHA_GATE", "READY_FOR_FINAL_SUBMISSION"])
+    total_email_applied = sum(1 for a in genuine_apps if a.get("status") == "APPLIED_VIA_DIRECT_EMAIL" or a.get("alt_email"))
+    total_easy_apply = sum(1 for a in genuine_apps if a.get("status") in ["APPLIED", "SUBMITTED"] and not a.get("alt_email"))
     total_verified = sum(1 for a in genuine_apps if a.get("verification_status") in ["CONFIRMED_SUBMITTED", "DIRECT_EMAIL_DRAFT_ATTACHED", "DIRECT_EMAIL_DISPATCHED", "CLOSED_BY_EMPLOYER"])
     total_errors = sum(1 for a in genuine_apps if a.get("verification_status") == "SUBMISSION_ERROR")
 
@@ -363,6 +365,22 @@ def get_full_metrics() -> Dict[str, Any]:
                 category = "Out of scope"
             disqualification_reasons[category] = disqualification_reasons.get(category, 0) + 1
 
+    # Structured chart data payloads
+    chart_funnel = [
+        {"stage": "Ingested & Scanned", "count": total_scanned},
+        {"stage": "Filtered Out (Senior / Mismatch)", "count": total_disqualified},
+        {"stage": "Closed / Moved On by Hirer", "count": total_closed},
+        {"stage": "Action Needed (Captcha Gate)", "count": total_action_needed},
+        {"stage": "Dispatched & Submitted", "count": total_applied}
+    ]
+
+    chart_channels = {
+        "LinkedIn Easy Apply": total_easy_apply,
+        "Direct Recruiter Email": total_email_applied,
+        "Company ATS Portal": total_action_needed,
+        "Closed / Inactive Audits": total_closed
+    }
+
     return {
         "total_scanned": total_scanned,
         "total_qualified": total_qualified,
@@ -370,14 +388,18 @@ def get_full_metrics() -> Dict[str, Any]:
         "total_applications": len(applications),
         "total_applied": total_applied,
         "total_closed": total_closed,
+        "total_action_needed": total_action_needed,
         "total_email_applied": total_email_applied,
+        "total_easy_apply": total_easy_apply,
         "total_test_records": total_test_records,
         "total_verified": total_verified,
         "total_errors": total_errors,
-        "application_rate": round((total_qualified / total_scanned * 100) if total_scanned else 0, 1),
+        "application_rate": round((total_applied / total_scanned * 100) if total_scanned else 0, 1),
         "by_status": by_status,
         "by_domain": by_domain,
-        "disqualification_reasons": disqualification_reasons
+        "disqualification_reasons": disqualification_reasons,
+        "chart_funnel": chart_funnel,
+        "chart_channels": chart_channels
     }
 
 def get_pipeline_summary() -> Dict[str, Any]:

@@ -36,10 +36,34 @@ An autonomous, developer-grade job discovery and direct application dispatch eng
     7. **Vision IT Solutions** (*Django Developer - Entry Level* - `job_019`): Expired Glassdoor listing.
     8. **Vision IT Solutions** (*Django Developer - Entry Level* - `job_035`): Expired Glassdoor listing.
   - Reclassified **50 Historical Scaffold & Unsubmitted Test Entries** (`status: "UNSUBMITTED_TEST_MOCK"`, `is_test: true`) ensuring zero false-positive submissions appear in the metrics.
-  - Total Scanned Pipeline Registry expanded to **349 Opportunities**.
-- **Accurate & Synchronized Metrics**:
-  - Reconciled counters across KPI cards, navigation tabs, and grid cards.
-  - Default view automatically displays **ONLY genuine live applications** (**7 Applications Active/Verified**, **8 Closed Audits**, **349 Total Scanned**).
+  - Total Scanned Pipeline Registry expanded to **350 Opportunities**.
+- **Balanced 6-Card Symmetrical KPI Strip & "Closed / Moved On" Tagging**:
+  - Engineered a symmetrical 6-column metric card grid across all breakpoints eliminating layout gaps:
+    1. **Applications Submitted** (7) `[Emerald]` — Tailored CV & custom application dispatched.
+    2. **Action Needed / Portals** (2) `[Sky Blue]` — 100% pre-filled forms awaiting final 1-click CAPTCHA.
+    3. **Closed / Moved On by Hirer** (8) `[Amber]` — Hirer closed post / moved on.
+    4. **Opportunities Analyzed** (350) `[White]` — Scanned across LinkedIn, Indeed, Glassdoor.
+    5. **Application Yield** (2.0%) `[Indigo]` — Qualified roles matching &le; 1 year seniority.
+    6. **Filtered Out / Senior Roles** (302) `[Muted Gray]` — Disqualified due to >1 year exp or mismatch.
+  - Added dedicated navigation tab: **Closed / Moved On (8)** with custom orange info banner, audit proofs, and employer notes.
+  - Added filter dropdown support for `Closed / Moved On by Hirer` and `Action Needed (Captcha Gate)`.
+- **Interactive Visual Analytics & Graphs Suite (Chart.js)**:
+  - Bundled local `chart.umd.min.js` (210 KB) for 100% offline, zero-latency rendering.
+  - Added 4 interactive dark-slate charts:
+    1. **Sourcing & Conversion Funnel** (Horizontal Bar) — Progression from raw alerts to filtered, audited, and submitted applications with % drop-off calculation.
+    2. **Submission Channels & Routes** (Doughnut) — Multi-channel distribution across LinkedIn Easy Apply (4), Direct Recruiter Email (3), ATS Portals (2), and Closed Audits (8).
+    3. **Engineering Verticals Distribution** (Bar) — Targeted roles mapped to Full-Stack Web, Mobile/Flutter, Rust/Blockchain, AI/ML, and Game Dev.
+    4. **Disqualification Reasons Breakdown** (Horizontal Bar) — Categorization of excluded roles (Out of Scope, Stack Mismatch, Senior/Lead roles > 1 yr).
+
+### 📸 Live Dashboard Screenshots
+
+| Dashboard Metric Cards & Navigation | Interactive Chart.js Analytics Suite |
+| :---: | :---: |
+| ![Balanced KPI Cards](web/screenshots/dashboard_kpi_metrics.png) | ![Interactive Visual Graphs](web/screenshots/analytics_graphs.png) |
+
+| Closed / Moved On Audit Tab | Opportunity Inspection & Visual Proofs |
+| :---: | :---: |
+| ![Closed Postings View](web/screenshots/closed_postings_view.png) | ![Submission Proofs](web/screenshots/closed_post_drawer_proof.png) |
 - **Mobile-Friendly Responsive Redesign**:
   - Engineered dedicated responsive breakpoints for screens `< 900px`, `< 768px`, and `< 640px`.
   - Touch-optimized 2-column KPI strip and full-width tab controls.

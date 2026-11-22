@@ -6,11 +6,13 @@
     "total_applications": 67,
     "total_applied": 7,
     "total_closed": 8,
-    "total_email_applied": 2,
+    "total_action_needed": 2,
+    "total_email_applied": 4,
+    "total_easy_apply": 4,
     "total_test_records": 51,
     "total_verified": 14,
     "total_errors": 0,
-    "application_rate": 13.7,
+    "application_rate": 2.0,
     "by_status": {
       "APPLIED": 6,
       "NO_LONGER_ACCEPTING_APPLICATIONS": 7,
@@ -35,6 +37,34 @@
       "Stack mismatch": 70,
       "Out of scope": 187,
       "Requires > 1 yr exp": 1
+    },
+    "chart_funnel": [
+      {
+        "stage": "Ingested & Scanned",
+        "count": 350
+      },
+      {
+        "stage": "Filtered Out (Senior / Mismatch)",
+        "count": 302
+      },
+      {
+        "stage": "Closed / Moved On by Hirer",
+        "count": 8
+      },
+      {
+        "stage": "Action Needed (Captcha Gate)",
+        "count": 2
+      },
+      {
+        "stage": "Dispatched & Submitted",
+        "count": 7
+      }
+    ],
+    "chart_channels": {
+      "LinkedIn Easy Apply": 4,
+      "Direct Recruiter Email": 4,
+      "Company ATS Portal": 2,
+      "Closed / Inactive Audits": 8
     }
   },
   "applications": [
