@@ -1,0 +1,19 @@
+Dear TEKXS Hiring Team,
+
+I am writing to apply for the Software Engineer position at TEKXS PRIVATE LIMITED in Lahore. I graduated with a BS in Software Engineering from Iqra University, Karachi in September 2026 (scoring in the 88.1st percentile on the Government of Pakistan National Student Competency Test, with 90% in Software Engineering), and I bring hands-on full-stack, REST API, and AI integration experience ready for immediate contribution.
+
+Your stack and product focus strongly align with my technical background:
+- TypeScript, JavaScript, React, Next.js & Node.js: Built CryptoTrader, a responsive full-stack market analytics dashboard and trading simulator using React 19, TypeScript, Vite, Zustand, and REST APIs.
+- Backend APIs, Databases & Distributed Systems: Engineered IqraDegreeChain, a credential verification platform combining an Express/TypeScript API gateway with Hyperledger Fabric, alongside PostgreSQL/MySQL/SQLite data modeling and clean Git branching workflows.
+- Python, Automation & AI/LLM Integrations: Built automated ingestion, evaluation, and LLM-driven agentic workflow pipelines in Python with FastAPI, Docker, and structured prompt engineering.
+
+I am based in Pakistan, available immediately, and eager to relocate/work on-site in Lahore to build reliable SaaS products, storefronts, and integrations for your global clients.
+
+My CV is attached for your review, and my projects can be explored at https://github.com/AREEB-AZHAR. Thank you for your time and consideration.
+
+Best regards,
+
+Areeb Azhar
++92 301 2343423
+areebazhar3@gmail.com
+https://github.com/AREEB-AZHAR

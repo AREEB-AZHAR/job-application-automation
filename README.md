@@ -13,7 +13,19 @@ An autonomous, developer-grade job discovery and direct application dispatch eng
 
 ## 🚀 Accomplishments & Real Live Application Dispatch
 
-### 🌟 Latest Pipeline Run (November 22, 2026) & Audit Highlights
+### 🌟 Latest Pipeline Run (November 27, 2026) & Audit Highlights
+- **24-Hour Live Gmail Alert Ingestion, Deduplication & Multi-Channel Dispatch**:
+  - Audited 66 opportunities across LinkedIn, Glassdoor, and Teamtailor alerts received in the last 24 hours (no new Indeed alerts in window; 1 duplicate skipped: `4492185272` Navigator HR). Total scanned pipeline expanded from 350 to **413 opportunities**.
+  - **Direct Recruiter Email Dispatched to TEKXS (`job_069`)**: Verified *Software Engineer* (`1 to 4 years` exp, Lahore — [Job ID: 4494908932](https://www.linkedin.com/jobs/view/4494908932/)) via live LinkedIn inspection; dispatched tailored cover letter + `Areeb_Azhar_Full_Stack_Web_CV.pdf` directly to `hr@tekxs.com` with subject `"Software Engineer"` via Gmail CLI (Verified Message ID: `1a21b004c32994f9`, `data/proofs/job_069/`).
+  - **3 New Verified Closed Posting Audits** with real browser screenshots:
+    - **Mashreq** (*Dev Engineer - Backend - Mashreq Global Network Pakistan* - [Job ID: 4494601199](https://www.linkedin.com/jobs/view/4494601199/)): Verified `"No longer accepting applications"` on LinkedIn (`job_070`, `data/proofs/job_070/`).
+    - **Eximus Technologies** (*Junior Software Engineer* - [Job ID: 4439730703](https://www.linkedin.com/jobs/view/4439730703/)): Followed external ATS (`eximusedu.com`), verified red notice `"Eximus Technologies is currently NOT accepting new applications"` and Dhaka, Bangladesh on-site mismatch (`job_071`, `data/proofs/job_071/`).
+    - **OraSec** (*Backend Developer (Node.js & Go)* - [Job ID: 4493080995](https://www.linkedin.com/jobs/view/4493080995/)): Verified `"No longer accepting applications"` on LinkedIn and 3+ years experience requirement (`job_072`, `data/proofs/job_072/`).
+  - **Strict Experience & Domain Disqualifications**: Live JD inspection disqualified **FullStack** (`5+ yrs`), **HBOX Digital** (`3+ yrs`), **CCRIPT** (`Mid to senior`), **ibex** (`2 yrs`), **Systems Limited MERN** (`6+ yrs`), **ENCS** (`5+ yrs`), **Global Rescue** (`3+ yrs`), **Yaqoob Group** (`Intermediate` / Multan-only), **Hashtag Media** (`not actively hiring`), **METRO Pakistan** (`Fruits & Vegetables QA`), and **TSS Pakistan** (`AI Engineer`, `3-4 yrs` on Teamtailor).
+  - **Cloudflare Gate Reported**: 4 Pakistan Glassdoor Easy Apply listings (`IOT Systems`, `Adequate Solutions`, `Limton Innovative System`, `EXA Capital`) hit Glassdoor's `"Humans only"` HTTP 403 Cloudflare challenge and were logged without bypassing.
+  - Updated live metrics: **8 Genuine Applications Submitted**, **2 Action Needed / Portals**, **11 Closed / Moved On Audits**, **413 Opportunities Analyzed**.
+
+### 🌟 Previous Pipeline Run (November 22, 2026) & Audit Highlights
 - **Rigorous Live Verification Audit & Zero Simulated Submissions**:
   - Rechecked all records in `data/applications.json` against real external platform execution logs. Zero mock confirmation tokens exist in active queues.
   - Confirmed **7 Genuine Live Submissions & Audited Portals** with verified external tokens and dual-receipt snapshots:
