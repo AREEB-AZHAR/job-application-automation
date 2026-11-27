@@ -29,6 +29,7 @@ An autonomous, developer-grade job discovery and direct application dispatch eng
       - **Technoholic Advance Solutions** (*Full Stack Developer*, Karachi, `1 yr preferred` — `job_073`): Populated Indeed SmartApply 100% to the final Review screen with `Areeb_Azhar_Full_Stack_Web_CV.pdf`, awaiting 1-click reCAPTCHA (`data/proofs/job_073/`).
       - **Soliton Technologies** (*Junior Software Engineer*, Lahore, `6 mo–1 yr` — `job_074`): Verified open ATS (`solitontechnologies.com/career/Junior%20Software%20Engineer/146`), flagged for candidate CNIC, Father's Name, and Google reCAPTCHA (`data/proofs/job_074/`).
       - **Closed Audits**: Documented **AI Community of Pakistan** (*Python Programming Intern*, `job_075`) and **TechieMinions** (*AI Product Developer*, 0–1 yrs, `job_076`) plus 8 other closed/2+–6+ yr LinkedIn roles; **Outsource origin Limited** (*Web/Mobile Intern*) hit Indeed's Cloudflare security check (`HTTP 403`).
+  - **Daily Bot Cycle Upgraded (`autonomous-job-pipeline` Skill + `daily-job-search` Sidecar)**: Persisted the rolling 7-day alert lookback, return-offer/interview/confirmation/bounce Gmail reconciliation, live-JD-only verification, and CAPTCHA/CNIC gate handling into both the global `autonomous-job-pipeline` skill and the 8:00 AM `Asia/Karachi` scheduled automation sidecar.
   - Updated live metrics: **8 Genuine Applications Submitted**, **3 Action Needed / Portals**, **13 Closed / Moved On Audits**, **423 Opportunities Analyzed**.
 
 ### 🌟 Previous Pipeline Run (November 22, 2026) & Audit Highlights
